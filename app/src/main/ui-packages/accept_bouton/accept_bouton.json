@@ -1,0 +1,117 @@
+{
+  "name": "accept_bouton",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "224:4275",
+    "version": "3156430886",
+    "component-id": "0b4ddf9ba2899892d3c9b93201aef982327b91f3"
+  },
+  "default": "Accept Bouton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 19"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 5"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 6"
+      }
+    ],
+    "modes": {
+      "Accept Bouton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Ellipse 19",
+              "Rectangle 5",
+              "Rectangle 6"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ellipse 19",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_19.svg"
+          },
+          {
+            "id": "Rectangle 5",
+            "margin": {
+              "left": "13.240636185221888",
+              "top": "20.125107047553456",
+              "right": "24.259363814778112",
+              "bottom": "6.948276283745372"
+            },
+            "border-radius": "37.5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_5.svg"
+          },
+          {
+            "id": "Rectangle 6",
+            "margin": {
+              "left": "22.737164677711576",
+              "top": "9.041391252826088",
+              "right": "14.762835322288424",
+              "bottom": "6.812112928082115"
+            },
+            "border-radius": "37.5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_6.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Accept Bouton",
+      "size": {
+        "width": 41.25,
+        "height": 41.25
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

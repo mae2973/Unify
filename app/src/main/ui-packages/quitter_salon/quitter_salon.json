@@ -1,0 +1,309 @@
+{
+  "name": "quitter_salon",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "136:1100",
+    "version": "3156430886",
+    "component-id": "60ca836cfc0d927de09e9fa8fb1a7e1623600e58"
+  },
+  "default": "Quitter salon",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 27"
+      },
+      {
+        "type": "text",
+        "id": "Êtes-vous sûr de vouloir quitter le salon ?"
+      },
+      {
+        "type": "group",
+        "id": "Group 1"
+      },
+      {
+        "type": "group",
+        "id": "Group 2"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 29"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 36"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 37"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 30"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 38"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 39"
+      }
+    ],
+    "modes": {
+      "Quitter salon": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 27",
+              "Êtes-vous sûr de vouloir quitter le salon ?",
+              "Group 1",
+              "Group 2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 27",
+            "border-radius": "32.601348876953125",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_27.svg"
+          },
+          {
+            "id": "Êtes-vous sûr de vouloir quitter le salon ?",
+            "margin": {
+              "left": "14.0",
+              "top": "22.0",
+              "right": "16.0",
+              "bottom": "78.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Êtes-vous sûr de vouloir quitter le salon ?",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "19.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Group 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "62.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "83.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.5"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Ellipse 29",
+              "Rectangle 36",
+              "Rectangle 37"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "204.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "83.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.5"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.5"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Ellipse 30",
+              "Rectangle 38",
+              "Rectangle 39"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ellipse 29",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_29.svg"
+          },
+          {
+            "id": "Rectangle 36",
+            "margin": {
+              "left": "15.888763422266265",
+              "top": "24.149981972689147",
+              "right": "29.111236577733735",
+              "bottom": "8.338078024869446"
+            },
+            "border-radius": "45.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_36.svg"
+          },
+          {
+            "id": "Rectangle 37",
+            "margin": {
+              "left": "27.284500262354584",
+              "top": "10.849669591675365",
+              "right": "17.715499737645416",
+              "bottom": "8.174536569823658"
+            },
+            "border-radius": "45.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_37.svg"
+          },
+          {
+            "id": "Ellipse 30",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_30.svg"
+          },
+          {
+            "id": "Rectangle 38",
+            "margin": {
+              "left": "23.13990119628454",
+              "top": "6.582552080674418",
+              "right": "21.86009880371546",
+              "bottom": "5.302453870253316"
+            },
+            "border-radius": "45.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_38.svg"
+          },
+          {
+            "id": "Rectangle 39",
+            "margin": {
+              "left": "23.14004910521055",
+              "top": "6.5823869354293265",
+              "right": "21.85995089478945",
+              "bottom": "5.302619015498408"
+            },
+            "border-radius": "45.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_39.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Quitter salon",
+      "size": {
+        "width": 319.0,
+        "height": 151.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,340 @@
+{
+  "name": "_cran_interface",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "232:14804",
+    "version": "3156430886",
+    "component-id": "30fc01b17657c256abdf0b09c8860af66e59584d"
+  },
+  "default": "Écran interface",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Écran basique",
+        "key": "_cran_basique"
+      },
+      {
+        "type": "text",
+        "id": "Name"
+      },
+      {
+        "type": "image",
+        "id": "Bouton Setting"
+      },
+      {
+        "type": "image",
+        "id": "Fleche droit"
+      },
+      {
+        "type": "image",
+        "id": "Fleche gauche"
+      },
+      {
+        "type": "group",
+        "id": "Logo"
+      },
+      {
+        "type": "group",
+        "id": "Playlist Button"
+      },
+      {
+        "type": "image",
+        "id": "logo 1"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 17"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 3"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 4"
+      }
+    ],
+    "modes": {
+      "Écran interface": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Écran basique",
+              "Name",
+              "Bouton Setting",
+              "Fleche droit",
+              "Fleche gauche",
+              "Logo",
+              "Playlist Button"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Écran basique"
+          },
+          {
+            "id": "Name",
+            "margin": {
+              "left": "64.0",
+              "top": "98.0",
+              "right": "65.0",
+              "bottom": "579.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$Nom frame",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "32.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Bouton Setting",
+            "margin": {
+              "left": "290.0",
+              "top": "20.0",
+              "right": "20.0",
+              "bottom": "650.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "bouton_setting.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Fleche droit",
+            "presence": "$Right",
+            "margin": {
+              "left": "286.0",
+              "top": "104.0",
+              "right": "55.925048828125",
+              "bottom": "586.60009765625"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "fleche_droit.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Fleche gauche",
+            "presence": "$Left",
+            "margin": {
+              "left": "54.99995040893555",
+              "top": "104.00002479553223",
+              "right": "286.925048828125",
+              "bottom": "586.5999755859375"
+            },
+            "relative-transform": [
+              [
+                "-1.0",
+                "1.2246468525851679e-16",
+                "0.0"
+              ],
+              [
+                "-1.2246468525851679e-16",
+                "-1.0",
+                "0.0"
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "fleche_droit.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Logo",
+            "margin": {
+              "left": "148.0",
+              "top": "646.0",
+              "right": "147.875",
+              "bottom": "13.25"
+            },
+            "is-structured": "false",
+            "children": [
+              "logo 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Playlist Button",
+            "presence": "$Bouton Playlist",
+            "margin": {
+              "left": "280.0",
+              "top": "651.0",
+              "right": "30.0",
+              "bottom": "19.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Ellipse 17",
+              "Rectangle 3",
+              "Rectangle 4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "logo 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "logo_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Ellipse 17",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_17.svg"
+          },
+          {
+            "id": "Rectangle 3",
+            "margin": {
+              "left": "23.0",
+              "top": "10.0",
+              "right": "23.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_3.svg"
+          },
+          {
+            "id": "Rectangle 4",
+            "margin": {
+              "left": "23.0",
+              "top": "10.0",
+              "right": "23.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_4.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Nom frame": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Right": {
+      "data-type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    "Left": {
+      "data-type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    "Bouton Playlist": {
+      "data-type": "boolean",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Écran interface",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      },
+      "parameters": {
+        "Nom frame": "Nom Frame",
+        "Right": true,
+        "Left": true,
+        "Bouton Playlist": true
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

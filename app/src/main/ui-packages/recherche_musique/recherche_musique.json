@@ -1,0 +1,205 @@
+{
+  "name": "recherche_musique",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "138:824",
+    "version": "3156430886",
+    "component-id": "fdd0ec2db3d5cb4d14792bd9b351103f165115b2"
+  },
+  "default": "Recherche musique",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 30"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 17"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 3"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 4"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 31"
+      },
+      {
+        "type": "text",
+        "id": "Rechercher une musique..."
+      }
+    ],
+    "modes": {
+      "Recherche musique": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 30",
+              "Ellipse 17",
+              "Rectangle 3",
+              "Rectangle 4",
+              "Rectangle 31",
+              "Rechercher une musique..."
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 30",
+            "border-radius": "25.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_30.svg"
+          },
+          {
+            "id": "Ellipse 17",
+            "margin": {
+              "left": "250.0",
+              "top": "242.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_17.svg"
+          },
+          {
+            "id": "Rectangle 3",
+            "margin": {
+              "left": "273.0",
+              "top": "252.0",
+              "right": "23.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_3.svg"
+          },
+          {
+            "id": "Rectangle 4",
+            "margin": {
+              "left": "273.0",
+              "top": "252.0",
+              "right": "23.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_4.svg"
+          },
+          {
+            "id": "Rectangle 31",
+            "margin": {
+              "left": "26.0",
+              "top": "25.0",
+              "right": "27.0",
+              "bottom": "221.0"
+            },
+            "border-radius": "25.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_31.svg"
+          },
+          {
+            "id": "Rechercher une musique...",
+            "margin": {
+              "left": "48.0",
+              "top": "25.0",
+              "right": "5.0",
+              "bottom": "222.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.3176470588235294",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "Rechercher une musique...",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "line-height": "1.171875"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Recherche musique",
+      "size": {
+        "width": 300.0,
+        "height": 292.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

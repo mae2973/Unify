@@ -1,0 +1,95 @@
+{
+  "name": "_cran_1_2",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "9:23",
+    "version": "3156430886",
+    "component-id": "66b9e72e302ce6d37a26ba84b535049e2ad359ae"
+  },
+  "default": "Écran 1.2",
+  "documentation": "Second SS",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      }
+    ],
+    "modes": {
+      "Écran 1.2": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "fills": [
+              {
+                "color": {},
+                "opacity": "1.0",
+                "fill-type": "lineargradient",
+                "blend-mode": "normal",
+                "color-stops": [
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "43.481781376518214",
+                      "saturation": "0.9762845849802372",
+                      "value": "0.9921568627450981"
+                    },
+                    "color-stop-position": "0.0"
+                  },
+                  {
+                    "color": {
+                      "alpha": "0.34901960784313724",
+                      "hue": "13.647058823529411",
+                      "saturation": "1.0",
+                      "value": "1.0"
+                    },
+                    "color-stop-position": "0.52"
+                  },
+                  {
+                    "color": {
+                      "alpha": "0.6",
+                      "hue": "341.56424581005587",
+                      "saturation": "0.7489539748953974",
+                      "value": "0.9372549019607843"
+                    },
+                    "color-stop-position": "1.0"
+                  }
+                ],
+                "gradient-handle-positions": [
+                  {
+                    "x": "0.5",
+                    "y": "0.0"
+                  },
+                  {
+                    "x": "0.5",
+                    "y": "1.0"
+                  },
+                  {
+                    "x": "0.0",
+                    "y": "0.0"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Écran 1.2",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

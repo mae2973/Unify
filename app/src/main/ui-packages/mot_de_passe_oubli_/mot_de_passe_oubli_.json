@@ -1,0 +1,88 @@
+{
+  "name": "mot_de_passe_oubli_",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "139:840",
+    "version": "3156430886",
+    "component-id": "56632cfbaca3e4c5be4b89230710dc26dbdd8fa5"
+  },
+  "default": "Mot de passe oublié",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Mot de passe oublié"
+      }
+    ],
+    "modes": {
+      "Mot de passe oublié": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Mot de passe oublié"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Mot de passe oublié",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.007843137254901933",
+              "value": "1.0"
+            },
+            "text-content": "Mot de passe oublié",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "line-height": "1.1428571319580079"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Mot de passe oublié",
+      "size": {
+        "width": 204.0,
+        "height": 25.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

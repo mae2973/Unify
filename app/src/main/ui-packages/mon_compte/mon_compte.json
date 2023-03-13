@@ -1,0 +1,492 @@
+{
+  "name": "mon_compte",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "134:837",
+    "version": "3156430886",
+    "component-id": "0866b88e4c0ffa9e428f5ce53e1286265e0dcb45"
+  },
+  "default": "Mon compte",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Écran 1.2",
+        "key": "_cran_1_2"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 39"
+      },
+      {
+        "type": "text",
+        "id": "Mon compte"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 35"
+      },
+      {
+        "type": "text",
+        "id": "Desbats"
+      },
+      {
+        "type": "text",
+        "id": "Mahëva"
+      },
+      {
+        "type": "text",
+        "id": "maeva.desbats@esme.fr"
+      },
+      {
+        "type": "text",
+        "id": "Lapetitemuscléedu93"
+      },
+      {
+        "type": "text",
+        "id": "Modifier"
+      },
+      {
+        "type": "text",
+        "id": "Retour"
+      },
+      {
+        "type": "text",
+        "id": "Changer le mot de passe"
+      },
+      {
+        "type": "image",
+        "id": "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 2"
+      },
+      {
+        "type": "image",
+        "id": "logo 1"
+      }
+    ],
+    "modes": {
+      "Mon compte": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Écran 1.2",
+              "Rectangle 39",
+              "Mon compte",
+              "Ellipse 35",
+              "Desbats",
+              "Mahëva",
+              "maeva.desbats@esme.fr",
+              "Lapetitemuscléedu93",
+              "Modifier",
+              "Retour",
+              "Changer le mot de passe",
+              "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 2",
+              "logo 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Écran 1.2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              }
+            }
+          },
+          {
+            "id": "Rectangle 39",
+            "border-radius": "30.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "32.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "83.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "296.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "548.0"
+              }
+            },
+            "vector-content": "rectangle_39.svg"
+          },
+          {
+            "id": "Mon compte",
+            "margin": {
+              "left": "64.0",
+              "top": "111.0",
+              "right": "65.0",
+              "bottom": "566.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Mon compte",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "32.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Ellipse 35",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "130.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "181.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "100.0"
+              }
+            },
+            "vector-content": "ellipse_35.svg"
+          },
+          {
+            "id": "Desbats",
+            "margin": {
+              "left": "33.0",
+              "top": "286.0",
+              "right": "180.0",
+              "bottom": "389.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Desbats",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.171875",
+            "case": "title"
+          },
+          {
+            "id": "Mahëva",
+            "margin": {
+              "left": "180.0",
+              "top": "286.0",
+              "right": "33.0",
+              "bottom": "389.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Mahëva",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.171875",
+            "case": "title"
+          },
+          {
+            "id": "maeva.desbats@esme.fr",
+            "margin": {
+              "left": "38.0",
+              "top": "434.0",
+              "right": "38.0",
+              "bottom": "241.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "maeva.desbats@esme.fr",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Lapetitemuscléedu93",
+            "margin": {
+              "left": "56.0",
+              "top": "360.0",
+              "right": "56.0",
+              "bottom": "315.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Lapetitemuscléedu93",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Modifier",
+            "margin": {
+              "left": "41.0",
+              "top": "574.0",
+              "right": "42.0",
+              "bottom": "101.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.7490196078431373",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Modifier",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "20.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Retour",
+            "margin": {
+              "left": "253.0",
+              "top": "656.0",
+              "right": "19.0",
+              "bottom": "19.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Retour",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "20.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Changer le mot de passe",
+            "margin": {
+              "left": "41.0",
+              "top": "508.0",
+              "right": "42.0",
+              "bottom": "167.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.7490196078431373",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Changer le mot de passe",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "20.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 2",
+            "margin": {
+              "left": "290.0",
+              "top": "20.0",
+              "right": "20.0",
+              "bottom": "650.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "pngtree_beautiful_settings_line_vector_icon_5273075_removebg_preview_1_2.png",
+            "scale": "cover",
+            "fills": [
+              {
+                "color": {},
+                "opacity": "1.0",
+                "fill-type": "image",
+                "blend-mode": "normal",
+                "color-stops": [],
+                "gradient-handle-positions": []
+              },
+              {
+                "color": {},
+                "opacity": "1.0",
+                "fill-type": "image",
+                "blend-mode": "normal",
+                "color-stops": [],
+                "gradient-handle-positions": []
+              }
+            ]
+          },
+          {
+            "id": "logo 1",
+            "margin": {
+              "left": "20.0",
+              "top": "639.0",
+              "right": "275.875",
+              "bottom": "20.25"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "logo_1.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Mon compte",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

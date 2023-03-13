@@ -1,0 +1,452 @@
+{
+  "name": "music_player",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "224:5090",
+    "version": "3156430886",
+    "component-id": "5aecbb4e417f7baa21b7d7a86194287132c64297"
+  },
+  "default": "Music Player",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "Pochette_Reinedesneiges 1"
+      },
+      {
+        "type": "text",
+        "id": "Libérée, Délivrée"
+      },
+      {
+        "type": "text",
+        "id": "Anaïs Delva"
+      },
+      {
+        "type": "group",
+        "id": "Music Bar"
+      },
+      {
+        "type": "text",
+        "id": "3:44"
+      },
+      {
+        "type": "text",
+        "id": "1:15"
+      },
+      {
+        "type": "group",
+        "id": "Music Changer"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 2"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 37"
+      },
+      {
+        "type": "image",
+        "id": "NicePng_fleche-png_2461230 3"
+      },
+      {
+        "type": "image",
+        "id": "NicePng_fleche-png_2461230 4"
+      },
+      {
+        "type": "image",
+        "id": "PngItem_116046 1"
+      }
+    ],
+    "modes": {
+      "Music Player": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Pochette_Reinedesneiges 1",
+              "Libérée, Délivrée",
+              "Anaïs Delva",
+              "Music Bar",
+              "3:44",
+              "1:15",
+              "Music Changer"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Pochette_Reinedesneiges 1",
+            "margin": {
+              "left": "26.0",
+              "right": "172.0",
+              "bottom": "40.0"
+            },
+            "border-radius": "20.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "pochette_reinedesneiges_1.jpeg",
+            "scale": "cover"
+          },
+          {
+            "id": "Libérée, Délivrée",
+            "margin": {
+              "left": "179.0",
+              "top": "10.0",
+              "bottom": "120.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$Nom",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "line-height": "1.171875",
+            "case": "title"
+          },
+          {
+            "id": "Anaïs Delva",
+            "margin": {
+              "left": "179.0",
+              "top": "34.0",
+              "bottom": "96.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$Author",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "line-height": "1.171875",
+            "case": "title"
+          },
+          {
+            "id": "Music Bar",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "12.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "160.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "287.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "15.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 2",
+              "Ellipse 37"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "3:44",
+            "margin": {
+              "left": "287.0",
+              "top": "147.0",
+              "right": "22.0",
+              "bottom": "19.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "3:44",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "1:15",
+            "margin": {
+              "top": "147.0",
+              "right": "309.0",
+              "bottom": "19.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "1:15",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Music Changer",
+            "presence": "$Host",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "188.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "77.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "111.074951171875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.4970703125"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "NicePng_fleche-png_2461230 3",
+              "NicePng_fleche-png_2461230 4",
+              "PngItem_116046 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 2",
+            "border-radius": "20.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_2.svg"
+          },
+          {
+            "id": "Ellipse 37",
+            "margin": {
+              "left": "76.0",
+              "right": "196.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_37.svg"
+          },
+          {
+            "id": "NicePng_fleche-png_2461230 3",
+            "margin": {
+              "left": "93.0",
+              "top": "10.0",
+              "bottom": "10.09716796875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "nice_png_fleche_png_2461230_3.png",
+            "scale": "cover"
+          },
+          {
+            "id": "NicePng_fleche-png_2461230 4",
+            "margin": {
+              "left": "1.7763568394002505e-15",
+              "top": "9.999906539916992",
+              "right": "92.99995040893555",
+              "bottom": "10.097164154052734"
+            },
+            "relative-transform": [
+              [
+                "-1.0",
+                "1.2246468525851679e-16",
+                "0.0"
+              ],
+              [
+                "-1.2246468525851679e-16",
+                "-1.0",
+                "0.0"
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "nice_png_fleche_png_2461230_3.png",
+            "scale": "cover"
+          },
+          {
+            "id": "PngItem_116046 1",
+            "margin": {
+              "left": "37.63140005338926",
+              "top": "6.631351987943049",
+              "right": "37.20917611848574",
+              "bottom": "6.631339509859686"
+            },
+            "relative-transform": [
+              [
+                "0.8660253882408142",
+                "0.4999999403953552",
+                "0.0"
+              ],
+              [
+                "-0.5000001192092896",
+                "0.8660253882408142",
+                "0.0"
+              ]
+            ],
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "png_item_116046_1.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Nom": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Author": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Host": {
+      "data-type": "boolean",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Music Player",
+      "size": {
+        "width": 333.0,
+        "height": 175.0
+      },
+      "parameters": {
+        "Nom": "Libérée, Délivrée",
+        "Author": "Anaïs Delva",
+        "Host": true
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

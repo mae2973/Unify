@@ -1,0 +1,119 @@
+{
+  "name": "_cran_accueil_connect_",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "232:12222",
+    "version": "3156430886",
+    "component-id": "c174c937589541097a95852afc73b22e5f26c5a8"
+  },
+  "default": "Écran accueil Connecté",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Écran basique",
+        "key": "_cran_basique"
+      },
+      {
+        "type": "image",
+        "id": "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 2"
+      },
+      {
+        "type": "group",
+        "id": "Logo 2"
+      },
+      {
+        "type": "image",
+        "id": "logo 1"
+      }
+    ],
+    "modes": {
+      "Écran accueil Connecté": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Écran basique",
+              "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 2",
+              "Logo 2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Écran basique"
+          },
+          {
+            "id": "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 2",
+            "margin": {
+              "left": "290.0",
+              "top": "20.0",
+              "right": "20.0",
+              "bottom": "650.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "pngtree_beautiful_settings_line_vector_icon_5273075_removebg_preview_1_2.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Logo 2",
+            "margin": {
+              "left": "20.0",
+              "top": "639.0",
+              "right": "275.875",
+              "bottom": "20.25"
+            },
+            "is-structured": "false",
+            "children": [
+              "logo 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "logo 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "logo_1.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Écran accueil Connecté",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

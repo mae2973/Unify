@@ -1,0 +1,94 @@
+{
+  "name": "_cran_1_1",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "25:12",
+    "version": "3156430886",
+    "component-id": "4f583cf9d9bde66c3c808d3e8a57860f48185de0"
+  },
+  "default": "Écran 1.1",
+  "documentation": "First Splash Screen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Écran 7",
+        "key": "_cran_1_2"
+      },
+      {
+        "type": "group",
+        "id": "Logo complet"
+      },
+      {
+        "type": "image",
+        "id": "final 1"
+      }
+    ],
+    "modes": {
+      "Écran 1.1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Écran 7",
+              "Logo complet"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Écran 7"
+          },
+          {
+            "id": "Logo complet",
+            "margin": {
+              "left": "14.0",
+              "top": "194.0",
+              "right": "14.125",
+              "bottom": "194.125"
+            },
+            "is-structured": "false",
+            "children": [
+              "final 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "final 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "final_1.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Écran 1.1",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

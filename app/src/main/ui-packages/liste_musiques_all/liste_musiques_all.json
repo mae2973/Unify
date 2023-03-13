@@ -1,0 +1,1990 @@
+{
+  "name": "liste_musiques_all",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "232:17264",
+    "version": "3156430886",
+    "component-id": "ab17df257690093e4a26c22cfa8cf882a471e5ee"
+  },
+  "default": "Liste musiques - All",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Écran interface",
+        "key": "_cran_interface"
+      },
+      {
+        "type": "group",
+        "id": "Indice temporel"
+      },
+      {
+        "type": "adin_component",
+        "id": "Music Player",
+        "key": "music_player"
+      },
+      {
+        "type": "group",
+        "id": "Liste Musique"
+      },
+      {
+        "type": "group",
+        "id": "List Music"
+      },
+      {
+        "type": "group",
+        "id": "List Music1"
+      },
+      {
+        "type": "group",
+        "id": "List Music2"
+      },
+      {
+        "type": "group",
+        "id": "List Music3"
+      },
+      {
+        "type": "group",
+        "id": "List Music4"
+      },
+      {
+        "type": "group",
+        "id": "List Music5"
+      },
+      {
+        "type": "group",
+        "id": "List Music Hoster"
+      },
+      {
+        "type": "group",
+        "id": "Icon"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos"
+      },
+      {
+        "type": "group",
+        "id": "Group 42"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Fond"
+      },
+      {
+        "type": "text",
+        "id": "Initiale"
+      },
+      {
+        "type": "text",
+        "id": "Anaïs Delva"
+      },
+      {
+        "type": "text",
+        "id": "/"
+      },
+      {
+        "type": "text",
+        "id": "Libérée, Délivrée"
+      },
+      {
+        "type": "group",
+        "id": "Icon1"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos1"
+      },
+      {
+        "type": "group",
+        "id": "Group 43"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon1"
+      },
+      {
+        "type": "vector",
+        "id": "Fond1"
+      },
+      {
+        "type": "text",
+        "id": "Initiale1"
+      },
+      {
+        "type": "text",
+        "id": "Anaïs Delva1"
+      },
+      {
+        "type": "text",
+        "id": "/1"
+      },
+      {
+        "type": "text",
+        "id": "Libérée, Délivrée1"
+      },
+      {
+        "type": "group",
+        "id": "Icon2"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos2"
+      },
+      {
+        "type": "group",
+        "id": "Group 44"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon2"
+      },
+      {
+        "type": "vector",
+        "id": "Fond2"
+      },
+      {
+        "type": "text",
+        "id": "Initiale2"
+      },
+      {
+        "type": "text",
+        "id": "Anaïs Delva2"
+      },
+      {
+        "type": "text",
+        "id": "/2"
+      },
+      {
+        "type": "text",
+        "id": "Libérée, Délivrée2"
+      },
+      {
+        "type": "group",
+        "id": "Icon3"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos3"
+      },
+      {
+        "type": "group",
+        "id": "Group 45"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon3"
+      },
+      {
+        "type": "vector",
+        "id": "Fond3"
+      },
+      {
+        "type": "text",
+        "id": "Initiale3"
+      },
+      {
+        "type": "text",
+        "id": "Anaïs Delva3"
+      },
+      {
+        "type": "text",
+        "id": "/3"
+      },
+      {
+        "type": "text",
+        "id": "Libérée, Délivrée3"
+      },
+      {
+        "type": "group",
+        "id": "Icon4"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos4"
+      },
+      {
+        "type": "group",
+        "id": "Group 46"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon4"
+      },
+      {
+        "type": "vector",
+        "id": "Fond4"
+      },
+      {
+        "type": "text",
+        "id": "Initiale4"
+      },
+      {
+        "type": "text",
+        "id": "Anaïs Delva4"
+      },
+      {
+        "type": "text",
+        "id": "/4"
+      },
+      {
+        "type": "text",
+        "id": "Libérée, Délivrée4"
+      },
+      {
+        "type": "group",
+        "id": "Icon5"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos5"
+      },
+      {
+        "type": "group",
+        "id": "Group 47"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon5"
+      },
+      {
+        "type": "vector",
+        "id": "Fond5"
+      },
+      {
+        "type": "text",
+        "id": "Initiale5"
+      },
+      {
+        "type": "text",
+        "id": "Anaïs Delva5"
+      },
+      {
+        "type": "text",
+        "id": "/5"
+      },
+      {
+        "type": "text",
+        "id": "Libérée, Délivrée5"
+      },
+      {
+        "type": "group",
+        "id": "Icon Hoster"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos6"
+      },
+      {
+        "type": "group",
+        "id": "Frame 25"
+      },
+      {
+        "type": "group",
+        "id": "Icon6"
+      },
+      {
+        "type": "image",
+        "id": "Couronne"
+      },
+      {
+        "type": "group",
+        "id": "Group 48"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon6"
+      },
+      {
+        "type": "vector",
+        "id": "Fond6"
+      },
+      {
+        "type": "text",
+        "id": "Initiale6"
+      },
+      {
+        "type": "text",
+        "id": "Anaïs Delva6"
+      },
+      {
+        "type": "text",
+        "id": "/6"
+      },
+      {
+        "type": "text",
+        "id": "Libérée, Délivrée6"
+      }
+    ],
+    "modes": {
+      "Liste musiques - All": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Écran interface",
+              "Indice temporel",
+              "Music Player",
+              "Liste Musique"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Écran interface",
+            "Nom frame": "Musique",
+            "Right": "true",
+            "Left": "true",
+            "Bouton Playlist": "true",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              }
+            }
+          },
+          {
+            "id": "Indice temporel",
+            "presence": "false",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "124.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "343.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "15.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "15.0"
+              }
+            },
+            "is-structured": "false",
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Player",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "24.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "183.0"
+              }
+            },
+            "Nom": "Libérée, Délivrée",
+            "Author": "Anaïs Delva",
+            "Host": "true",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "333.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "175.0"
+              }
+            }
+          },
+          {
+            "id": "Liste Musique",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "-1.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "150.5"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "271.0"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "List Music",
+              "List Music1",
+              "List Music2",
+              "List Music3",
+              "List Music4",
+              "List Music5",
+              "List Music Hoster"
+            ],
+            "item-spacing": "10.0"
+          },
+          {
+            "id": "List Music",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon",
+              "Music Infos"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "List Music1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon1",
+              "Music Infos1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "List Music2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon2",
+              "Music Infos2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "List Music3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon3",
+              "Music Infos3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "List Music4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon4",
+              "Music Infos4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "List Music5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon5",
+              "Music Infos5"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "List Music Hoster",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "300.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon Hoster",
+              "Music Infos6"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 42",
+              "Image Icon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "60.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "13.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "240.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Anaïs Delva",
+              "/",
+              "Libérée, Délivrée"
+            ],
+            "item-spacing": "5.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 42",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond",
+              "Initiale"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond.svg"
+          },
+          {
+            "id": "Initiale",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Anaïs Delva",
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Anaïs Delva",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "/",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "5.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "/",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Libérée, Délivrée",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "89.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Libérée, Délivrée",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Icon1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 43",
+              "Image Icon1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "60.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "13.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "240.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Anaïs Delva1",
+              "/1",
+              "Libérée, Délivrée1"
+            ],
+            "item-spacing": "5.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 43",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond1",
+              "Initiale1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon1",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond1.svg"
+          },
+          {
+            "id": "Initiale1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Anaïs Delva1",
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Anaïs Delva",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "/1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "5.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "/",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Libérée, Délivrée1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "89.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Libérée, Délivrée",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Icon2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 44",
+              "Image Icon2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "60.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "13.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "240.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Anaïs Delva2",
+              "/2",
+              "Libérée, Délivrée2"
+            ],
+            "item-spacing": "5.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 44",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond2",
+              "Initiale2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon2",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond2.svg"
+          },
+          {
+            "id": "Initiale2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Anaïs Delva2",
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Anaïs Delva",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "/2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "5.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "/",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Libérée, Délivrée2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "89.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Libérée, Délivrée",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Icon3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 45",
+              "Image Icon3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "60.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "13.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "240.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Anaïs Delva3",
+              "/3",
+              "Libérée, Délivrée3"
+            ],
+            "item-spacing": "5.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 45",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond3",
+              "Initiale3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon3",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond3.svg"
+          },
+          {
+            "id": "Initiale3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Anaïs Delva3",
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Anaïs Delva",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "/3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "5.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "/",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Libérée, Délivrée3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "89.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Libérée, Délivrée",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Icon4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 46",
+              "Image Icon4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos4",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "60.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "13.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "240.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Anaïs Delva4",
+              "/4",
+              "Libérée, Délivrée4"
+            ],
+            "item-spacing": "5.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 46",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond4",
+              "Initiale4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon4",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond4.svg"
+          },
+          {
+            "id": "Initiale4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Anaïs Delva4",
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Anaïs Delva",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "/4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "5.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "/",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Libérée, Délivrée4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "89.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Libérée, Délivrée",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Icon5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 47",
+              "Image Icon5"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos5",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "60.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "13.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "240.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Anaïs Delva5",
+              "/5",
+              "Libérée, Délivrée5"
+            ],
+            "item-spacing": "5.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 47",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond5",
+              "Initiale5"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon5",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond5.svg"
+          },
+          {
+            "id": "Initiale5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Anaïs Delva5",
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Anaïs Delva",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "/5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "5.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "/",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Libérée, Délivrée5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "89.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Libérée, Délivrée",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Icon Hoster",
+            "margin": {
+              "right": "260.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Frame 25"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos6",
+            "margin": {
+              "left": "60.0",
+              "top": "13.0",
+              "bottom": "14.0"
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Anaïs Delva6",
+              "/6",
+              "Libérée, Délivrée6"
+            ],
+            "item-spacing": "5.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame 25",
+            "margin": {
+              "bottom": "0.25"
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon6",
+              "Couronne"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon6",
+            "margin": {
+              "top": "11.943359375"
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 48",
+              "Image Icon6"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Couronne",
+            "margin": {
+              "left": "8.0",
+              "right": "8.0",
+              "bottom": "28.8631591796875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "couronne.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Group 48",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "40.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "39.811279296875"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond6",
+              "Initiale6"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon6",
+            "presence": "false",
+            "margin": {
+              "bottom": "0.995361328125"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond6",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond6.svg"
+          },
+          {
+            "id": "Initiale6",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Anaïs Delva6",
+            "font-weight": "900.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Anaïs Delva",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "/6",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "5.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "14.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "/",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Libérée, Délivrée6",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "89.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Libérée, Délivrée",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Liste musiques - All",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

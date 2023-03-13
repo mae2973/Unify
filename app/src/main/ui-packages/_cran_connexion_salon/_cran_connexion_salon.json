@@ -1,0 +1,663 @@
+{
+  "name": "_cran_connexion_salon",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "39:202",
+    "version": "3156430886",
+    "component-id": "0c71a8de589ccf6acce05a9b790ff870e6d29da1"
+  },
+  "default": "Écran connexion Salon",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "11",
+        "key": "_cran_1_2"
+      },
+      {
+        "type": "group",
+        "id": "Logo 3"
+      },
+      {
+        "type": "image",
+        "id": "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 1"
+      },
+      {
+        "type": "group",
+        "id": "Overlay Rejoindre Salon"
+      },
+      {
+        "type": "image",
+        "id": "logo 1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "text",
+        "id": "Rejoindre un salon"
+      },
+      {
+        "type": "group",
+        "id": "Annuler"
+      },
+      {
+        "type": "group",
+        "id": "Annuler1"
+      },
+      {
+        "type": "vector",
+        "id": "Line 2"
+      },
+      {
+        "type": "text",
+        "id": "Code salon"
+      },
+      {
+        "type": "text",
+        "id": "Scanner le QR code"
+      },
+      {
+        "type": "group",
+        "id": "⬛ Light"
+      },
+      {
+        "type": "group",
+        "id": "Accent"
+      },
+      {
+        "type": "vector",
+        "id": "BG light"
+      },
+      {
+        "type": "group",
+        "id": "14 sp • BUTTON"
+      },
+      {
+        "type": "text",
+        "id": "BUTTON"
+      },
+      {
+        "type": "group",
+        "id": "⬛ Light1"
+      },
+      {
+        "type": "group",
+        "id": "Accent1"
+      },
+      {
+        "type": "vector",
+        "id": "BG light1"
+      },
+      {
+        "type": "group",
+        "id": "14 sp • BUTTON1"
+      },
+      {
+        "type": "text",
+        "id": "BUTTON1"
+      }
+    ],
+    "modes": {
+      "Écran connexion Salon": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "11",
+              "Logo 3",
+              "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 1",
+              "Overlay Rejoindre Salon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "11"
+          },
+          {
+            "id": "Logo 3",
+            "margin": {
+              "left": "20.0",
+              "top": "639.0",
+              "right": "275.875",
+              "bottom": "20.25"
+            },
+            "is-structured": "false",
+            "children": [
+              "logo 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 1",
+            "margin": {
+              "left": "290.0",
+              "top": "20.0",
+              "right": "20.0",
+              "bottom": "650.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "pngtree_beautiful_settings_line_vector_icon_5273075_removebg_preview_1_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Overlay Rejoindre Salon",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "45.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "203.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "269.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "313.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 1",
+              "Rejoindre un salon",
+              "Annuler",
+              "Annuler1",
+              "Line 2",
+              "Code salon",
+              "Scanner le QR code"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "logo 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "logo_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 1",
+            "border-radius": "30.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "Rejoindre un salon",
+            "margin": {
+              "left": "21.0",
+              "top": "29.0",
+              "right": "17.0",
+              "bottom": "241.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Rejoindre un salon",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Annuler",
+            "margin": {
+              "left": "100.0",
+              "top": "252.0",
+              "right": "100.0",
+              "bottom": "31.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "⬛ Light",
+              "Accent"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Annuler1",
+            "margin": {
+              "left": "156.0",
+              "top": "113.0",
+              "right": "44.0",
+              "bottom": "170.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "⬛ Light1",
+              "Accent1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Line 2",
+            "margin": {
+              "left": "33.0",
+              "top": "143.0",
+              "right": "134.0",
+              "bottom": "170.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Code salon",
+            "margin": {
+              "left": "33.0",
+              "top": "118.0",
+              "right": "32.0",
+              "bottom": "170.0"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.007843137254901933",
+              "value": "1.0"
+            },
+            "text-content": "Code salon",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "line-height": "1.1428571319580079",
+            "case": "title"
+          },
+          {
+            "id": "Scanner le QR code",
+            "margin": {
+              "left": "33.0",
+              "top": "182.0",
+              "right": "32.0",
+              "bottom": "106.0"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.007843137254901933",
+              "value": "1.0"
+            },
+            "text-content": "Scanner le QR code",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "line-height": "1.1428571319580079"
+          },
+          {
+            "id": "⬛ Light",
+            "is-structured": "false",
+            "children": [
+              "BG light"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Accent",
+            "margin": {
+              "left": "6.0",
+              "right": "6.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "14 sp • BUTTON"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BG light",
+            "border-radius": "4.5",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.0784313725490196",
+                "hue": "200.0",
+                "saturation": "0.32142857142857145",
+                "value": "0.2196078431372549"
+              },
+              "blur": "4.5",
+              "offset-x": "0.0",
+              "offset-y": "3.0",
+              "spread": "0.0",
+              "blend-mode": "multiply"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "bg_light.svg"
+          },
+          {
+            "id": "14 sp • BUTTON",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "BUTTON"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BUTTON",
+            "margin": {
+              "right": "3.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "ANNULER",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.5",
+            "line-height": "1.171875",
+            "case": "upper"
+          },
+          {
+            "id": "⬛ Light1",
+            "is-structured": "false",
+            "children": [
+              "BG light1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Accent1",
+            "margin": {
+              "left": "6.0",
+              "right": "6.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "14 sp • BUTTON1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BG light1",
+            "border-radius": "4.5",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.0784313725490196",
+                "hue": "200.0",
+                "saturation": "0.32142857142857145",
+                "value": "0.2196078431372549"
+              },
+              "blur": "4.5",
+              "offset-x": "0.0",
+              "offset-y": "3.0",
+              "spread": "0.0",
+              "blend-mode": "multiply"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "bg_light1.svg"
+          },
+          {
+            "id": "14 sp • BUTTON1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "BUTTON1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BUTTON1",
+            "margin": {
+              "right": "3.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "OK",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.5",
+            "line-height": "1.171875",
+            "case": "upper"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Écran connexion Salon",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

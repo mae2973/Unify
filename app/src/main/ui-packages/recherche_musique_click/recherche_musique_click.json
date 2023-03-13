@@ -1,0 +1,437 @@
+{
+  "name": "recherche_musique_click",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "139:828",
+    "version": "3156430886",
+    "component-id": "f7dc0a075c27963f8202d285dcb87a45076fcf3a"
+  },
+  "default": "Recherche musique click",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 30"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 17"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 3"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 4"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 31"
+      },
+      {
+        "type": "text",
+        "id": "Jour 1 Louane c’est le jour 1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 33"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 34"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 32"
+      },
+      {
+        "type": "text",
+        "id": "Jour 1 Louane"
+      },
+      {
+        "type": "text",
+        "id": "Jour 1 - Gostan Remix Louane"
+      },
+      {
+        "type": "text",
+        "id": "Jour 1 Louane1"
+      }
+    ],
+    "modes": {
+      "Recherche musique click": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 30",
+              "Ellipse 17",
+              "Rectangle 3",
+              "Rectangle 4",
+              "Rectangle 31",
+              "Jour 1 Louane c’est le jour 1",
+              "Rectangle 33",
+              "Rectangle 34",
+              "Rectangle 32",
+              "Jour 1 Louane",
+              "Jour 1 - Gostan Remix Louane",
+              "Jour 1 Louane1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 30",
+            "border-radius": "25.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_30.svg"
+          },
+          {
+            "id": "Ellipse 17",
+            "margin": {
+              "left": "252.341796875",
+              "top": "242.0",
+              "right": "0.18994140625"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_17.svg"
+          },
+          {
+            "id": "Rectangle 3",
+            "margin": {
+              "left": "274.17724609375",
+              "top": "252.0",
+              "right": "22.025390625",
+              "bottom": "10.0"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_3.svg"
+          },
+          {
+            "id": "Rectangle 4",
+            "margin": {
+              "left": "274.0759553909302",
+              "top": "252.75949382781982",
+              "right": "21.924044609069824",
+              "bottom": "10.759493827819824"
+            },
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_4.svg"
+          },
+          {
+            "id": "Rectangle 31",
+            "margin": {
+              "left": "26.0",
+              "top": "25.0",
+              "right": "27.0",
+              "bottom": "221.0"
+            },
+            "border-radius": "25.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_31.svg"
+          },
+          {
+            "id": "Jour 1 Louane c’est le jour 1",
+            "margin": {
+              "left": "42.0",
+              "top": "25.0",
+              "right": "42.0",
+              "bottom": "222.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {},
+            "text-content": "Jour 1 Louane c’est le jour 1",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Rectangle 33",
+            "margin": {
+              "left": "24.68359375",
+              "top": "158.0",
+              "right": "227.84814453125",
+              "bottom": "84.0"
+            },
+            "border-radius": "5.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_33.svg"
+          },
+          {
+            "id": "Rectangle 34",
+            "margin": {
+              "left": "24.68359375",
+              "top": "228.0",
+              "right": "227.84814453125",
+              "bottom": "14.0"
+            },
+            "border-radius": "5.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_34.svg"
+          },
+          {
+            "id": "Rectangle 32",
+            "margin": {
+              "left": "24.68359375",
+              "top": "88.0",
+              "right": "227.84814453125",
+              "bottom": "154.0"
+            },
+            "border-radius": "5.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_32.svg"
+          },
+          {
+            "id": "Jour 1 Louane",
+            "margin": {
+              "left": "95.885986328125",
+              "top": "92.0",
+              "bottom": "157.5"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "annotated-text-content": {
+              "text": "Jour 1\nLouane",
+              "annotated-text-span-list": [
+                {
+                  "span-start": "0",
+                  "span-length": "7"
+                },
+                {
+                  "span-start": "7",
+                  "span-length": "6",
+                  "annotated-text-style": {
+                    "font-weight": "900.0",
+                    "typeface": "Roboto"
+                  }
+                }
+              ]
+            },
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "14.999999046325684",
+            "line-height": "1.1718749473492271"
+          },
+          {
+            "id": "Jour 1 - Gostan Remix Louane",
+            "margin": {
+              "left": "95.885986328125",
+              "top": "164.0",
+              "bottom": "85.5"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "annotated-text-content": {
+              "text": "Jour 1 - Gostan Remix\nLouane",
+              "annotated-text-span-list": [
+                {
+                  "span-start": "0",
+                  "span-length": "22"
+                },
+                {
+                  "span-start": "22",
+                  "span-length": "6",
+                  "annotated-text-style": {
+                    "font-weight": "900.0",
+                    "typeface": "Roboto"
+                  }
+                }
+              ]
+            },
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "14.999999046325684",
+            "line-height": "1.1718749473492271"
+          },
+          {
+            "id": "Jour 1 Louane1",
+            "margin": {
+              "left": "95.885986328125",
+              "top": "236.0",
+              "bottom": "13.5"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "annotated-text-content": {
+              "text": "Jour 1\nLouane",
+              "annotated-text-span-list": [
+                {
+                  "span-start": "0",
+                  "span-length": "7"
+                },
+                {
+                  "span-start": "7",
+                  "span-length": "6",
+                  "annotated-text-style": {
+                    "font-weight": "900.0",
+                    "typeface": "Roboto"
+                  }
+                }
+              ]
+            },
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "14.999999046325684",
+            "line-height": "1.1718749473492271"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Recherche musique click",
+      "size": {
+        "width": 300.0,
+        "height": 292.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

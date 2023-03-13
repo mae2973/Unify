@@ -1,0 +1,307 @@
+{
+  "name": "recherche_musique_spotify",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "186:20862",
+    "version": "3156430886",
+    "component-id": "c92df143f3ac9a8d6f90a72fb2ebb399603bad84"
+  },
+  "default": "Recherche musique Spotify",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Recherche musique",
+        "key": "recherche_musique"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 32"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 33"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 35"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 34"
+      },
+      {
+        "type": "text",
+        "id": "Playlist 1"
+      },
+      {
+        "type": "text",
+        "id": "Playlist 2"
+      },
+      {
+        "type": "text",
+        "id": "Playlist 3"
+      },
+      {
+        "type": "text",
+        "id": "Playlist 4"
+      }
+    ],
+    "modes": {
+      "Recherche musique Spotify": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Recherche musique",
+              "Rectangle 32",
+              "Rectangle 33",
+              "Rectangle 35",
+              "Rectangle 34",
+              "Playlist 1",
+              "Playlist 2",
+              "Playlist 3",
+              "Playlist 4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Recherche musique"
+          },
+          {
+            "id": "Rectangle 32",
+            "margin": {
+              "left": "168.0",
+              "top": "89.0",
+              "right": "55.0",
+              "bottom": "126.0"
+            },
+            "border-radius": "7.699999809265137",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_32.svg"
+          },
+          {
+            "id": "Rectangle 33",
+            "margin": {
+              "left": "55.0",
+              "top": "89.0",
+              "right": "168.0",
+              "bottom": "126.0"
+            },
+            "border-radius": "7.699999809265137",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_33.svg"
+          },
+          {
+            "id": "Rectangle 35",
+            "margin": {
+              "left": "168.0",
+              "top": "188.0",
+              "right": "55.0",
+              "bottom": "27.0"
+            },
+            "border-radius": "7.699999809265137",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_35.svg"
+          },
+          {
+            "id": "Rectangle 34",
+            "margin": {
+              "left": "55.0",
+              "top": "188.0",
+              "right": "168.0",
+              "bottom": "27.0"
+            },
+            "border-radius": "7.699999809265137",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_34.svg"
+          },
+          {
+            "id": "Playlist 1",
+            "margin": {
+              "left": "61.0",
+              "top": "169.0",
+              "right": "173.0",
+              "bottom": "107.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Playlist 1",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Playlist 2",
+            "margin": {
+              "left": "174.0",
+              "top": "169.0",
+              "right": "60.0",
+              "bottom": "107.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Playlist 2",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Playlist 3",
+            "margin": {
+              "left": "61.0",
+              "top": "268.0",
+              "right": "173.0",
+              "bottom": "8.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Playlist 3",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Playlist 4",
+            "margin": {
+              "left": "174.0",
+              "top": "268.0",
+              "right": "60.0",
+              "bottom": "8.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Playlist 4",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.0",
+            "line-height": "1.171875"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Recherche musique Spotify",
+      "size": {
+        "width": 300.0,
+        "height": 292.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

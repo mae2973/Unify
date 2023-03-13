@@ -1,0 +1,263 @@
+{
+  "name": "named_icon_hoster",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "224:2040",
+    "version": "3156430886",
+    "component-id": "19ab9590e08eb1d38ee815c541ca6ada1af3dc3e"
+  },
+  "default": "Named Icon Hoster",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Icon Hoster"
+      },
+      {
+        "type": "text",
+        "id": "Name"
+      },
+      {
+        "type": "group",
+        "id": "Frame 25"
+      },
+      {
+        "type": "group",
+        "id": "Icon"
+      },
+      {
+        "type": "image",
+        "id": "Couronne"
+      },
+      {
+        "type": "group",
+        "id": "Group 42"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Fond"
+      },
+      {
+        "type": "text",
+        "id": "Initiale"
+      }
+    ],
+    "modes": {
+      "Named Icon Hoster": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Icon Hoster",
+              "Name"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon Hoster",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "92.75"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Frame 25"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Name",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "112.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "34.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$Pseudo",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "12.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Frame 25",
+            "is-structured": "false",
+            "children": [
+              "Icon",
+              "Couronne"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon",
+            "margin": {
+              "top": "21.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 42",
+              "Image Icon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Couronne",
+            "margin": {
+              "left": "14.0",
+              "right": "14.0",
+              "bottom": "50.75"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "couronne.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Group 42",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "70.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond",
+              "Initiale"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.75"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond.svg"
+          },
+          {
+            "id": "Initiale",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "40.0",
+            "line-height": "1.171875"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Pseudo": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Named Icon Hoster",
+      "size": {
+        "width": 112.0,
+        "height": 126.75
+      },
+      "parameters": {
+        "Pseudo": "Gordon Ramsay"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

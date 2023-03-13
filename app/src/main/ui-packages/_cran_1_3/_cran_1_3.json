@@ -1,0 +1,106 @@
+{
+  "name": "_cran_1_3",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "25:13",
+    "version": "3156430886",
+    "component-id": "468b6655030db4534e43c869c42bf455ee0cbddd"
+  },
+  "default": "Écran 1.3",
+  "documentation": "Third SS",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Écran 6",
+        "key": "_cran_1_2"
+      },
+      {
+        "type": "group",
+        "id": "Logo complet"
+      },
+      {
+        "type": "group",
+        "id": "Logo complet1"
+      },
+      {
+        "type": "image",
+        "id": "final 1"
+      }
+    ],
+    "modes": {
+      "Écran 1.3": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Écran 6",
+              "Logo complet"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Écran 6"
+          },
+          {
+            "id": "Logo complet",
+            "margin": {
+              "left": "14.0",
+              "top": "194.0",
+              "right": "14.125",
+              "bottom": "194.125"
+            },
+            "is-structured": "false",
+            "children": [
+              "Logo complet1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Logo complet1",
+            "is-structured": "false",
+            "children": [
+              "final 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "final 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "final_1.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Écran 1.3",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

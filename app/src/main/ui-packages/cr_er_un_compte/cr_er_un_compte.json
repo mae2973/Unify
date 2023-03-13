@@ -1,0 +1,88 @@
+{
+  "name": "cr_er_un_compte",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "139:838",
+    "version": "3156430886",
+    "component-id": "aac08709564c112e98596c10edd26bc6f6d86aba"
+  },
+  "default": "Créer un compte",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Créer un compte"
+      }
+    ],
+    "modes": {
+      "Créer un compte": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Créer un compte"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Créer un compte",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.007843137254901933",
+              "value": "1.0"
+            },
+            "text-content": "Créer un compte",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "line-height": "1.1428571319580079"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Créer un compte",
+      "size": {
+        "width": 204.0,
+        "height": 25.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,562 @@
+{
+  "name": "liste_des_participants_all",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "232:15596",
+    "version": "3156430886",
+    "component-id": "cd8b48bdcb668a2837b2001790e37e39a6c1df3a"
+  },
+  "default": "Liste des participants - All",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Écran interface",
+        "key": "_cran_interface"
+      },
+      {
+        "type": "group",
+        "id": "Liste participants"
+      },
+      {
+        "type": "group",
+        "id": "Grid Visualization"
+      },
+      {
+        "type": "group",
+        "id": "12 row grid"
+      },
+      {
+        "type": "group",
+        "id": "Line"
+      },
+      {
+        "type": "group",
+        "id": "Line1"
+      },
+      {
+        "type": "group",
+        "id": "Line2"
+      },
+      {
+        "type": "group",
+        "id": "Line3"
+      },
+      {
+        "type": "group",
+        "id": "Line4"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon Hoster",
+        "key": "named_icon_hoster"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon1",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon2",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon3",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon4",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon5",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon6",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon7",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon8",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon9",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon10",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon11",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon12",
+        "key": "named_icon"
+      },
+      {
+        "type": "adin_component",
+        "id": "Named Icon13",
+        "key": "named_icon"
+      }
+    ],
+    "modes": {
+      "Liste des participants - All": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Écran interface",
+              "Liste participants"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Écran interface",
+            "Nom frame": "Participants",
+            "Right": "true",
+            "Left": "false",
+            "Bouton Playlist": "true",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              }
+            }
+          },
+          {
+            "id": "Liste participants",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "165.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "470.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Grid Visualization"
+            ]
+          },
+          {
+            "id": "Grid Visualization",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "470.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "12 row grid"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "12 row grid",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "470.0"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Line",
+              "Line1",
+              "Line2",
+              "Line3",
+              "Line4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Line",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "120.0"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "Named Icon Hoster",
+              "Named Icon",
+              "Named Icon1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Line1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "120.0"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "Named Icon2",
+              "Named Icon3",
+              "Named Icon4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Line2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "120.0"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "Named Icon5",
+              "Named Icon6",
+              "Named Icon7"
+            ],
+            "item-spacing": "8.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Line3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "120.0"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "Named Icon8",
+              "Named Icon9",
+              "Named Icon10"
+            ],
+            "item-spacing": "8.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Line4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "120.0"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "Named Icon11",
+              "Named Icon12",
+              "Named Icon13"
+            ],
+            "item-spacing": "8.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Named Icon Hoster",
+            "Pseudo": "Aurélien Couthures",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon",
+            "Pseudo": "Roch Voisine",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon1",
+            "Pseudo": "Gordon Ramsay",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon2",
+            "Pseudo": "Sauron",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon3",
+            "Pseudo": "Maëva Desbats",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon4",
+            "Pseudo": "Céline Dion",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon5",
+            "Pseudo": "Chris Brown",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon6",
+            "Pseudo": "Donald Trump",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon7",
+            "Pseudo": "Clément Coutant",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon8",
+            "Pseudo": "Stephen King",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon9",
+            "Pseudo": "Charles De Gaulle",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon10",
+            "Pseudo": "Franck Dubosc",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon11",
+            "Pseudo": "Stephen King",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon12",
+            "Pseudo": "Charles De Gaulle",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          },
+          {
+            "id": "Named Icon13",
+            "Pseudo": "Franck Dubosc",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Liste des participants - All",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

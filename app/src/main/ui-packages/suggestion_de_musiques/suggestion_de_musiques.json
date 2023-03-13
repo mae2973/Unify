@@ -1,0 +1,1253 @@
+{
+  "name": "suggestion_de_musiques",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "232:17661",
+    "version": "3156430886",
+    "component-id": "5ce6aec7e6dce75b7f3c8f7c1c9e31a300643419"
+  },
+  "default": "Suggestion de musiques",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Écran interface",
+        "key": "_cran_interface"
+      },
+      {
+        "type": "group",
+        "id": "Liste Suggestion"
+      },
+      {
+        "type": "group",
+        "id": "Presentation musique"
+      },
+      {
+        "type": "group",
+        "id": "Presentation musique1"
+      },
+      {
+        "type": "group",
+        "id": "Presentation musique2"
+      },
+      {
+        "type": "group",
+        "id": "Presentation musique3"
+      },
+      {
+        "type": "group",
+        "id": "Presentation musique -Host"
+      },
+      {
+        "type": "group",
+        "id": "Icon"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos"
+      },
+      {
+        "type": "group",
+        "id": "Group 42"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon"
+      },
+      {
+        "type": "vector",
+        "id": "Fond"
+      },
+      {
+        "type": "text",
+        "id": "Initiale"
+      },
+      {
+        "type": "text",
+        "id": "AC/DC"
+      },
+      {
+        "type": "text",
+        "id": "Back In Black"
+      },
+      {
+        "type": "group",
+        "id": "Icon1"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos1"
+      },
+      {
+        "type": "group",
+        "id": "Group 43"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon1"
+      },
+      {
+        "type": "vector",
+        "id": "Fond1"
+      },
+      {
+        "type": "text",
+        "id": "Initiale1"
+      },
+      {
+        "type": "text",
+        "id": "AC/DC1"
+      },
+      {
+        "type": "text",
+        "id": "Back In Black1"
+      },
+      {
+        "type": "group",
+        "id": "Icon2"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos2"
+      },
+      {
+        "type": "group",
+        "id": "Group 44"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon2"
+      },
+      {
+        "type": "vector",
+        "id": "Fond2"
+      },
+      {
+        "type": "text",
+        "id": "Initiale2"
+      },
+      {
+        "type": "text",
+        "id": "AC/DC2"
+      },
+      {
+        "type": "text",
+        "id": "Back In Black2"
+      },
+      {
+        "type": "group",
+        "id": "Icon3"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos3"
+      },
+      {
+        "type": "group",
+        "id": "Group 45"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon3"
+      },
+      {
+        "type": "vector",
+        "id": "Fond3"
+      },
+      {
+        "type": "text",
+        "id": "Initiale3"
+      },
+      {
+        "type": "text",
+        "id": "AC/DC3"
+      },
+      {
+        "type": "text",
+        "id": "Back In Black3"
+      },
+      {
+        "type": "group",
+        "id": "Music Infos4"
+      },
+      {
+        "type": "group",
+        "id": "Icon Hoster"
+      },
+      {
+        "type": "text",
+        "id": "AC/DC4"
+      },
+      {
+        "type": "text",
+        "id": "Back In Black4"
+      },
+      {
+        "type": "group",
+        "id": "Frame 25"
+      },
+      {
+        "type": "group",
+        "id": "Icon4"
+      },
+      {
+        "type": "image",
+        "id": "Couronne"
+      },
+      {
+        "type": "group",
+        "id": "Group 46"
+      },
+      {
+        "type": "vector",
+        "id": "Image Icon4"
+      },
+      {
+        "type": "vector",
+        "id": "Fond4"
+      },
+      {
+        "type": "text",
+        "id": "Initiale4"
+      }
+    ],
+    "modes": {
+      "Suggestion de musiques": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Écran interface",
+              "Liste Suggestion"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Écran interface",
+            "Nom frame": "Suggestions",
+            "Right": "false",
+            "Left": "true",
+            "Bouton Playlist": "true",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "360.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "720.0"
+              }
+            }
+          },
+          {
+            "id": "Liste Suggestion",
+            "padding": {
+              "top": "20.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "20.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "460.0"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "end",
+            "children": [
+              "Presentation musique",
+              "Presentation musique1",
+              "Presentation musique2",
+              "Presentation musique3",
+              "Presentation musique -Host"
+            ],
+            "item-spacing": "13.0"
+          },
+          {
+            "id": "Presentation musique",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "330.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon",
+              "Music Infos"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Presentation musique1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "330.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon1",
+              "Music Infos1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Presentation musique2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "330.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon2",
+              "Music Infos2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Presentation musique3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "330.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon3",
+              "Music Infos3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Presentation musique -Host",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "330.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Music Infos4",
+              "Icon Hoster"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon",
+            "margin": {
+              "right": "280.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 42",
+              "Image Icon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos",
+            "margin": {
+              "left": "62.0",
+              "top": "7.0",
+              "bottom": "7.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "AC/DC",
+              "Back In Black"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 42",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.756103515625"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond",
+              "Initiale"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.243896484375"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond.svg"
+          },
+          {
+            "id": "Initiale",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "AC/DC",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "19.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "268.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "AC/DC",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "bottom",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Back In Black",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "268.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Back in Black",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Icon1",
+            "margin": {
+              "right": "280.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 43",
+              "Image Icon1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos1",
+            "margin": {
+              "left": "62.0",
+              "top": "7.0",
+              "bottom": "7.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "AC/DC1",
+              "Back In Black1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 43",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.756103515625"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond1",
+              "Initiale1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon1",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.243896484375"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond1.svg"
+          },
+          {
+            "id": "Initiale1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "AC/DC1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "19.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "268.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "AC/DC",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "bottom",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Back In Black1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "268.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Back in Black",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Icon2",
+            "margin": {
+              "right": "280.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 44",
+              "Image Icon2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos2",
+            "margin": {
+              "left": "62.0",
+              "top": "7.0",
+              "bottom": "7.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "AC/DC2",
+              "Back In Black2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 44",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.756103515625"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond2",
+              "Initiale2"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon2",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.243896484375"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond2.svg"
+          },
+          {
+            "id": "Initiale2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "AC/DC2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "19.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "268.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "AC/DC",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "bottom",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Back In Black2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "268.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Back in Black",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Icon3",
+            "margin": {
+              "right": "280.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 45",
+              "Image Icon3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Music Infos3",
+            "margin": {
+              "left": "62.0",
+              "top": "7.0",
+              "bottom": "7.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "AC/DC3",
+              "Back In Black3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 45",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.756103515625"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond3",
+              "Initiale3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon3",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.243896484375"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond3.svg"
+          },
+          {
+            "id": "Initiale3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "AC/DC3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "19.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "268.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "AC/DC",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "bottom",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Back In Black3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "268.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Back in Black",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Music Infos4",
+            "margin": {
+              "left": "62.0",
+              "top": "7.0",
+              "bottom": "7.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "AC/DC4",
+              "Back In Black4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon Hoster",
+            "margin": {
+              "right": "280.0",
+              "bottom": "1.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "Frame 25"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "AC/DC4",
+            "margin": {
+              "top": "19.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "AC/DC",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "bottom",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Back In Black4",
+            "margin": {
+              "bottom": "17.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Back in Black",
+            "overflow": "ellipsis",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "15.0",
+            "line-height": "1.171875"
+          },
+          {
+            "id": "Frame 25",
+            "margin": {
+              "bottom": "0.25"
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon4",
+              "Couronne"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon4",
+            "margin": {
+              "top": "14.8868408203125"
+            },
+            "is-structured": "false",
+            "children": [
+              "Group 46",
+              "Image Icon4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Couronne",
+            "margin": {
+              "left": "10.0",
+              "right": "10.0",
+              "bottom": "35.9764404296875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "couronne.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Group 46",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "50.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.6226806640625"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Fond4",
+              "Initiale4"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Image Icon4",
+            "presence": "false",
+            "margin": {
+              "bottom": "1.240478515625"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Fond4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "fond4.svg"
+          },
+          {
+            "id": "Initiale4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "F",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "25.0",
+            "line-height": "1.171875"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Suggestion de musiques",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

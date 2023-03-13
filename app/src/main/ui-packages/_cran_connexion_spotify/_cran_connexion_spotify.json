@@ -1,0 +1,740 @@
+{
+  "name": "_cran_connexion_spotify",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lmGMURqhxSxNxSF6NLnS08",
+    "node": "18:130",
+    "version": "3156430886",
+    "component-id": "1c22e66ea13f068a02590cae4ee63c40c1429dca"
+  },
+  "default": "Écran connexion Spotify",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "11",
+        "key": "_cran_1_2"
+      },
+      {
+        "type": "group",
+        "id": "Logo 3"
+      },
+      {
+        "type": "group",
+        "id": "Overlay Spotify"
+      },
+      {
+        "type": "image",
+        "id": "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 1"
+      },
+      {
+        "type": "image",
+        "id": "logo 1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 4"
+      },
+      {
+        "type": "image",
+        "id": "spotify 2"
+      },
+      {
+        "type": "group",
+        "id": "Annuler"
+      },
+      {
+        "type": "group",
+        "id": "Annuler1"
+      },
+      {
+        "type": "vector",
+        "id": "Line 1"
+      },
+      {
+        "type": "vector",
+        "id": "Line 2"
+      },
+      {
+        "type": "text",
+        "id": "Identifiant"
+      },
+      {
+        "type": "text",
+        "id": "Mot de passe"
+      },
+      {
+        "type": "text",
+        "id": "Connexion"
+      },
+      {
+        "type": "group",
+        "id": "⬛ Light"
+      },
+      {
+        "type": "group",
+        "id": "Accent"
+      },
+      {
+        "type": "vector",
+        "id": "BG light"
+      },
+      {
+        "type": "group",
+        "id": "14 sp • BUTTON"
+      },
+      {
+        "type": "text",
+        "id": "BUTTON"
+      },
+      {
+        "type": "group",
+        "id": "⬛ Light1"
+      },
+      {
+        "type": "group",
+        "id": "Accent1"
+      },
+      {
+        "type": "vector",
+        "id": "BG light1"
+      },
+      {
+        "type": "group",
+        "id": "14 sp • BUTTON1"
+      },
+      {
+        "type": "text",
+        "id": "BUTTON1"
+      }
+    ],
+    "modes": {
+      "Écran connexion Spotify": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "11",
+              "Logo 3",
+              "Overlay Spotify",
+              "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "11"
+          },
+          {
+            "id": "Logo 3",
+            "margin": {
+              "left": "20.0",
+              "top": "639.0",
+              "right": "275.875",
+              "bottom": "20.25"
+            },
+            "is-structured": "false",
+            "children": [
+              "logo 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Overlay Spotify",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "45.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "204.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "269.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "313.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Rectangle 1",
+              "Ellipse 4",
+              "spotify 2",
+              "Annuler",
+              "Annuler1",
+              "Line 1",
+              "Line 2",
+              "Identifiant",
+              "Mot de passe",
+              "Connexion"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "_Pngtree_beautiful_settings_line_vector_icon_5273075-removebg-preview(1) 1",
+            "margin": {
+              "left": "290.0",
+              "top": "20.0",
+              "right": "20.0",
+              "bottom": "650.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "pngtree_beautiful_settings_line_vector_icon_5273075_removebg_preview_1_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "logo 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "logo_1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 1",
+            "border-radius": "30.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "Ellipse 4",
+            "margin": {
+              "left": "200.0",
+              "top": "27.0",
+              "right": "22.0",
+              "bottom": "248.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "ellipse_4.svg"
+          },
+          {
+            "id": "spotify 2",
+            "margin": {
+              "left": "198.0",
+              "top": "20.0",
+              "right": "19.79998779296875",
+              "bottom": "241.79998779296875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "image-content": "spotify_2.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Annuler",
+            "margin": {
+              "left": "100.0",
+              "top": "263.0",
+              "right": "100.0",
+              "bottom": "20.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "⬛ Light",
+              "Accent"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Annuler1",
+            "margin": {
+              "left": "100.0",
+              "top": "220.0",
+              "right": "100.0",
+              "bottom": "63.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "⬛ Light1",
+              "Accent1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Line 1",
+            "margin": {
+              "left": "33.0",
+              "top": "141.0",
+              "right": "31.990234375",
+              "bottom": "172.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Line 2",
+            "margin": {
+              "left": "33.0",
+              "top": "192.0",
+              "right": "31.990234375",
+              "bottom": "121.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            }
+          },
+          {
+            "id": "Identifiant",
+            "margin": {
+              "left": "33.0",
+              "top": "116.0",
+              "right": "32.0",
+              "bottom": "172.0"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.007843137254901933",
+              "value": "1.0"
+            },
+            "text-content": "Identifiant",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "case": "title"
+          },
+          {
+            "id": "Mot de passe",
+            "margin": {
+              "left": "33.0",
+              "top": "167.0",
+              "right": "32.0",
+              "bottom": "121.0"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.007843137254901933",
+              "value": "1.0"
+            },
+            "text-content": "Mot de passe",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "16.0"
+          },
+          {
+            "id": "Connexion",
+            "margin": {
+              "left": "33.0",
+              "top": "46.0",
+              "right": "89.0",
+              "bottom": "222.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Connexion",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "24.0",
+            "line-height": "1.171875",
+            "case": "title"
+          },
+          {
+            "id": "⬛ Light",
+            "is-structured": "false",
+            "children": [
+              "BG light"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Accent",
+            "margin": {
+              "left": "6.0",
+              "right": "6.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "14 sp • BUTTON"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BG light",
+            "border-radius": "4.5",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.0784313725490196",
+                "hue": "200.0",
+                "saturation": "0.32142857142857145",
+                "value": "0.2196078431372549"
+              },
+              "blur": "4.5",
+              "offset-x": "0.0",
+              "offset-y": "3.0",
+              "spread": "0.0",
+              "blend-mode": "multiply"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "bg_light.svg"
+          },
+          {
+            "id": "14 sp • BUTTON",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "BUTTON"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BUTTON",
+            "margin": {
+              "right": "3.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "ANNULER",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.5",
+            "line-height": "1.171875",
+            "case": "upper"
+          },
+          {
+            "id": "⬛ Light1",
+            "is-structured": "false",
+            "children": [
+              "BG light1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Accent1",
+            "margin": {
+              "left": "6.0",
+              "right": "6.0"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "14 sp • BUTTON1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BG light1",
+            "border-radius": "4.5",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.0784313725490196",
+                "hue": "200.0",
+                "saturation": "0.32142857142857145",
+                "value": "0.2196078431372549"
+              },
+              "blur": "4.5",
+              "offset-x": "0.0",
+              "offset-y": "3.0",
+              "spread": "0.0",
+              "blend-mode": "multiply"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "bg_light1.svg"
+          },
+          {
+            "id": "14 sp • BUTTON1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "BUTTON1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "BUTTON1",
+            "margin": {
+              "right": "3.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "VALIDER",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align-vertical": "center",
+            "text-size": "10.5",
+            "line-height": "1.171875",
+            "case": "upper"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Écran connexion Spotify",
+      "size": {
+        "width": 360.0,
+        "height": 720.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
