@@ -24,10 +24,12 @@
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:switchMinWidth="20dp"
         android:layout_gravity="top|right"
-        android:layout_marginTop="20px"
-        android:layout_marginRight="20px"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:switchMinWidth="30dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -38,11 +40,11 @@
         app:srcCompat="@drawable/logo_1" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/button_validation"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="430dp"
         android:background="@drawable/my_button"
         android:text="VALIDER"
         android:textColor="@color/white" />
@@ -55,6 +57,7 @@
         android:inputType="textPersonName"
         android:layout_gravity="center_horizontal"
         android:text="Identifiant"
+        android:textSize="20dp"
         android:layout_marginTop="325dp"
         android:textColor="#D99480"/>
 
@@ -66,8 +69,33 @@
         android:inputType="textPersonName"
         android:layout_gravity="center_horizontal"
         android:text="Mot de passe"
+        android:textSize="20dp"
         android:layout_marginTop="375dp"
         android:textColor="#D99480"/>
+
+    <Button
+        android:id="@+id/button_création_compte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="550dp"
+        android:background=""
+        android:text="Créer un compte"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="#D99480"/>/>
+
+    <Button
+        android:id="@+id/button_mdp_oublié"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="590dp"
+        android:background=""
+        android:textSize="20dp"
+        android:text="Mot de passe oublié"
+        android:textAllCaps="false"
+        android:textColor="#D99480"/>/>
 
 
 </android.support.design.widget.CoordinatorLayout>
