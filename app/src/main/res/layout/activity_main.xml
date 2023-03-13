@@ -24,10 +24,10 @@
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20px"
-        android:layout_marginRight="20px"
+        android:switchMinWidth="20dp"
         android:layout_gravity="top|right"
-         />
+        android:layout_marginTop="20px"
+        android:layout_marginRight="20px"/>
 
     <ImageView
         android:id="@+id/imageView"
