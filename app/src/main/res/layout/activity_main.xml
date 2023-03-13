@@ -41,13 +41,33 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F58361"
-        android:text="VALIDER"
-        android:textColor="@color/white"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="450dp"
-        />
+        android:background="@drawable/my_button"
+        android:text="VALIDER"
+        android:textColor="@color/white" />
 
+    <EditText
+        android:id="@+id/identifiant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_gravity="center_horizontal"
+        android:text="Identifiant"
+        android:layout_marginTop="325dp"
+        android:textColor="#D99480"/>
+
+    <EditText
+        android:id="@+id/motdepasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_gravity="center_horizontal"
+        android:text="Mot de passe"
+        android:layout_marginTop="375dp"
+        android:textColor="#D99480"/>
 
 
 </android.support.design.widget.CoordinatorLayout>
