@@ -1,7 +1,14 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.application' version '7.4.1'
 }
 
+task wrapper(type: Wrapper){
+    gradleVersion = '7.4.1'
+}
+
+task prepareKotlinBuildScriptModel {
+
+}
 android {
     namespace 'com.example.unify'
     compileSdk 33
