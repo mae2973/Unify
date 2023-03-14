@@ -1,6 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Unify.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-29dp" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:switchMinWidth="30dp"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/logo_1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="641dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/gradient2"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Créer un compte"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:text="Nom"
+        android:textColor="#FCDCB5"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:shadowDx="0"
+        android:text="Prénom"
+        android:textColor="#FCDCB5"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <EditText
+        android:id="@+id/mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Adresse mail"
+        android:textColor="#FCDCB5"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Mot de passe"
+        android:textColor="#FCDCB5"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <EditText
+        android:id="@+id/confirm_mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:ems="11"
+        android:inputType="textPersonName"
+        android:text="Confirmer le mot de passe"
+        android:textColor="#FCDCB5"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Identifiant"
+        android:textColor="#FCDCB5"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="56dp"
+        android:layout_height="53dp"
+        android:background="@drawable/bouton_photo"
+        app:srcCompat="@drawable/bouton_photo"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <Button
+        android:id="@+id/valid"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bouton_valid"
+        android:text="Valider"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="514dp" />
+
+    <Button
+        android:id="@+id/annuler"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bouton_annuler"
+        android:text="Annuler"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="556dp" />
+
 
 </android.support.constraint.ConstraintLayout>
