@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Unify.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:switchMinWidth="30dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="645dp"
+        android:layout_marginLeft="15dp"
+        app:layout_anchor="@+id/logo"
+        app:layout_anchorGravity="end|center"
+        app:srcCompat="@drawable/logo_1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="300dp"
+        android:layout_height="550dp"
+        app:srcCompat="@drawable/gradient2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="660dp"
+        android:background=""
+        android:text="Retour"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/mon_compte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Mon compte"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+ />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bouton_photo"
+        app:srcCompat="@drawable/bouton_photo"
+  />
+
+</android.support.design.widget.CoordinatorLayout>
