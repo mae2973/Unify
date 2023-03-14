@@ -14,22 +14,12 @@
 
     </android.support.design.widget.AppBarLayout>
 
+
     <include
         android:id="@+id/include"
         layout="@layout/content_main"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center" />
-
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|right"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        android:switchMinWidth="30dp" />
 
     <ImageView
         android:id="@+id/logo"
@@ -44,7 +34,7 @@
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="300dp"
-        android:layout_height="550dp"
+        android:layout_height="540dp"
         app:srcCompat="@drawable/gradient2"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="75dp"
@@ -67,21 +57,107 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="110dp"
         android:text="Mon compte"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="30dp"
         android:textStyle="bold"
  />
 
-    <ImageButton
-        android:id="@+id/imageButton"
+    <ImageView
+        android:id="@+id/photo"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/bouton_photo"
         app:srcCompat="@drawable/bouton_photo"
   />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coutant"
+        android:textSize="20dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klaimant"
+        android:textSize="20dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="240dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/identifiant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="budapest_la_vie"
+        android:textSize="20dp"
+        android:layout_marginTop="340dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:text="super_parlement@budapest.com"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/modif_mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Changer le mot de passe"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="490dp"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:background=""
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/modif_compte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifier"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="540dp"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:background=""
+        android:textColor="@color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/parametres"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="20dp"
+
+        />
+
 
 </android.support.design.widget.CoordinatorLayout>
