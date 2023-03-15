@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="300dp"
+                android:layout_height="345dp"
+                app:srcCompat="@drawable/gradient3"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Changer le mot de passe"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/new_mdp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:textColor="#FCBCB8"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="120dp"
+                android:textSize="15dp"
+                android:inputType="textPersonName"
+                android:text="Nouveau mot de passe" />
+
+            <EditText
+                android:id="@+id/confirm_new_mdp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:textColor="#FCBCB8"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="160dp"
+                android:textSize="15dp"
+                android:inputType="textPersonName"
+                android:text="Confirmer le nouveau mot de passe" />
+
+            <Button
+                android:id="@+id/valid"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bouton_valid"
+                android:text="Valider"
+                android:textColor="@color/white"
+                android:layout_marginTop="220dp"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bouton_annuler"
+                android:layout_centerHorizontal="true"
+                android:text="Annuler"
+                android:textColor="@color/white"
+                android:layout_marginTop="270dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#cccccc" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
