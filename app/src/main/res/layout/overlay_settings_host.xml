@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/Settings_host"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/gradient3"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/code_salon"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Code salon :"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="55dp"/>
+
+            <TextView
+                android:id="@+id/Code_Salon"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="155dp"/>
+
+            <Button
+                android:id="@+id/Mon_compte"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="165dp"
+                android:background="transparent"
+                android:text="Mon compte"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/Quitter_salon"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:background="transparent"
+                android:text="Quitter le salon"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:translationX="330dp"
+                app:srcCompat="@drawable/parametres" />
+
+            <ImageView
+                android:id="@+id/Qr_code"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                tools:srcCompat="@tools:sample/avatars"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:id="@+id/validation_suggest"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Validation des suggestions"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="55dp"/>
+
+            <TextView
+                android:id="@+id/mode_sombre"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Mode sombre"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="55dp"/>
+
+            <Switch
+                android:id="@+id/switch_suggest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="320dp"/>
+
+            <Switch
+                android:id="@+id/switch_md_sombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="320dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#cccccc" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
