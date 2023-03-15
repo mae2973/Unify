@@ -19,7 +19,6 @@
         layout="@layout/content_main"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center"
-        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-29dp" />
 
     <Switch
