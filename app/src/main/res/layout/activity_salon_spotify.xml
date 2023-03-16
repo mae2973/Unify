@@ -16,8 +16,8 @@
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center"
         tools:ignore="NotSibling"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="-4dp" />
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-7dp" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -36,8 +36,8 @@
         app:layout_anchor="@+id/logo"
         app:layout_anchorGravity="end|center"
         app:srcCompat="@drawable/logo_1"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="815dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="643dp" />
 
     <Button
         android:id="@+id/button3"
@@ -48,8 +48,9 @@
         android:textColor="@color/white"
         android:textSize="35dp"
         app:layout_constraintEnd_toStartOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.588"
         app:layout_constraintStart_toEndOf="@+id/include"
-        tools:layout_editor_absoluteY="286dp" />
+        tools:layout_editor_absoluteY="214dp" />
 
     <Button
         android:id="@+id/button4"
@@ -59,9 +60,11 @@
         android:text="REJOINDRE"
         android:textColor="@color/white"
         android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/include"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/include"
-        tools:layout_editor_absoluteY="477dp" />
+        tools:layout_editor_absoluteY="420dp" />
 
 
 </android.support.constraint.ConstraintLayout>
