@@ -2,10 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".InterfacePrincipale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:ignore="ExtraText">
 
     <include
@@ -96,8 +96,8 @@
         android:layout_height="138dp"
         app:srcCompat="@drawable/icone_musique"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="220dp" />
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="192dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -105,22 +105,22 @@
         android:layout_height="28dp"
         android:text="Titre"
         android:textColor="@color/white"
-        android:textSize="18dp"
+        android:textSize="  20dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="220dp" />
+        tools:layout_editor_absoluteY="204dp" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="55dp"
+        android:layout_width="65dp"
         android:layout_height="22dp"
         android:text="Auteur"
         android:textColor="@color/white"
-        android:textSize="18dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="261dp" />
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="232dp" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -129,7 +129,7 @@
         app:srcCompat="@drawable/fleche_droit"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="345dp"
-        tools:layout_editor_absoluteY="308dp" />
+        tools:layout_editor_absoluteY="280dp" />
 
     <ImageView
         android:id="@+id/imageView14"
@@ -139,7 +139,7 @@
         app:srcCompat="@drawable/fleche_droit"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="308dp" />
+        tools:layout_editor_absoluteY="280dp" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -148,7 +148,7 @@
         android:rotation="-270"
         app:srcCompat="@drawable/png_item_116046_1"
         tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="299dp" />
+        tools:layout_editor_absoluteY="275dp" />
 
     <Button
         android:id="@+id/button7"
@@ -156,7 +156,7 @@
         android:layout_height="40dp"
         android:background="none"
         tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="307dp" />
+        tools:layout_editor_absoluteY="280dp" />
 
     <Button
         android:id="@+id/button8"
@@ -164,7 +164,7 @@
         android:layout_height="47dp"
         android:background="none"
         tools:layout_editor_absoluteX="349dp"
-        tools:layout_editor_absoluteY="300dp" />
+        tools:layout_editor_absoluteY="280dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -172,7 +172,189 @@
         android:layout_height="15dp"
         app:srcCompat="@drawable/barre_musique"
         tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="403dp" />
+        tools:layout_editor_absoluteY="392dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="none"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/bouton_photo"
+
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00"
+        android:textColor="@color/white"
+
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="min:sec1sec2"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/icone_participant"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <Button
+        android:id="@+id/playmusic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="none"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/icone_participant"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/icone_participant"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prénom1 Nom1"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/  Titre1"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prénom2 Nom2"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="514dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prénom3 Nom3"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/  Titre2"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="514dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/  Titre3"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:text="P1"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P2"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P3"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        android:background="none"
+        app:srcCompat="@drawable/bouton_ajouter"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="641dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="85dp"
+        tools:layout_editor_absoluteX="325dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+
+    <!-- P1 : initiales de Prénom1
+         P2 : initiales de Prénom2
+         P3 : initiales de Prénom3 -->
 
 
 </android.support.constraint.ConstraintLayout>
