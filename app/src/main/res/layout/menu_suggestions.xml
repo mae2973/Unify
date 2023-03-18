@@ -201,6 +201,15 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="435dp"/>
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="90dp"
+        android:background="none"
+        />
+
 
     <!--Pa1 pour participant 1 , etc.. -->
 
