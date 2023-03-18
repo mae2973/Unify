@@ -31,16 +31,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="87dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/parametres"
-
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="345dp"
-        tools:layout_editor_absoluteY="16dp" />
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="77dp"
@@ -351,10 +341,18 @@
         tools:layout_editor_absoluteX="325dp"
         tools:layout_editor_absoluteY="618dp" />
 
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/parametres"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="15dp" />
 
-    <!-- P1 : initiales de Prénom1
-         P2 : initiales de Prénom2
-         P3 : initiales de Prénom3 -->
+
+    <!-- P1 : initiale de Prénom1
+         P2 : initiale de Prénom2
+         P3 : initiale de Prénom3 -->
 
 
 </android.support.constraint.ConstraintLayout>
