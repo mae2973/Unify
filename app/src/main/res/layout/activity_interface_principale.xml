@@ -323,31 +323,29 @@
         tools:layout_editor_absoluteY="575dp" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="77dp"
-        android:layout_height="74dp"
-        android:background="none"
-        app:srcCompat="@drawable/bouton_ajouter"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="641dp" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+"
-        android:textColor="@color/white"
-        android:textSize="85dp"
-        tools:layout_editor_absoluteX="325dp"
-        tools:layout_editor_absoluteY="618dp" />
-
-    <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/parametres"
         tools:layout_editor_absoluteX="345dp"
         tools:layout_editor_absoluteY="15dp" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="69dp"
+        android:layout_height="71dp"
+        android:background="none"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="636dp" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="110dp"
+        android:layout_height="97dp"
+        app:srcCompat="@drawable/bouton_ajouter"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="627dp" />
 
 
     <!-- P1 : initiale de Prénom1

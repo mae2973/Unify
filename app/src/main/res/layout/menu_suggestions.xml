@@ -211,6 +211,23 @@
         />
 
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="92dp"
+        android:layout_height="81dp"
+        android:layout_marginLeft="294dp"
+        android:layout_marginTop="624dp"
+        android:background="none" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="110dp"
+        android:layout_height="97dp"
+        app:srcCompat="@drawable/bouton_ajouter"
+        android:layout_marginLeft="293dp"
+        android:layout_marginTop="627dp" />
+
+
     <!--Pa1 pour participant 1 , etc.. -->
 
 </RelativeLayout>

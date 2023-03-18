@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnexionSpotify"
+    android:background="@color/black">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        tools:ignore="NotSibling"
+
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-31dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/parametres"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/logo_1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="641dp" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/gradient2"  />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#044706"
+        app:srcCompat="@drawable/spotify_2"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="236dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@color/white"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:text="Identifiant"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="236dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@color/white"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:text="Mot de passe"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="363dp"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALIDER"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/bouton_valid"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANNULER"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/bouton_annuler"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="489dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="70dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Passer"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="73dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="489dp"
+        android:background="none"/>
+
+
+</android.support.constraint.ConstraintLayout>
