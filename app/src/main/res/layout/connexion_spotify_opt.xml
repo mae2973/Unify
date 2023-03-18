@@ -94,5 +94,13 @@
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="489dp"/>
 
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/logo_1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="641dp" />
+
 
 </android.support.constraint.ConstraintLayout>
