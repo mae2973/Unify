@@ -10,6 +10,8 @@
     <include
         android:id="@+id/include"
         layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center"
         tools:ignore="NotSibling"
@@ -30,10 +32,10 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:background="@drawable/parametres"
-        android:layout_marginLeft="340dp"
+        android:layout_marginLeft="360dp"
         android:layout_marginTop="20dp"
       />
 
@@ -51,7 +53,7 @@
         android:id="@+id/imageView10"
         android:layout_width="77dp"
         android:layout_height="74dp"
-        android:layout_marginLeft="169dp"
+        android:layout_marginLeft="205dp"
         android:layout_marginTop="641dp"
         app:srcCompat="@drawable/logo_1" />
 
@@ -215,17 +217,17 @@
         android:id="@+id/button4"
         android:layout_width="92dp"
         android:layout_height="81dp"
-        android:layout_marginLeft="294dp"
+        android:layout_marginLeft="350dp"
         android:layout_marginTop="624dp"
         android:background="none" />
 
     <ImageView
-        android:id="@+id/imageView24"
-        android:layout_width="110dp"
-        android:layout_height="97dp"
-        app:srcCompat="@drawable/bouton_ajouter"
-        android:layout_marginLeft="293dp"
-        android:layout_marginTop="627dp" />
+        android:id="@+id/imageView20"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="610dp"
+        app:srcCompat="@drawable/bouton_ajout" />
 
 
     <!--Pa1 pour participant 1 , etc.. -->

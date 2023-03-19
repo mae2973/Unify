@@ -340,12 +340,12 @@
         tools:layout_editor_absoluteY="636dp" />
 
     <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="110dp"
-        android:layout_height="97dp"
-        app:srcCompat="@drawable/bouton_ajouter"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="627dp" />
+        android:id="@+id/imageView28"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        app:srcCompat="@drawable/bouton_ajout"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="616dp" />
 
 
     <!-- P1 : initiale de Prénom1

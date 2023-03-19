@@ -122,7 +122,7 @@
         android:text="Passer"
         android:textColor="@color/white"
         tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="495dp" />
+        tools:layout_editor_absoluteY="497dp" />
 
     <Button
         android:id="@+id/button14"
