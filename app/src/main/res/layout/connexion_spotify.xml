@@ -28,15 +28,6 @@
         app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/gradient2" />
 
-    <ImageView
-        android:id="@+id/imageView25"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#044706"
-        app:srcCompat="@drawable/spotify_2"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="203dp" />
-
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
@@ -101,6 +92,14 @@
         app:srcCompat="@drawable/logo_1"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="641dp" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/icone_spotify"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="168dp" />
 
 
 </android.support.constraint.ConstraintLayout>
