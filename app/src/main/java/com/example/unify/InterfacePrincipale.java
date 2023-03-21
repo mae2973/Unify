@@ -9,6 +9,6 @@ public class InterfacePrincipale extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interface_principale);
-        setContentView(R.layout.menu_suggestions) ;
+        setContentView(R.layout.menu_suggestions_part) ;
     }
 }
