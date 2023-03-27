@@ -9,5 +9,8 @@ public class choix_type_salon extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choix_type_salon);
-    }fyguyhiojio
+
+
+
+    }
 }
