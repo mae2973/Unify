@@ -1,13 +1,13 @@
 package com.example.unify;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-public class SalonSpotify extends AppCompatActivity {
+public class overlay_changer_mdp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_connexion_spotify_opt);
+        setContentView(R.layout.overlay_changer_mdp);
     }
 }
