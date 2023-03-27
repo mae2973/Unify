@@ -23,15 +23,24 @@
             android:textColor="@color/white"
             android:textSize="18dp" />
 
+
         <ImageView
-            android:id="@+id/imageView31"
+            android:id="@+id/imageView25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/bouton_valider" />
+            android:src="@drawable/boutons_valider_refuser" />
 
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:src="@drawable/boutons_valider_refuser"
+        android:translationX="18dp"
+        android:translationY="70dp" />
 
 
 </FrameLayout>
