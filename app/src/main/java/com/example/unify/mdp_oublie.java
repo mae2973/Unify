@@ -10,4 +10,13 @@ public class mdp_oublie extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mdp_oublie);
     }
+
+    Button button_validation = (Button)findViewById(R.id.open_activity_button);
+
+    btn.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(MainActivity.this, MyOtherActivity.class));
+        }
+    });
 }
