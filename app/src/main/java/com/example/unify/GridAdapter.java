@@ -16,15 +16,17 @@ public class GridAdapter extends BaseAdapter { // Attributs
     String[] ini_participants ;
     int[] image ;
 
+    LayoutInflater inflater ;
+
 
     // Constructeur
     public GridAdapter(Context context, String[] nom_participants, String[] ini_participants, int[] image) {
         this.context = context;
         this.nom_participants = nom_participants;
-        this.ini_participants = this.ini_participants;
+        this.ini_participants = ini_participants;
         this.image = image;
 
-        LayoutInflater inflater ;
+
     }
 
     @Override
@@ -33,23 +35,22 @@ public class GridAdapter extends BaseAdapter { // Attributs
     }
 
     @Override
-    public Object getItem(int i) {
+    public Object getItem(int position) {
         return null;
     }
 
     @Override
-    public long getItemId(int i) {
+    public long getItemId(int position) {
         return 0;
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        LayoutInflater inflater = null;
+    public View getView(int position, View convertView, ViewGroup parent) {
+
         if (inflater==null)
             inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) ;
 
 
-        View convertView = null;
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.grid_item,null) ;
         }
@@ -58,7 +59,7 @@ public class GridAdapter extends BaseAdapter { // Attributs
         TextView textView1 = convertView.findViewById(R.id.item_name) ;
         TextView textView2 = convertView.findViewById(R.id.initiales) ;
 
-        int position = 0;
+
         imageView.setImageResource(image[position]) ;
         textView1.setText(nom_participants[position]) ;
         textView2.setText(ini_participants[position]) ;
