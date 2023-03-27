@@ -4,6 +4,10 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
+import android.widget.GridView;
+
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -21,8 +25,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+
+        }
+
+
+
 
         setSupportActionBar(binding.toolbar);
 
