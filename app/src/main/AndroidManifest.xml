@@ -19,6 +19,15 @@
             android:name=".Participants"
             android:exported="false" />
         <activity
+            android:name=".creation_compte"
+            android:exported="false" />
+        <activity
+            android:name=".connexion_salon"
+            android:exported="false" />
+        <activity
+            android:name=".choix_type_salon"
+            android:exported="false" />
+        <activity
             android:name=".ConnexionSpotify"
             android:exported="false" />
         <activity
