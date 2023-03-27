@@ -1,10 +1,9 @@
 plugins {
-    id 'com.android.application' version '7.4.1'
-
+    id 'com.android.application' version '7.3.1'
 }
 
 task wrapper(type: Wrapper){
-    gradleVersion = '7.4.1'
+    gradleVersion = '7.3.1'
 }
 
 task prepareKotlinBuildScriptModel {
@@ -55,4 +54,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation platform('com.google.firebase:firebase-bom:31.3.0')
+    implementation 'com.google.firebase:firebase-analytics'
 }
