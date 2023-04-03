@@ -20,7 +20,7 @@ public class mdp_oublie extends AppCompatActivity {
     button_validation.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(MainActivity.this, MyOtherActivity.class));
+            startActivity(new Intent(MainActivity.this, mail_envoye.class));
         }
     });
 }

@@ -1,7 +1,8 @@
 package com.example.unify;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class menu_suggestions_part extends AppCompatActivity {
 
