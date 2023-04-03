@@ -15,5 +15,4 @@
 
     <style name="Theme.Unify.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.Unify.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
