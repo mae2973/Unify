@@ -1,14 +1,13 @@
 package com.example.unify;
 
-import android.provider.Telephony;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.AdapterView;
-import android.widget.GridView;
-import android.widget.Toast;
 import android.view.View;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.unify.databinding.ActivityParticipantsBinding;
 
 public class Participants extends AppCompatActivity {
