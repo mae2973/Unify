@@ -74,7 +74,7 @@
         android:layout_marginTop="235dp"/>
 
     <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/imageView19"
         app:srcCompat="@drawable/icone_participant"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -82,7 +82,7 @@
         android:layout_marginTop="302dp"/>
 
     <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/imageView23"
         app:srcCompat="@drawable/icone_participant"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -90,7 +90,7 @@
         android:layout_marginTop="370dp"/>
 
     <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/imageView21"
         app:srcCompat="@drawable/icone_participant"
         android:layout_width="50dp"
         android:layout_height="50dp"
