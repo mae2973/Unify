@@ -13,7 +13,7 @@ public class mdp_oublie extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mdp_oublie);
-    }
+
 
     Button button_validation = (Button)findViewById(R.id.button_validation);
 
@@ -23,4 +23,4 @@ public class mdp_oublie extends AppCompatActivity {
             startActivity(new Intent(mdp_oublie.this, mail_envoye.class));
         }
     });
-}
+}}
