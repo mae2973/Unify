@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#EF3D74"
+        android:background="@color/black"
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center"
+        tools:ignore="NotSibling" />
+        >
+
+    </solid>
+
+
+
+</shape>
