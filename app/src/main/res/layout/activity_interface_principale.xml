@@ -66,7 +66,6 @@
         android:id="@+id/button5"
         android:layout_width="49dp"
         android:layout_height="61dp"
-        android:background="none"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="309dp"
         tools:layout_editor_absoluteY="90dp" />
@@ -75,7 +74,6 @@
         android:id="@+id/button6"
         android:layout_width="52dp"
         android:layout_height="62dp"
-        android:background="none"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="52dp"
         tools:layout_editor_absoluteY="92dp" />
@@ -144,7 +142,6 @@
         android:id="@+id/button7"
         android:layout_width="26dp"
         android:layout_height="40dp"
-        android:background="none"
         tools:layout_editor_absoluteX="238dp"
         tools:layout_editor_absoluteY="280dp" />
 
@@ -152,7 +149,6 @@
         android:id="@+id/button8"
         android:layout_width="38dp"
         android:layout_height="47dp"
-        android:background="none"
         tools:layout_editor_absoluteX="349dp"
         tools:layout_editor_absoluteY="280dp" />
 
@@ -168,7 +164,6 @@
         android:id="@+id/imageButton6"
         android:layout_width="15dp"
         android:layout_height="15dp"
-        android:background="none"
         android:backgroundTint="@color/white"
         app:srcCompat="@drawable/bouton_photo"
 
@@ -206,7 +201,6 @@
         android:id="@+id/playmusic"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:background="none"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="275dp" />
 
@@ -335,7 +329,6 @@
         android:id="@+id/button2"
         android:layout_width="69dp"
         android:layout_height="71dp"
-        android:background="none"
         tools:layout_editor_absoluteX="312dp"
         tools:layout_editor_absoluteY="636dp" />
 

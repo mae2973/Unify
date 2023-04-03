@@ -46,7 +46,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="300dp"
         android:layout_marginTop="660dp"
-        android:background=""
         android:text="Retour"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -132,7 +131,6 @@
         android:layout_marginTop="490dp"
         android:textSize="17dp"
         android:textAllCaps="false"
-        android:background=""
         android:textColor="@color/white"
         />
 
@@ -145,7 +143,6 @@
         android:layout_marginTop="540dp"
         android:textSize="17dp"
         android:textAllCaps="false"
-        android:background=""
         android:textColor="@color/white"
         />
 
