@@ -19,3 +19,10 @@ plugins {
     id 'com.android.library' version '7.3.1' apply false
 }
 
+subprojects {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << '-Xmaxerrs' << '500'
+        }
+    }
+}

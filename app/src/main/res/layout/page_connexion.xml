@@ -7,12 +7,13 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.Unify.AppBarOverlay">
+        android:theme="@style/Theme.Unify.AppBarOverlay"
+        tools:ignore="MissingConstraints">
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
 
     <include

@@ -38,6 +38,9 @@
             android:name=".SplashScreen"
             android:exported="false" />
         <activity
+            android:name=".page_connexion"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
@@ -48,6 +51,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
