@@ -1,7 +1,8 @@
 package com.example.unify;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class choix_type_salon extends AppCompatActivity {
 

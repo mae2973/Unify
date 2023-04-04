@@ -120,8 +120,7 @@
         android:layout_width="73dp"
         android:layout_height="38dp"
         tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="489dp"
-        android:background="none"/>
+        tools:layout_editor_absoluteY="489dp"/>
 
     <ImageView
         android:id="@+id/imageView22"
