@@ -7,12 +7,11 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.Unify.AppBarOverlay">
-
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
 
     <include
@@ -27,8 +26,8 @@
         android:layout_width="77dp"
         android:layout_height="74dp"
         app:srcCompat="@drawable/logo_1"
-        android:layout_marginTop="650dp"
-        android:layout_marginLeft="10dp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="222dp"
        />
 
     <ImageButton
@@ -38,8 +37,8 @@
         android:background="@drawable/bouton_creer"
         app:srcCompat="@drawable/bouton_creer"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="260dp"
-
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="20dp"
         />
 
     <ImageButton
@@ -49,7 +48,8 @@
         android:background="@drawable/bouton_rejoindre"
         app:srcCompat="@drawable/bouton_rejoindre"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="400dp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="222dp"
 
         />
 
@@ -58,8 +58,8 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/parametres"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="222dp"
 
         />
 
@@ -72,7 +72,10 @@
         app:layout_anchorGravity="center"
         android:textSize="25dp"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="222dp"
+        />
 
     <TextView
         android:id="@+id/b_rejoindre"
@@ -82,7 +85,8 @@
         android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_anchor="@+id/rejoindre"
-        app:layout_anchorGravity="center"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="222dp"
         android:textStyle="bold"/>
 
 
