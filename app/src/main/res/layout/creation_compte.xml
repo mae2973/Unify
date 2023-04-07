@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.Unify.AppBarOverlay">
-
-    </android.support.design.widget.AppBarLayout>
-
-
     <include
         android:id="@+id/include"
         layout="@layout/content_main"
@@ -26,140 +18,184 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|right"
+        android:layout_marginStart="348dp"
+        android:layout_marginBottom="688dp"
         android:scaleX="1.5"
         android:scaleY="1.5"
         android:switchMinWidth="30dp"
-        tools:layout_editor_absoluteX="349dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="77dp"
         android:layout_height="74dp"
-        app:srcCompat="@drawable/logo_1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="641dp" />
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_1" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="300dp"
         android:layout_height="500dp"
-        app:srcCompat="@drawable/gradient2"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="98dp" />
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/include"
+        app:srcCompat="@drawable/gradient2" />
 
     <TextView
         android:id="@+id/creer_compte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="564dp"
         android:text="Créer un compte"
         android:textColor="@color/white"
         android:textSize="25dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="125dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/nom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="507dp"
         android:backgroundTint="@color/white"
         android:ems="5"
         android:inputType="textPersonName"
         android:text="Nom"
         android:textColor="#FCDCB5"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="179dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/prenom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="203dp"
+        android:layout_marginBottom="507dp"
         android:backgroundTint="@color/white"
         android:ems="5"
         android:inputType="textPersonName"
         android:shadowDx="0"
         android:text="Prénom"
         android:textColor="#FCDCB5"
-        tools:layout_editor_absoluteX="223dp"
-        tools:layout_editor_absoluteY="179dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/mdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="452dp"
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Adresse mail"
         android:textColor="#FCDCB5"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="234dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="344dp"
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Mot de passe"
         android:textColor="#FCDCB5"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="343dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/confirm_mdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="289dp"
         android:backgroundTint="@color/white"
         android:ems="11"
         android:inputType="textPersonName"
         android:text="Confirmer le mot de passe"
         android:textColor="#FCDCB5"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="397dp"
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Identifiant"
         android:textColor="#FCDCB5"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="289dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-     <ImageButton
+    <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="56dp"
         android:layout_height="53dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/bouton_photo"
-        app:srcCompat="@drawable/bouton_photo"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="449dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_mdp"
+        app:srcCompat="@drawable/bouton_photo" />
 
     <Button
         android:id="@+id/valid"
         android:layout_width="80dp"
         android:layout_height="35dp"
+        android:layout_marginTop="11dp"
         android:background="@drawable/bouton_valid"
         android:text="Valider"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="514dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <Button
         android:id="@+id/annuler"
         android:layout_width="80dp"
         android:layout_height="35dp"
+        android:layout_marginTop="7dp"
         android:background="@drawable/bouton_annuler"
         android:text="Annuler"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="556dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/valid" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="78dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="397dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

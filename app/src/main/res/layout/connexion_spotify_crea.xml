@@ -5,18 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ConnexionSpotify"
-    android:background="@color/black">>
+    android:background="@color/black">
 
     <include
         android:id="@+id/include"
         layout="@layout/content_main"
+        app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center"
         tools:ignore="NotSibling"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="-31dp" />
 
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginBottom="664dp"
+        android:background="@drawable/parametres"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/imageView19"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_1" />
+
+    <ImageView
+        android:id="@+id/imageView21"
         android:layout_width="300dp"
         android:layout_height="380dp"
         android:layout_gravity="center_horizontal"
@@ -26,80 +47,84 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/gradient2" />
+        app:srcCompat="@drawable/gradient2"  />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="465dp"
         android:text="Connexion"
         android:textColor="@color/white"
         android:textSize="25dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="232dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName12"
+        android:id="@+id/editTextTextPersonName6"
         android:layout_width="236dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Identifiant"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="303dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName13"
-        android:layout_width="236dp"
-        android:layout_height="49dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="386dp"
         android:backgroundTint="@color/white"
         android:ems="6"
         android:inputType="textPersonName"
         android:text="Identifiant"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="236dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="328dp"
+        android:backgroundTint="@color/white"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:text="Mot de passe"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="VALIDER"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="260dp"
         android:background="@drawable/bouton_valid"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="426dp"  />
+        android:text="VALIDER"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ANNULER"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="194dp"
         android:background="@drawable/bouton_annuler"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="489dp"/>
+        android:text="ANNULER"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="77dp"
-        android:layout_height="74dp"
-        app:srcCompat="@drawable/logo_1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="641dp" />
-
-    <ImageView
-        android:id="@+id/imageView24"
+        android:id="@+id/imageView22"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        app:srcCompat="@drawable/icone_spotify"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="168dp" />
+        android:layout_marginStart="252dp"
+        android:layout_marginBottom="443dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icone_spotify" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
