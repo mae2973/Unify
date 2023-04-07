@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -8,11 +8,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Unify"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name="mdp_oublie"/>
-        <activity
-            android:name="mail_envoye"/>
+            android:name=".activity_connexion_spotify_opt_withconstraints"
+            android:exported="false"
+            android:label="@string/title_activity_connexion_spotify_opt_withconstraints"
+            android:theme="@style/Theme.Unify.NoActionBar" />
+        <activity android:name=".mdp_oublie" />
+        <activity android:name=".mail_envoye" />
         <activity
             android:name=".Participants"
             android:exported="false" />
@@ -44,14 +47,13 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Unify.NoActionBar" >
+            android:theme="@style/Theme.Unify.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
