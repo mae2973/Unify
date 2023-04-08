@@ -14,13 +14,21 @@
             android:exported="true"
             android:label="@string/title_activity_connexion_spotify_opt_withconstraints"
             android:theme="@style/Theme.Unify.NoActionBar" />
-        <activity android:name=".mdp_oublie" />
-        <activity android:name=".mail_envoye" />
+        <activity android:name=".mdp_oublie"
+            android:exported="true"/>
+        <activity android:name=".mail_envoye"
+            android:exported="true"/>
         <activity
             android:name=".Participants"
             android:exported="true" />
         <activity
             android:name=".creation_compte"
+            android:exported="true" />
+        <activity
+            android:name=".modif_compte"
+            android:exported="true" />
+        <activity
+            android:name=".overlay_changer_mdp"
             android:exported="true" />
         <activity
             android:name=".connexion_salon"
