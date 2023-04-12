@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="sugestion"
+            type="com.example.unify.Sugestion" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+        <!--<EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="reminder" />
+        <Spinner
+            android:id="@+id/dates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/times" />
+        <Spinner
+            android:id="@id/times"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_alignParentRight="true" />
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/times"
+            android:layout_alignParentRight="true"
+            android:text="done" />-->
+
+        <ImageView
+            android:id="@id/icon_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="0dp"
+            android:src="@{sugestion.icon}"
+            tools:src="@drawable/icone_participant"/>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="9dp"
+            android:text="Pa5"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titre_musique"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{sugestion.titre}"
+            tools:text="titre5"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/icon_user"/>
+        <TextView
+            android:id="@+id/auteur_musique"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{sugestion.auteur}"
+            tools:text="AC/DC"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/icon_user"
+            android:layout_below="@id/titre_musique"/>
+
+    </RelativeLayout>
+</layout>

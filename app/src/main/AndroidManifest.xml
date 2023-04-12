@@ -39,6 +39,9 @@
             android:name=".Participants"
             android:exported="true" />
         <activity
+            android:name=".MenuSuggestionsPart"
+            android:exported="true" />
+        <activity
             android:name=".creation_compte"
             android:exported="true" />
         <activity
@@ -54,10 +57,10 @@
             android:name=".overlay_settings_host"
             android:exported="true" />
         <activity
-            android:name=".connexion_salon"
+            android:name=".ConnexionSalon"
             android:exported="true" />
         <activity
-            android:name=".choix_type_salon"
+            android:name=".ChoixTypeSalon"
             android:exported="true" />
         <activity
             android:name=".ConnexionSpotify"

@@ -30,15 +30,6 @@
         android:layout_marginTop="87dp"
         />
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/parametres"
-        android:layout_marginLeft="360dp"
-        android:layout_marginTop="20dp"
-      />
-
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="37dp"
@@ -86,13 +77,6 @@
         android:layout_marginLeft="26dp"
         android:layout_marginTop="370dp"/>
 
-    <ImageView
-        app:srcCompat="@drawable/icone_participant"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="435dp"/>
-
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
@@ -139,17 +123,6 @@
         android:layout_marginTop="379dp" />
 
     <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pa5"
-        android:textColor="@color/white"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="444dp" />
-
-    <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -179,41 +152,16 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="303dp" />
 
+
     <TextView
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="376dp"
         android:text="Titre4\nAC/DC"
         android:textColor="@color/white"
-        android:textSize="18dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="376dp" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Titre5\nAC/DC"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="435dp"/>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="90dp"
-        />
-
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="92dp"
-        android:layout_height="81dp"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="624dp" />
+        android:textSize="18dp" />
 
     <ImageView
         android:id="@+id/imageView20"
@@ -222,6 +170,48 @@
         android:layout_marginLeft="340dp"
         android:layout_marginTop="610dp"
         app:srcCompat="@drawable/bouton_ajout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="435dp"
+            app:srcCompat="@drawable/icone_participant" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="435dp"
+            android:text="Titre5\nAC/DC"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="444dp"
+            android:text="Pa5"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="6"
+        tools:listitem="@layout/proposition_music">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
     <!--Pa1 pour participant 1 , etc.. -->
