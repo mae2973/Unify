@@ -95,7 +95,7 @@
                 app:srcCompat="@drawable/bouton_photo"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="235dp"
-            />
+                />
 
             <Button
                 android:id="@+id/button_validation"
@@ -116,7 +116,7 @@
                 android:textColor="@color/white"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="350dp"
-                 />
+                />
 
 
             />

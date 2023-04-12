@@ -15,4 +15,7 @@
     <string name="title_activity_connexion_spotify_opt_withconstraints">
         activity_connexion_spotify_opt_withconstraints
     </string>
+    <string name="title_activity_overlay_mail_envoye2">overlay_mail_envoye2</string>
+    <string name="title_activity_overlay_mdp_oublie2">overlay_mdp_oublie2</string>
+    <string name="title_activity_overlay_modif_compte2">overlay_modif_compte2</string>
 </resources>

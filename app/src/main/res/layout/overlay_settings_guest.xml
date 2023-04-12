@@ -51,22 +51,24 @@
 
             <Button
                 android:id="@+id/Mon_compte"
-                android:layout_width="120dp"
-                android:layout_height="35dp"
-                android:layout_marginTop="85dp"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
                 android:layout_marginLeft="55dp"
+                android:layout_marginTop="81dp"
+                android:background="#00FFFFFF"
                 android:text="Mon compte"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="18dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/Quitter_salon"
-                android:layout_width="140dp"
-                android:layout_height="35dp"
+                android:layout_width="150dp"
+                android:layout_height="43dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="130dp"
+                android:background="#00FFFFFF"
                 android:text="Quitter le salon"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
@@ -86,7 +88,7 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="15dp"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@tools:sample/avatars"/>
 
             <TextView
                 android:id="@+id/mode_sombre"
@@ -107,11 +109,6 @@
                 android:layout_marginTop="90dp" />
 
         </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dip"
-            android:background="#cccccc" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
