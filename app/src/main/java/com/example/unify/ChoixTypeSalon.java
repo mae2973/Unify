@@ -9,24 +9,38 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ChoixTypeSalon extends AppCompatActivity {
 
-    ImageButton switchToConnexionActivity;
+    ImageButton buttonCreer;
+    ImageButton buttonRejoindre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choix_type_salon);
 
 
-        switchToConnexionActivity = findViewById(R.id.rejoindre);
-        switchToConnexionActivity.setOnClickListener(new View.OnClickListener() {
+        buttonCreer = findViewById(R.id.creer);
+        buttonCreer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switchActivities();
+                setButtonCreer();
+            }
+        });
+
+        buttonRejoindre = findViewById(R.id.rejoindre_salon);
+        buttonRejoindre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonRejoindre();
             }
         });
 
     }
 
-    private void switchActivities() {
+    private void setButtonCreer() {
+        Intent switchActivityIntent = new Intent(this, ConnexionSalon.class);
+        startActivity(switchActivityIntent);
+    }
+
+    private void setButtonRejoindre() {
         Intent switchActivityIntent = new Intent(this, ConnexionSalon.class);
         startActivity(switchActivityIntent);
     }

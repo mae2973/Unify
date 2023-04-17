@@ -41,7 +41,7 @@
         app:srcCompat="@drawable/bouton_creer" />
 
     <ImageButton
-        android:id="@+id/rejoindre"
+        android:id="@+id/rejoindre_salon"
         android:layout_width="170dp"
         android:layout_height="75dp"
         android:layout_marginTop="388dp"
