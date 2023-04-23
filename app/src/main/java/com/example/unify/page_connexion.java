@@ -38,8 +38,8 @@ public class page_connexion extends AppCompatActivity {
         });
 
         // BOUTON POUR VALIDER ( s'active seulement si tous les champs sont remplis )
-        EditText editTextNom = findViewById(R.id.identifiant);
-        EditText editTextPrenom = findViewById(R.id.editTextTextPassword2);
+        EditText idt = findViewById(R.id.identifiant);
+        EditText mdp = findViewById(R.id.editTextTextPassword2);
         Button Valider = findViewById(R.id.button_validation);
 
         Valider.setEnabled(false);
@@ -50,8 +50,8 @@ public class page_connexion extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                String nom = editTextNom.getText().toString().trim();
-                String prenom = editTextPrenom.getText().toString().trim();
+                String nom = idt.getText().toString().trim();
+                String prenom = mdp.getText().toString().trim();
                 Valider.setEnabled(!nom.isEmpty() && !prenom.isEmpty());
             }
 
@@ -67,7 +67,7 @@ public class page_connexion extends AppCompatActivity {
             }
         });
 
-        editTextNom.addTextChangedListener(formulaireValidationWatcher);
-        editTextPrenom.addTextChangedListener(formulaireValidationWatcher);
+        idt.addTextChangedListener(formulaireValidationWatcher);
+        mdp.addTextChangedListener(formulaireValidationWatcher);
     }
 }
