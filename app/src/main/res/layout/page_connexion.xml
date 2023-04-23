@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity">
+    tools:context=".page_connexion">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.Unify.AppBarOverlay"
@@ -20,85 +21,121 @@
         android:id="@+id/include"
         layout="@layout/content_main"
         app:layout_anchor="@+id/include"
-        app:layout_anchorGravity="center" />
+        app:layout_anchorGravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling"
+        tools:layout_editor_absoluteY="-221dp" />
 
     <Switch
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|right"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginStart="364dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="688dp"
+        android:minHeight="48dp"
         android:scaleX="1.5"
         android:scaleY="1.5"
-        android:switchMinWidth="30dp" />
+        android:switchMinWidth="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="227dp"
-        android:layout_height="267dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="75dp"
-        app:srcCompat="@drawable/logo_1" />
 
     <Button
         android:id="@+id/button_validation"
         android:layout_width="80dp"
-        android:layout_height="35dp"
+        android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="430dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="466dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="223dp"
         android:background="@drawable/bouton_valid"
         android:text="VALIDER"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
 
     <EditText
         android:id="@+id/identifiant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="349dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="#D99480"
         android:ems="10"
         android:inputType="textPersonName"
-        android:layout_gravity="center_horizontal"
         android:text="Identifiant"
-        android:textSize="20dp"
-        android:layout_marginTop="325dp"
         android:textColor="#D99480"
-        android:backgroundTint="#D99480"/>
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/motdepasse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_gravity="center_horizontal"
-        android:text="Mot de passe"
-        android:textSize="20dp"
-        android:layout_marginTop="375dp"
-        android:textColor="#D99480"
-        android:backgroundTint="#D99480"/>
 
     <Button
         android:id="@+id/button_création_compte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="548dp"
+        android:layout_marginEnd="131dp"
+        android:background="@android:color/transparent"
         android:text="Créer un compte"
-        android:textSize="20dp"
         android:textAllCaps="false"
         android:textColor="#D99480"
-       />
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_mdp_oublié"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="590dp"
-        android:textSize="20dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginBottom="87dp"
+        android:background="@android:color/transparent"
         android:text="Mot de passe oublié"
         android:textAllCaps="false"
-        android:textColor="#D99480"/>/>
+        android:textColor="#D99480"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="233dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="397dp"
+        android:layout_marginEnd="98dp"
+        android:backgroundTint="#D99480"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textColor="#D99480"
+        android:textColorHint="#D99480"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:srcCompat="@drawable/logo_1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
