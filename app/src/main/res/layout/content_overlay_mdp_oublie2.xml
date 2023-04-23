@@ -54,9 +54,10 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Adresse mail"
+                android:hint="Adresse mail"
                 android:textSize="20dp"
                 android:textColor="#FAB489"
+                android:textColorHint="#FAB489"
                 android:backgroundTint="@color/white"
                 android:layout_marginTop="80dp"
                 android:layout_centerHorizontal="true"/>

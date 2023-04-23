@@ -69,8 +69,9 @@
         android:backgroundTint="@color/white"
         android:ems="5"
         android:inputType="textPersonName"
-        android:text="Nom"
+        android:hint="Nom"
         android:textColor="#FCDCB5"
+        android:textColorHint="#FCDCB5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -84,8 +85,9 @@
         android:ems="5"
         android:inputType="textPersonName"
         android:shadowDx="0"
-        android:text="Prénom"
+        android:hint="Prénom"
         android:textColor="#FCDCB5"
+        android:textColorHint="#FCDCB5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -98,8 +100,9 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Adresse mail"
+        android:hint="Adresse mail"
         android:textColor="#FCDCB5"
+        android:textColorHint="#FCDCB5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -112,8 +115,9 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Mot de passe"
+        android:hint="Mot de passe"
         android:textColor="#FCDCB5"
+        android:textColorHint="#FCDCB5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -126,8 +130,9 @@
         android:backgroundTint="@color/white"
         android:ems="11"
         android:inputType="textPersonName"
-        android:text="Confirmer le mot de passe"
+        android:hint="Confirmer le mot de passe"
         android:textColor="#FCDCB5"
+        android:textColorHint="#FCDCB5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -140,7 +145,8 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Identifiant"
+        android:hint="Identifiant"
+        android:textColorHint="#FCDCB5"
         android:textColor="#FCDCB5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

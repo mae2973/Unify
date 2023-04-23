@@ -45,10 +45,11 @@
                 android:ems="5"
                 android:inputType="textPersonName"
                 android:textColor="#FBCBC8"
+                android:textColorHint="#FBCBC8"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="80dp"
                 android:backgroundTint="@android:color/white"
-                android:text="Nom" />
+                android:hint="Nom" />
 
             <EditText
                 android:id="@+id/prenom"
@@ -57,10 +58,11 @@
                 android:ems="5"
                 android:inputType="textPersonName"
                 android:textColor="#FBCBC8"
+                android:textColorHint="#FBCBC8"
                 android:layout_marginLeft="220dp"
                 android:layout_marginTop="80dp"
                 android:backgroundTint="@android:color/white"
-                android:text="Prénom" />
+                android:hint="Prénom" />
 
             <EditText
                 android:id="@+id/mail"
@@ -70,9 +72,10 @@
                 android:inputType="textPersonName"
                 android:textColor="#FBCBC8"
                 android:layout_marginLeft="80dp"
+                android:textColorHint="#FBCBC8"
                 android:layout_marginTop="130dp"
                 android:backgroundTint="@android:color/white"
-                android:text="Adresse mail" />
+                android:hint="Adresse mail" />
 
             <EditText
                 android:id="@+id/identifiant"
@@ -83,8 +86,9 @@
                 android:textColor="#FBCBC8"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="180dp"
+                android:textColorHint="#FBCBC8"
                 android:backgroundTint="@android:color/white"
-                android:text="Identifiant" />
+                android:hint="Identifiant" />
 
             <ImageButton
                 android:id="@+id/imageButton"

@@ -43,11 +43,12 @@
                 android:layout_centerHorizontal="true"
                 android:ems="10"
                 android:textColor="#FCBCB8"
+                android:textColorHint="#FBCBC8"
                 android:backgroundTint="@color/white"
                 android:layout_marginTop="270dp"
                 android:textSize="15dp"
                 android:inputType="textPersonName"
-                android:text="Nouveau mot de passe" />
+                android:hint="Nouveau mot de passe" />
 
             <EditText
                 android:id="@+id/confirm_new_mdp"
@@ -59,8 +60,9 @@
                 android:backgroundTint="@color/white"
                 android:layout_marginTop="310dp"
                 android:textSize="15dp"
+                android:textColorHint="#FBCBC8"
                 android:inputType="textPersonName"
-                android:text="Confirmer le nouveau mot de passe" />
+                android:hint="Confirmer le nouveau mot de passe" />
 
             <Button
                 android:id="@+id/valid"
