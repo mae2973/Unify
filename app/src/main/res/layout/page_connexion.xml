@@ -26,6 +26,7 @@
         tools:ignore="NotSibling"
         tools:layout_editor_absoluteY="-221dp" />
 
+
     <Switch
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
@@ -33,7 +34,7 @@
         android:layout_gravity="top|right"
         android:layout_marginStart="364dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="688dp"
+        android:layout_marginBottom="664dp"
         android:minHeight="48dp"
         android:scaleX="1.5"
         android:scaleY="1.5"
@@ -42,7 +43,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <Button
         android:id="@+id/button_validation"
@@ -72,7 +72,8 @@
         android:backgroundTint="#D99480"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Identifiant"
+        android:hint="Identifiant"
+        android:textColorHint="#D99480"
         android:textColor="#D99480"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,20 +95,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/button_mdp_oublié"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="114dp"
-        android:layout_marginBottom="87dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="84dp"
         android:background="@android:color/transparent"
         android:text="Mot de passe oublié"
         android:textAllCaps="false"
         android:textColor="#D99480"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- aligner mdp oublie -->
 
     <EditText
         android:id="@+id/editTextTextPassword2"
