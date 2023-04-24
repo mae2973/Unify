@@ -4,11 +4,11 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class overlay_settings_host extends AppCompatActivity {
+public class ModifCompte extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.overlay_settings_host);
+        setContentView(R.layout.modif_compte);
     }
 }
