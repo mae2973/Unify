@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="ExtraText"
     android:background="@color/black"
-    tools:context=".InterfacePrincipale" >
+    tools:context=".MenuSuggestionsPart">
 
     <include
         android:id="@+id/include"
@@ -14,15 +13,14 @@
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center"
         tools:ignore="NotSibling"
-        tools:layout_editor_absoluteX="-53dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteX="-16dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/parametres" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sugg_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-69dp"
+        tools:layout_editor_absoluteY="94dp" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

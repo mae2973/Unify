@@ -9,6 +9,6 @@ public class MenuSuggestionsPart extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu_suggestions_part);
+        setContentView(R.layout.suggestions_musiques);
     }
 }
