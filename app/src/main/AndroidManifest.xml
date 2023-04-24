@@ -20,7 +20,7 @@
             android:label="@string/title_activity_overlay_mdp_oublie2"
             android:theme="@style/Theme.Unify.NoActionBar" />
         <activity
-            android:name=".overlay_mail_envoye2"
+            android:name=".OverlayMailEnvoye2"
             android:exported="true"
             android:label="@string/title_activity_overlay_mail_envoye2"
             android:theme="@style/Theme.Unify.NoActionBar" />
@@ -42,13 +42,13 @@
             android:name=".MenuSuggestionsPart"
             android:exported="true" />
         <activity
-            android:name=".creation_compte"
+            android:name=".CreationCompte"
             android:exported="true" />
         <activity
             android:name=".modif_compte"
             android:exported="true" />
         <activity
-            android:name=".overlay_changer_mdp"
+            android:name=".OverlayChangerMdp"
             android:exported="true" />
         <activity
             android:name=".overlay_settings_guest"
@@ -81,7 +81,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".page_connexion"
+            android:name=".PageConnexion"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

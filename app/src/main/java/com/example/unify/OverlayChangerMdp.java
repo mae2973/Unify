@@ -4,11 +4,11 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class creation_compte extends AppCompatActivity {
+public class OverlayChangerMdp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.creation_compte);
+        setContentView(R.layout.overlay_changer_mdp);
     }
 }
