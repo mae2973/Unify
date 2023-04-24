@@ -35,7 +35,7 @@ public class ConnexionSalon extends AppCompatActivity {
     }
 
     private void setButtonOk(){
-        Intent switchActivityIntent = new Intent(this, ChoixTypeSalon.class);
+        Intent switchActivityIntent = new Intent(this, activity_connexion_spotify_opt_withconstraints.class);
         startActivity(switchActivityIntent);
     }
     private void setButtonAnnuler() {

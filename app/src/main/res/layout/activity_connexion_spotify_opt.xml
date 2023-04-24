@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConnexionSpotify"
+    tools:context=".activity_connexion_spotify_opt_withconstraints"
     android:background="@color/black">
 
     <include

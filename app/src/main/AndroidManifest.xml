@@ -63,7 +63,7 @@
             android:name=".ChoixTypeSalon"
             android:exported="true" />
         <activity
-            android:name=".ConnexionSpotify"
+            android:name=".activity_connexion_spotify_opt_withconstraints"
             android:exported="true" />
         <activity
             android:name=".InterfacePrincipale"
