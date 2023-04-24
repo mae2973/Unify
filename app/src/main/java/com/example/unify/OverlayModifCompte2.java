@@ -8,14 +8,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import com.example.unify.databinding.ActivityOverlayModifCompte2Binding;
 
-public class overlay_modif_compte2 extends AppCompatActivity {
+public class OverlayModifCompte2 extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityOverlayModifCompte2Binding binding;

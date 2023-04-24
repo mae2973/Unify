@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".overlay_mdp_oublie2">
+    tools:context=".OverlayMdpOublie2">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
