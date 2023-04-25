@@ -10,7 +10,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.unify.databinding.ActivityConnexionSpotifyUserBinding;
 
-public class activity_connexion_spotify_opt_withconstraints extends AppCompatActivity {
+public class ConnexionSpotifyUser extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityConnexionSpotifyUserBinding binding;

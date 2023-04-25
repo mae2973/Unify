@@ -25,7 +25,7 @@
             android:label="@string/title_activity_overlay_mail_envoye2"
             android:theme="@style/Theme.Unify.NoActionBar" />
         <activity
-            android:name=".activity_connexion_spotify_opt_withconstraints"
+            android:name=".ConnexionSpotifyUser"
             android:exported="true"
             android:label="@string/title_activity_connexion_spotify_opt_withconstraints"
             android:theme="@style/Theme.Unify.NoActionBar" />
