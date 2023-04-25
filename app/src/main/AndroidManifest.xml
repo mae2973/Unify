@@ -57,7 +57,7 @@
             android:name=".overlay_settings_host"
             android:exported="true" />
         <activity
-            android:name=".ConnexionSalon"
+            android:name=".RejoindreSalon"
             android:exported="true" />
         <activity
             android:name=".ChoixTypeSalon"

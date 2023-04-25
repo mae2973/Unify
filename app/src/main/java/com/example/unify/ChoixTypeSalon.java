@@ -41,7 +41,7 @@ public class ChoixTypeSalon extends AppCompatActivity {
     }
 
     private void setButtonRejoindre() {
-        Intent switchActivityIntent = new Intent(this, ConnexionSalon.class);
+        Intent switchActivityIntent = new Intent(this, RejoindreSalon.class);
         startActivity(switchActivityIntent);
     }
 

@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ConnexionSalon extends AppCompatActivity {
+public class RejoindreSalon extends AppCompatActivity {
 
     Button buttonOk;
     Button buttonAnnuler;
