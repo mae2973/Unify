@@ -36,7 +36,7 @@ public class ChoixTypeSalon extends AppCompatActivity {
     }
 
     private void setButtonCreer() {
-        Intent switchActivityIntent = new Intent(this, ConnexionSpotify.class);
+        Intent switchActivityIntent = new Intent(this, ConnexionSpotifyUser.class);
         startActivity(switchActivityIntent);
     }
 
