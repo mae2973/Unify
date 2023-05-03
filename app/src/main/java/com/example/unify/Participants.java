@@ -1,18 +1,22 @@
 package com.example.unify;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.unify.databinding.ActivityParticipantsBinding;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Participants extends AppCompatActivity {
 
     ActivityParticipantsBinding binding;
+    List<String> itemList;
+    ItemAdapter itemAdapter;
+    RecyclerView recyclerView;
 
 
     @Override
@@ -28,17 +32,28 @@ public class Participants extends AppCompatActivity {
 
 
         GridAdapter gridAdapter = new GridAdapter(Participants.this, nom_participants, ini_participants, image);
-        binding.gridView.setAdapter(gridAdapter);
+        //binding.gridView.setAdapter(gridAdapter);
 
-        binding.gridView.setOnItemClickListener(new OnItemClickListener() {
+        //binding.gridView.setOnItemClickListener(new OnItemClickListener() {
 
-            @Override
-            public void onItemClick(AdapterView parent, View view, int position, long id) {
+        //    @Override
+        //    public void onItemClick(AdapterView parent, View view, int position, long id) {
 
-                Toast.makeText(Participants.this, "You clicked on" + nom_participants[position], Toast.LENGTH_SHORT).show();
+        //        Toast.makeText(Participants.this, "You clicked on" + nom_participants[position], Toast.LENGTH_SHORT).show();
 
-            }
-        });
+        //    }
+        //});
+        itemList = new ArrayList<>();
+        itemList.add("Element 1");
+        itemList.add("Element 2");
+        itemList.add("Element 3");
+        itemAdapter = new ItemAdapter(itemList);
+        recyclerView = findViewById(R.id.recyclerView_participants);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(itemAdapter);
+        itemList.add("Element 3");
+
+
     }
 }
 

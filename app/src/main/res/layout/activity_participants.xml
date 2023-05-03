@@ -8,16 +8,16 @@
     tools:context=".Participants">
 
 
-    <include
+    <!-- <include
         android:id="@+id/include"
         layout="@layout/content_main"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center"
         tools:ignore="NotSibling"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp" /> -->
 
-    <ImageView
+     <ImageView
         android:id="@+id/imageView32"
         android:layout_width="77dp"
         android:layout_height="74dp"
@@ -48,6 +48,20 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/include"
         tools:layout_editor_absoluteY="185dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_participants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

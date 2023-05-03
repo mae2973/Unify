@@ -38,11 +38,13 @@ public class ChoixTypeSalon extends AppCompatActivity {
     private void setButtonCreer() {
         Intent switchActivityIntent = new Intent(this, ConnexionSpotifyUser.class);
         startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
     }
 
     private void setButtonRejoindre() {
         Intent switchActivityIntent = new Intent(this, RejoindreSalon.class);
         startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
     }
 
 }

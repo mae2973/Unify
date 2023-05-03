@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -39,9 +38,11 @@ public class ConnexionSpotifyUser extends AppCompatActivity {
         Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
         // destination à modif une fois qu'on aura les bons trucs avec les fragments
         startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
     }
 
     private void setButtonAnnuler() {
         this.finish();
+        overridePendingTransition(0, 0);
     }
 }
