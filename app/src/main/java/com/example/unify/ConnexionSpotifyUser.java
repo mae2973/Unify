@@ -1,36 +1,47 @@
 package com.example.unify;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.example.unify.databinding.ActivityConnexionSpotifyUserBinding;
 
 public class ConnexionSpotifyUser extends AppCompatActivity {
+    Button buttonValider;
+    Button buttonAnnuler;
 
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityConnexionSpotifyUserBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.connexion_spotify_crea);
 
-        binding = ActivityConnexionSpotifyUserBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        buttonValider = findViewById(R.id.bouton_valid_spotify_crea);
+        buttonValider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonValider();
+            }
+        });
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_activity_connexion_spotify_opt_withconstraints);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        buttonAnnuler = findViewById(R.id.bouton_annul_spotify_crea);
+        buttonAnnuler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonAnnuler();
+            }
+        });
     }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_activity_connexion_spotify_opt_withconstraints);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
+    private void setButtonValider() {
+        Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
+        // destination à modif une fois qu'on aura les bons trucs avec les fragments
+        startActivity(switchActivityIntent);
+    }
+
+    private void setButtonAnnuler() {
+        this.finish();
     }
 }
