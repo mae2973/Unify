@@ -16,8 +16,8 @@
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="-31dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
+    <Button
+        android:id="@+id/param_connexion_spotify_crea"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="344dp"

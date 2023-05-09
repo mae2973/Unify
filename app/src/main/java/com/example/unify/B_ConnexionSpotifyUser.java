@@ -75,4 +75,5 @@ public class B_ConnexionSpotifyUser extends AppCompatActivity {
         // METTRE LA BONNE DESTINATION, ICI L'OVERLAY PARAMETRES QU'ON A PAS ENCORE FAIT
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
-}}
+}
+}

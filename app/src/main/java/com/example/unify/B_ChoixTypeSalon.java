@@ -11,7 +11,6 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
 
     ImageButton buttonCreer;
     ImageButton buttonRejoindre;
-
     ImageButton buttonParametre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

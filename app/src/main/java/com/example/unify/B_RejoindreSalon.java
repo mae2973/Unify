@@ -11,6 +11,9 @@ public class B_RejoindreSalon extends AppCompatActivity {
 
     Button buttonOk;
     Button buttonAnnuler;
+
+    Button buttonParametre;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +35,14 @@ public class B_RejoindreSalon extends AppCompatActivity {
             }
         });
 
+        buttonParametre = findViewById(R.id.param_rejoindre_salon);
+        buttonParametre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonParametre();
+            }
+        });
+
     }
 
     private void setButtonOk(){
@@ -41,6 +52,13 @@ public class B_RejoindreSalon extends AppCompatActivity {
     }
     private void setButtonAnnuler() {
         this.finish();
+        overridePendingTransition(0, 0);
+    }
+
+    private void setButtonParametre() {
+        Intent switchActivityIntent = new Intent(this, B_RejoindreSalon.class);
+        // METTRE LA BONNE DESTINATION, ICI L'OVERLAY PARAMETRES QU'ON A PAS ENCORE FAIT
+        startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
 
