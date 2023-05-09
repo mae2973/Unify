@@ -25,7 +25,7 @@
             android:label="@string/title_activity_overlay_mail_envoye2"
             android:theme="@style/Theme.Unify.NoActionBar" />
         <activity
-            android:name=".B_ConnexionSpotifyUser"
+            android:name=".B_ConnexionSpotifyCrea"
             android:exported="true"
             android:label="@string/title_activity_connexion_spotify_opt_withconstraints"
             android:theme="@style/Theme.Unify.NoActionBar" />
@@ -63,7 +63,7 @@
             android:name=".B_ChoixTypeSalon"
             android:exported="true" />
         <activity
-            android:name=".B_ConnexionSpotify"
+            android:name=".B_ConnexionSpotifyUser"
             android:exported="true" />
         <activity
             android:name=".InterfacePrincipale"

@@ -46,7 +46,7 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
     }
 
     private void setButtonCreer() {
-        Intent switchActivityIntent = new Intent(this, B_ConnexionSpotifyUser.class);
+        Intent switchActivityIntent = new Intent(this, B_ConnexionSpotifyCrea.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
@@ -59,7 +59,7 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
 
     private void setButtonParametre() {
         Intent switchActivityIntent = new Intent(this, B_RejoindreSalon.class);
-        // METTRE LA BONNE DESTINATION, ICI L'OVERLAY PARAMETRES QU'ON A PAS ENCORE FAIT 
+        // METTRE LA BONNE DESTINATION, ICI L'OVERLAY PARAMETRES QU'ON A PAS ENCORE FAIT
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }

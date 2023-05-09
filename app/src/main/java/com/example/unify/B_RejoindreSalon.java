@@ -35,7 +35,7 @@ public class B_RejoindreSalon extends AppCompatActivity {
     }
 
     private void setButtonOk(){
-        Intent switchActivityIntent = new Intent(this, B_ConnexionSpotify.class);
+        Intent switchActivityIntent = new Intent(this, B_ConnexionSpotifyUser.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
