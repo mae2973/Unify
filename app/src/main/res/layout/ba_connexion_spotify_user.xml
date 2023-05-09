@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConnexionSpotify"
+    tools:context=".B_ConnexionSpotify"
     android:background="@color/black">
 
     <include
@@ -71,9 +71,8 @@
         android:backgroundTint="@color/white"
         android:ems="6"
         android:inputType="textPersonName"
-        android:hint="Identifiant"
+        android:text="Identifiant"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -86,14 +85,13 @@
         android:backgroundTint="@color/white"
         android:ems="6"
         android:inputType="textPersonName"
-        android:hint="Mot de passe"
+        android:text="Mot de passe"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/bouton_valid_spotify_crea"
+        android:id="@+id/boutton_valid_spotify_opt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -106,7 +104,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/bouton_annul_spotify_crea"
+        android:id="@+id/boutton_annul_spotify_opt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -114,6 +112,20 @@
         android:layout_marginBottom="194dp"
         android:background="@drawable/bouton_annuler"
         android:text="ANNULER"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="70dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="261dp"
+        android:layout_marginBottom="195dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Passer"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

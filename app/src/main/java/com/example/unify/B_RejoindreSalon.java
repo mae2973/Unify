@@ -7,14 +7,14 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RejoindreSalon extends AppCompatActivity {
+public class B_RejoindreSalon extends AppCompatActivity {
 
     Button buttonOk;
     Button buttonAnnuler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.connexion_salon);
+        setContentView(R.layout.b_connexion_salon);
 
         buttonOk = findViewById(R.id.connexion_salon_ok);
         buttonOk.setOnClickListener(new View.OnClickListener() {
@@ -35,11 +35,13 @@ public class RejoindreSalon extends AppCompatActivity {
     }
 
     private void setButtonOk(){
-        Intent switchActivityIntent = new Intent(this, ConnexionSpotify.class);
+        Intent switchActivityIntent = new Intent(this, B_ConnexionSpotify.class);
         startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
     }
     private void setButtonAnnuler() {
         this.finish();
+        overridePendingTransition(0, 0);
     }
 
 

@@ -7,9 +7,9 @@
 
     <activity
         android:id="@+id/splashScreen"
-        android:name="com.example.unify.SplashScreen"
+        android:name="com.example.unify.A_SplashScreen"
         android:label="activity_splash_screen"
-        tools:layout="@layout/activity_splash_screen" >
+        tools:layout="@layout/a_splash_screen" >
         <action
             android:id="@+id/action_parametresSalons_to_splashScreen"
             app:destination="@id/splashScreen" />
@@ -17,7 +17,7 @@
         android:id="@+id/mainActivity"
         android:name="com.example.unify.MainActivity"
         android:label="activity_choix_type_salon"
-        tools:layout="@layout/activity_choix_type_salon" >
+        tools:layout="@layout/b_choix_type_salon" >
         <action
             android:id="@+id/action_parametresSalons_to_splashScreen"
             app:destination="@id/splashScreen" />
@@ -27,9 +27,9 @@
         app:destination="@id/splashScreen" />
     <fragment
         android:id="@+id/parametresSalons"
-        android:name="com.example.unify.ParametresSalons"
+        android:name="com.example.unify.C_ParametresSalons_TODO"
         android:label="fragment_quitter_salon"
-        tools:layout="@layout/fragment_quitter_salon" >
+        tools:layout="@layout/c_quitter_salon" >
         <action
             android:id="@+id/action_parametresSalons_to_splashScreen"
             app:destination="@id/splashScreen" />

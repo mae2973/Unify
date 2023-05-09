@@ -4,11 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ConnexionSpotifyUser extends AppCompatActivity {
+public class B_ConnexionSpotifyUser extends AppCompatActivity {
     Button buttonValider;
     Button buttonAnnuler;
 
@@ -16,7 +15,7 @@ public class ConnexionSpotifyUser extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.connexion_spotify_crea);
+        setContentView(R.layout.ba_connexion_spotify_crea);
 
         buttonValider = findViewById(R.id.bouton_valid_spotify_crea);
         buttonValider.setOnClickListener(new View.OnClickListener() {
@@ -39,9 +38,11 @@ public class ConnexionSpotifyUser extends AppCompatActivity {
         Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
         // destination à modif une fois qu'on aura les bons trucs avec les fragments
         startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
     }
 
     private void setButtonAnnuler() {
         this.finish();
+        overridePendingTransition(0, 0);
     }
 }

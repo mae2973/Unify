@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void switchActivities() {
-        Intent switchActivityIntent = new Intent(this, ChoixTypeSalon.class);
+        Intent switchActivityIntent = new Intent(this, B_ChoixTypeSalon.class);
         startActivity(switchActivityIntent);
     }
 }

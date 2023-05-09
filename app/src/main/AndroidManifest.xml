@@ -25,7 +25,7 @@
             android:label="@string/title_activity_overlay_mail_envoye2"
             android:theme="@style/Theme.Unify.NoActionBar" />
         <activity
-            android:name=".ConnexionSpotifyUser"
+            android:name=".B_ConnexionSpotifyUser"
             android:exported="true"
             android:label="@string/title_activity_connexion_spotify_opt_withconstraints"
             android:theme="@style/Theme.Unify.NoActionBar" />
@@ -36,7 +36,7 @@
             android:name=".mail_envoye"
             android:exported="true" />
         <activity
-            android:name=".Participants"
+            android:name=".C_Participants_TODO"
             android:exported="true" />
         <activity
             android:name=".MenuSuggestionsPart"
@@ -57,13 +57,13 @@
             android:name=".overlay_settings_host"
             android:exported="true" />
         <activity
-            android:name=".RejoindreSalon"
+            android:name=".B_RejoindreSalon"
             android:exported="true" />
         <activity
-            android:name=".ChoixTypeSalon"
+            android:name=".B_ChoixTypeSalon"
             android:exported="true" />
         <activity
-            android:name=".ConnexionSpotify"
+            android:name=".B_ConnexionSpotify"
             android:exported="true" />
         <activity
             android:name=".InterfacePrincipale"
@@ -72,7 +72,7 @@
             android:name=".SalonSpotify"
             android:exported="true" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".A_SplashScreen"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -81,7 +81,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".page_connexion"
+            android:name=".B_PageConnexion"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
