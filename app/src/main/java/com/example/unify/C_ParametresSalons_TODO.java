@@ -9,10 +9,10 @@ import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link C_RechercheMusique#newInstance} factory method to
+ * Use the {@link C_ParametresSalons_TODO#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class C_RechercheMusique extends Fragment {
+public class C_ParametresSalons_TODO extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,7 +23,7 @@ public class C_RechercheMusique extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public C_RechercheMusique() {
+    public C_ParametresSalons_TODO() {
         // Required empty public constructor
     }
 
@@ -33,11 +33,11 @@ public class C_RechercheMusique extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment RechercheMusique.
+     * @return A new instance of fragment ParametresSalons.
      */
     // TODO: Rename and change types and number of parameters
-    public static C_RechercheMusique newInstance(String param1, String param2) {
-        C_RechercheMusique fragment = new C_RechercheMusique();
+    public static C_ParametresSalons_TODO newInstance(String param1, String param2) {
+        C_ParametresSalons_TODO fragment = new C_ParametresSalons_TODO();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -58,6 +58,6 @@ public class C_RechercheMusique extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recherche_musique, container, false);
+        return inflater.inflate(R.layout.c_quitter_salon, container, false);
     }
 }

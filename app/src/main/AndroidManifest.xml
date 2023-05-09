@@ -36,7 +36,7 @@
             android:name=".mail_envoye"
             android:exported="true" />
         <activity
-            android:name=".C_Participants"
+            android:name=".C_Participants_TODO"
             android:exported="true" />
         <activity
             android:name=".MenuSuggestionsPart"
