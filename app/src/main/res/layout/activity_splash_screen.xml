@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:ignore="ExtraText"
     android:background="@color/black"
-    tools:context=".SplashScreen">
+    tools:context=".A_SplashScreen">
 
     <include
         android:id="@+id/include"

@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ChoixTypeSalon extends AppCompatActivity {
+public class B_ChoixTypeSalon extends AppCompatActivity {
 
     ImageButton buttonCreer;
     ImageButton buttonRejoindre;
@@ -36,13 +36,13 @@ public class ChoixTypeSalon extends AppCompatActivity {
     }
 
     private void setButtonCreer() {
-        Intent switchActivityIntent = new Intent(this, ConnexionSpotifyUser.class);
+        Intent switchActivityIntent = new Intent(this, B_ConnexionSpotifyUser.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
 
     private void setButtonRejoindre() {
-        Intent switchActivityIntent = new Intent(this, RejoindreSalon.class);
+        Intent switchActivityIntent = new Intent(this, B_RejoindreSalon.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }

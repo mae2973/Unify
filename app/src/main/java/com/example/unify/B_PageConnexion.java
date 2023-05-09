@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class page_connexion extends AppCompatActivity {
+public class B_PageConnexion extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class page_connexion extends AppCompatActivity {
         CreerCompte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v1) {
-                Intent intent1 = new Intent(page_connexion.this, creation_compte.class);
+                Intent intent1 = new Intent(B_PageConnexion.this, creation_compte.class);
                 startActivity(intent1);
             }
         });
@@ -32,7 +32,7 @@ public class page_connexion extends AppCompatActivity {
         MdpOublie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v2) {
-                Intent intent2 = new Intent(page_connexion.this,mdp_oublie.class);
+                Intent intent2 = new Intent(B_PageConnexion.this,mdp_oublie.class);
                 startActivity(intent2);
             }
         });
@@ -62,7 +62,7 @@ public class page_connexion extends AppCompatActivity {
         Valider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v3) {
-                Intent intent3 = new Intent(page_connexion.this,ChoixTypeSalon.class);
+                Intent intent3 = new Intent(B_PageConnexion.this, B_ChoixTypeSalon.class);
                 startActivity(intent3);
             }
         });

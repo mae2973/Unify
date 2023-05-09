@@ -7,42 +7,42 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RejoindreSalon extends AppCompatActivity {
-
-    Button buttonOk;
+public class B_ConnexionSpotifyUser extends AppCompatActivity {
+    Button buttonValider;
     Button buttonAnnuler;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.connexion_salon);
+        setContentView(R.layout.connexion_spotify_crea);
 
-        buttonOk = findViewById(R.id.connexion_salon_ok);
-        buttonOk.setOnClickListener(new View.OnClickListener() {
+        buttonValider = findViewById(R.id.bouton_valid_spotify_crea);
+        buttonValider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setButtonOk();
+                setButtonValider();
             }
         });
 
-        buttonAnnuler = findViewById(R.id.connexion_salon_annuler);
+        buttonAnnuler = findViewById(R.id.bouton_annul_spotify_crea);
         buttonAnnuler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setButtonAnnuler();
             }
         });
-
     }
 
-    private void setButtonOk(){
-        Intent switchActivityIntent = new Intent(this, ConnexionSpotify.class);
+    private void setButtonValider() {
+        Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
+        // destination à modif une fois qu'on aura les bons trucs avec les fragments
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
+
     private void setButtonAnnuler() {
         this.finish();
         overridePendingTransition(0, 0);
     }
-
-
 }

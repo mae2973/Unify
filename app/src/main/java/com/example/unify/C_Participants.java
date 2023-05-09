@@ -11,7 +11,7 @@ import com.example.unify.databinding.ActivityParticipantsBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Participants extends AppCompatActivity {
+public class C_Participants extends AppCompatActivity {
 
     ActivityParticipantsBinding binding;
     List<String> itemList;
@@ -31,7 +31,7 @@ public class Participants extends AppCompatActivity {
         int[] image = {R.drawable.fond, R.drawable.fond, R.drawable.fond, R.drawable.fond, R.drawable.fond, R.drawable.fond};
 
 
-        GridAdapter gridAdapter = new GridAdapter(Participants.this, nom_participants, ini_participants, image);
+        GridAdapter gridAdapter = new GridAdapter(C_Participants.this, nom_participants, ini_participants, image);
         //binding.gridView.setAdapter(gridAdapter);
 
         //binding.gridView.setOnItemClickListener(new OnItemClickListener() {
