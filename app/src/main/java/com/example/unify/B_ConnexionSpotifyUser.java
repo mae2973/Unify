@@ -15,7 +15,7 @@ public class B_ConnexionSpotifyUser extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.connexion_spotify_crea);
+        setContentView(R.layout.ba_connexion_spotify_crea);
 
         buttonValider = findViewById(R.id.bouton_valid_spotify_crea);
         buttonValider.setOnClickListener(new View.OnClickListener() {

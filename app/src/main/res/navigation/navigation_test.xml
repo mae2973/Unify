@@ -17,7 +17,7 @@
         android:id="@+id/mainActivity"
         android:name="com.example.unify.MainActivity"
         android:label="activity_choix_type_salon"
-        tools:layout="@layout/activity_choix_type_salon" >
+        tools:layout="@layout/b_choix_type_salon" >
         <action
             android:id="@+id/action_parametresSalons_to_splashScreen"
             app:destination="@id/splashScreen" />

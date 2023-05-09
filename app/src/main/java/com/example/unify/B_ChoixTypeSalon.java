@@ -14,7 +14,7 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choix_type_salon);
+        setContentView(R.layout.b_choix_type_salon);
 
 
         buttonCreer = findViewById(R.id.creer);

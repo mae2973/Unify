@@ -14,7 +14,7 @@ public class B_RejoindreSalon extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.connexion_salon);
+        setContentView(R.layout.b_connexion_salon);
 
         buttonOk = findViewById(R.id.connexion_salon_ok);
         buttonOk.setOnClickListener(new View.OnClickListener() {
