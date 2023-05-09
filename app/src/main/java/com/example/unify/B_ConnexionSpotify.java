@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ConnexionSpotify extends AppCompatActivity {
+public class B_ConnexionSpotify extends AppCompatActivity {
     Button buttonValider;
     Button buttonAnnuler;
 
@@ -17,7 +17,7 @@ public class ConnexionSpotify extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_connexion_spotify_user);
+        setContentView(R.layout.ba_connexion_spotify_user);
 
         buttonValider = findViewById(R.id.boutton_valid_spotify_opt);
         buttonValider.setOnClickListener(new View.OnClickListener() {

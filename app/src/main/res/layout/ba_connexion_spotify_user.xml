@@ -116,8 +116,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName8"
+    <Button
+        android:id="@+id/boutton_passer_spotify_opt"
         android:layout_width="70dp"
         android:layout_height="39dp"
         android:layout_marginStart="261dp"

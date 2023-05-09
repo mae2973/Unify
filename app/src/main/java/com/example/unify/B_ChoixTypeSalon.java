@@ -11,6 +11,8 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
 
     ImageButton buttonCreer;
     ImageButton buttonRejoindre;
+
+    ImageButton buttonParametre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,14 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
             }
         });
 
+        buttonParametre = findViewById(R.id.param_choix_salon);
+        buttonParametre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonParametre();
+            }
+        });
+
     }
 
     private void setButtonCreer() {
@@ -43,6 +53,13 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
 
     private void setButtonRejoindre() {
         Intent switchActivityIntent = new Intent(this, B_RejoindreSalon.class);
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
+    }
+
+    private void setButtonParametre() {
+        Intent switchActivityIntent = new Intent(this, B_RejoindreSalon.class);
+        // METTRE LA BONNE DESTINATION, ICI L'OVERLAY PARAMETRES QU'ON A PAS ENCORE FAIT 
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
