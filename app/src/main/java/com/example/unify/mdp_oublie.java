@@ -26,7 +26,7 @@ public class mdp_oublie extends AppCompatActivity {
         });
 
 
-        buttonAnnuler = findViewById(R.id.button_validation);
+        buttonAnnuler = findViewById(R.id.annuler);
         buttonAnnuler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,6 +44,5 @@ public class mdp_oublie extends AppCompatActivity {
 
     private void setButtonAnnuler() {
         this.finish();
-        overridePendingTransition(0, 0);
     }
 }
