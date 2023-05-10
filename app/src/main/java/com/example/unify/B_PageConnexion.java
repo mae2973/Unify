@@ -12,30 +12,35 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class B_PageConnexion extends AppCompatActivity {
 
+
+    Button buttonCompte;
+
+    Button buttonMdp;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.page_connexion);
 
-        // BOUTON POUR CREER UN COMPTE
-        Button CreerCompte = findViewById(R.id.button_création_compte);
-        CreerCompte.setOnClickListener(new View.OnClickListener() {
+
+        buttonCompte = findViewById(R.id.button_création_compte);
+        buttonCompte.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v1) {
-                Intent intent1 = new Intent(B_PageConnexion.this, creation_compte.class);
-                startActivity(intent1);
+            public void onClick(View view) {
+                setButtonCompte();
             }
         });
 
-        // BOUTON POUR MDP OUBLIE
-        Button MdpOublie = findViewById(R.id.button_mdp_oublié);
-        MdpOublie.setOnClickListener(new View.OnClickListener() {
+        buttonMdp = findViewById(R.id.button_mdp_oublié);
+        buttonMdp.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v2) {
-                Intent intent2 = new Intent(B_PageConnexion.this,mdp_oublie.class);
-                startActivity(intent2);
+            public void onClick(View view) {
+                setButtonMdp();
             }
         });
+
+
 
         // BOUTON POUR VALIDER ( s'active seulement si tous les champs sont remplis )
         EditText idt = findViewById(R.id.identifiant);
@@ -69,5 +74,17 @@ public class B_PageConnexion extends AppCompatActivity {
 
         idt.addTextChangedListener(formulaireValidationWatcher);
         mdp.addTextChangedListener(formulaireValidationWatcher);
+    }
+
+    private void setButtonCompte() {
+        Intent switchActivityIntent = new Intent(this, creation_compte.class);
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
+    }
+
+    private void setButtonMdp() {
+        Intent switchActivityIntent = new Intent(this, mdp_oublie.class);
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
     }
 }
