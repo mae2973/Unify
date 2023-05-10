@@ -77,7 +77,7 @@ public class B_PageConnexion extends AppCompatActivity {
     }
 
     private void setButtonCompte() {
-        Intent switchActivityIntent = new Intent(this, creation_compte.class);
+        Intent switchActivityIntent = new Intent(this, D_creation_compte.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }

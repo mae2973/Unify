@@ -35,7 +35,7 @@ public class mdp_oublie extends AppCompatActivity {
         });
 }
     private void setButtonValider() {
-        Intent switchActivityIntent = new Intent(this, mail_envoye.class);
+        Intent switchActivityIntent = new Intent(this, D_mail_envoye.class);
         // destination à modif une fois qu'on aura les bons trucs avec les fragments
         startActivity(switchActivityIntent);
         this.finish();

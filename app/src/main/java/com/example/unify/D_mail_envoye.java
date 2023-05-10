@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class mail_envoye extends AppCompatActivity {
+public class D_mail_envoye extends AppCompatActivity {
 
     Button buttonValider;
 

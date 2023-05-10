@@ -18,7 +18,7 @@
             android:name=".mdp_oublie"
             android:exported="true" />
         <activity
-            android:name=".mail_envoye"
+            android:name=".D_mail_envoye"
             android:exported="true" />
         <activity
             android:name=".C_Participants_TODO"
@@ -27,7 +27,7 @@
             android:name=".MenuSuggestionsPart"
             android:exported="true" />
         <activity
-            android:name=".creation_compte"
+            android:name=".D_creation_compte"
             android:exported="true" />
         <activity
             android:name=".modif_compte"
