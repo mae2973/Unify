@@ -15,7 +15,7 @@ public class mdp_oublie extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mdp_oublie);
+        setContentView(R.layout.d_mdp_oublie);
 
         buttonValider = findViewById(R.id.button_validation);
         buttonValider.setOnClickListener(new View.OnClickListener() {

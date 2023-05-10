@@ -1,6 +1,5 @@
 package com.example.unify;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +15,7 @@ public class overlay_changer_mdp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.overlay_changer_mdp);
+        setContentView(R.layout.d_changer_mdp);
 
         buttonValider = findViewById(R.id.valid);
         buttonValider.setOnClickListener(new View.OnClickListener() {
