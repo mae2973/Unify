@@ -30,6 +30,7 @@ public class mail_envoye extends AppCompatActivity {
         Intent switchActivityIntent = new Intent(this, overlay_changer_mdp.class);
         // destination à modif une fois qu'on aura les bons trucs avec les fragments
         startActivity(switchActivityIntent);
+        this.finish();
         overridePendingTransition(0, 0);
     }
 }

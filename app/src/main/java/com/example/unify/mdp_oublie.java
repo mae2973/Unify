@@ -38,13 +38,12 @@ public class mdp_oublie extends AppCompatActivity {
         Intent switchActivityIntent = new Intent(this, mail_envoye.class);
         // destination à modif une fois qu'on aura les bons trucs avec les fragments
         startActivity(switchActivityIntent);
+        this.finish();
         overridePendingTransition(0, 0);
     }
 
     private void setButtonAnnuler() {
-        Intent switchActivityIntent = new Intent(this, B_PageConnexion.class);
-        // destination à modif une fois qu'on aura les bons trucs avec les fragments
-        startActivity(switchActivityIntent);
+        this.finish();
         overridePendingTransition(0, 0);
     }
 }
