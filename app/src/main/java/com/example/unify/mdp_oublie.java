@@ -9,18 +9,42 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class mdp_oublie extends AppCompatActivity {
 
+    Button buttonValider;
+
+    Button buttonAnnuler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mdp_oublie);
 
+        buttonValider = findViewById(R.id.button_validation);
+        buttonValider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonValider();
+            }
+        });
 
-    Button button_validation = (Button)findViewById(R.id.button_validation);
 
-    button_validation.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            startActivity(new Intent(mdp_oublie.this, mail_envoye.class));
-        }
-    });
-}}
+        buttonAnnuler = findViewById(R.id.button_validation);
+        buttonAnnuler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonAnnuler();
+            }
+        });
+}
+    private void setButtonValider() {
+        Intent switchActivityIntent = new Intent(this, mail_envoye.class);
+        // destination à modif une fois qu'on aura les bons trucs avec les fragments
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
+    }
+
+    private void setButtonAnnuler() {
+        Intent switchActivityIntent = new Intent(this, B_PageConnexion.class);
+        // destination à modif une fois qu'on aura les bons trucs avec les fragments
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
+    }
+}
