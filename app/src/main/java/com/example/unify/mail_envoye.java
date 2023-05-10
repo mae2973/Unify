@@ -14,7 +14,7 @@ public class mail_envoye extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mail_envoye);
+        setContentView(R.layout.d_mail_envoye);
 
 
         buttonValider = findViewById(R.id.button_validation);
