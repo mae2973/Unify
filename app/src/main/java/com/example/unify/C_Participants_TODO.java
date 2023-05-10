@@ -6,14 +6,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.unify.databinding.ActivityParticipantsBinding;
+import com.example.unify.databinding.CParticipantsBinding;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class C_Participants_TODO extends AppCompatActivity {
 
-    ActivityParticipantsBinding binding;
+    CParticipantsBinding binding;
     List<String> itemList;
     ItemAdapter itemAdapter;
     RecyclerView recyclerView;
@@ -22,7 +22,7 @@ public class C_Participants_TODO extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityParticipantsBinding.inflate(getLayoutInflater());
+        binding = CParticipantsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
