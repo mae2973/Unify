@@ -1,39 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:padding="20dp">
 
-    <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:scaleType="centerCrop"
-        android:id="@+id/grid_image"
-        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/initiales"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="P1"
-        android:textColor="@color/white"
-        android:textSize="43dp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/item_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Prénom1 Nom1"
-        android:textColor="@color/white"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="102dp"
-        android:textSize="14dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="wrap_content" >
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/item_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prénom1"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            android:layout_below="@+id/initiales"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/item_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nom1"
+            android:textSize="9sp"
+            android:layout_below="@+id/initiales"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/grid_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/fond" />
+
+        <TextView
+            android:id="@+id/initiales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="P1"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

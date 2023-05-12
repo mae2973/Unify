@@ -1,79 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Unify"
-        tools:targetApi="31">
-        <activity
-            android:name=".B_ConnexionSpotifyCrea"
-            android:exported="true"
-            android:label="@string/title_activity_connexion_spotify_opt_withconstraints"
-            android:theme="@style/Theme.Unify.NoActionBar" />
-        <activity
-            android:name=".D_MdpOublie"
-            android:exported="true" />
-        <activity
-            android:name=".D_MailEnvoye"
-            android:exported="true" />
-        <activity
-            android:name=".C_Participants_TODO"
-            android:exported="true" />
-        <activity
-            android:name=".MenuSuggestionsPart"
-            android:exported="true" />
-        <activity
-            android:name=".D_CreationCompte"
-            android:exported="true" />
-        <activity
-            android:name=".modif_compte"
-            android:exported="true" />
-        <activity
-            android:name=".D_ChangerMdp"
-            android:exported="true" />
-        <activity
-            android:name=".overlay_settings_guest"
-            android:exported="true" />
-        <activity
-            android:name=".overlay_settings_host"
-            android:exported="true" />
-        <activity
-            android:name=".B_RejoindreSalon"
-            android:exported="true" />
-        <activity
-            android:name=".B_ChoixTypeSalon"
-            android:exported="true" />
-        <activity
-            android:name=".B_ConnexionSpotifyUser"
-            android:exported="true" />
-        <activity
-            android:name=".InterfacePrincipale"
-            android:exported="true" />
-        <activity
-            android:name=".SalonSpotify"
-            android:exported="true" />
-        <activity
-            android:name=".A_SplashScreen"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.Unify"
+    tools:targetApi="31">
+    <activity
+        android:name=".OverlayModifCompte2"
+        android:exported="true"
+        android:label="@string/title_activity_overlay_modif_compte2"
+        android:theme="@style/Theme.Unify.NoActionBar" />
+    <activity
+        android:name=".OverlayMdpOublie2"
+        android:exported="true"
+        android:label="@string/title_activity_overlay_mdp_oublie2"
+        android:theme="@style/Theme.Unify.NoActionBar" />
+    <activity
+        android:name=".OverlayMailEnvoye2"
+        android:exported="true"
+        android:label="@string/title_activity_overlay_mail_envoye2"
+        android:theme="@style/Theme.Unify.NoActionBar" />
+    <activity
+        android:name=".activity_connexion_spotify_opt_withconstraints"
+        android:exported="true"
+        android:label="@string/title_activity_connexion_spotify_opt_withconstraints"
+        android:theme="@style/Theme.Unify.NoActionBar" />
+    <activity
+        android:name=".mdp_oublie"
+        android:exported="true" />
+    <activity
+        android:name=".mail_envoye"
+        android:exported="true" />
+    <activity
+        android:name=".Participants"
+        android:exported="true" />
+    <activity
+        android:name=".MenuSuggestionsPart"
+        android:exported="true" />
+    <activity
+        android:name=".CreationCompte"
+        android:exported="true" />
+    <activity
+        android:name=".ModifCompte"
+        android:exported="true" />
+    <activity
+        android:name=".OverlayChangerMdp"
+        android:exported="true" />
+    <activity
+        android:name=".OverlaySettingsGuest"
+        android:exported="true" />
+    <activity
+        android:name=".OverlaySettingsHost"
+        android:exported="true" />
+    <activity
+        android:name=".ConnexionSalon"
+        android:exported="true" />
+    <activity
+        android:name=".ChoixTypeSalon"
+        android:exported="true" />
+    <activity
+        android:name=".InterfacePrincipale"
+        android:exported="true" />
+    <activity
+        android:name=".InterfacePrincipaleInvite"
+        android:exported="true" />
+    <activity
+        android:name=".SalonSpotify"
+        android:exported="true" />
+    <activity
+        android:name=".SplashScreen"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".B_PageConnexion"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Unify.NoActionBar"/>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
 
-    </application>
+        <!-- Ajout de naviguation -->
+       <!--  <nav-graph android:value="@navigation/navigation" />  -->
+
+    </activity>
+
+    <activity
+        android:name=".PageConnexion"
+        android:exported="true" />
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        android:label="@string/title_activity_main"
+        android:theme="@style/Theme.Unify.NoActionBar" />
+
+</application>
 
 </manifest>
+
+

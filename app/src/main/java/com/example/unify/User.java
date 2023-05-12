@@ -1,8 +1,8 @@
 package com.example.unify;
 
 public class User {
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -14,12 +14,9 @@ public class User {
         return this.lastName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    // Initiale du participant
+    public String getFirstLetter() {
+        return String.valueOf(this.firstName.charAt(0));
     }
 
 }

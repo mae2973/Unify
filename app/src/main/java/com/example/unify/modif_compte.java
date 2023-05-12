@@ -9,6 +9,6 @@ public class modif_compte extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d_modif_compte);
+        setContentView(R.layout.modif_compte);
     }
 }

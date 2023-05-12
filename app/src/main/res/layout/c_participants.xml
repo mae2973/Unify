@@ -19,35 +19,71 @@
 
      <ImageView
         android:id="@+id/imageView32"
-        android:layout_width="77dp"
-        android:layout_height="74dp"
-        app:layout_constraintEnd_toStartOf="@+id/include"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/include"
-        app:srcCompat="@drawable/logo_1"
-        tools:layout_editor_absoluteY="638dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_1" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
         android:text="Participants"
         android:textColor="@color/white"
         android:textSize="40dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/include"
-        app:layout_constraintStart_toEndOf="@+id/include"
-        tools:layout_editor_absoluteY="95dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <GridView
         android:id="@+id/gridView"
-        android:layout_width="360dp"
-        android:layout_height="443dp"
+        android:layout_width="358dp"
+        android:layout_height="469dp"
+        android:layout_marginTop="157dp"
         android:numColumns="3"
-        app:layout_constraintEnd_toStartOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/include"
-        tools:layout_editor_absoluteY="185dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="Quitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/fleche_droit" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:contentDescription="Paramètres"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/parametres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:contentDescription="Plus d'actions"
+        android:layout_width="103dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bouton_ajoutp" />
 
     <LinearLayout
         android:layout_width="match_parent"
