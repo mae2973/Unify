@@ -63,7 +63,7 @@
         app:layout_constraintVertical_bias="0.112" />
 
     <EditText
-        android:id="@+id/identifiant"
+        android:id="@+id/identifiant_connexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -113,7 +113,7 @@
     <!-- aligner mdp oublie -->
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/mdp_saisi_user"
         android:layout_width="233dp"
         android:layout_height="48dp"
         android:layout_marginTop="397dp"
