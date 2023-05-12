@@ -1,22 +1,16 @@
 package com.example.unify;
 
-import static android.content.ContentValues.TAG;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -26,9 +20,6 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.WriteBatch;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class B_PageConnexion extends AppCompatActivity {
     Button buttonCompte;
     Button buttonMdp;
@@ -37,7 +28,7 @@ public class B_PageConnexion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page_connexion);
+        setContentView(R.layout.d_page_connexion);
 
         db = FirebaseFirestore.getInstance();
 
@@ -106,13 +97,13 @@ public class B_PageConnexion extends AppCompatActivity {
     }
 
     private void setButtonCompte() {
-        Intent switchActivityIntent = new Intent(this, D_creation_compte.class);
+        Intent switchActivityIntent = new Intent(this, D_CreationCompte.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
 
     private void setButtonMdp() {
-        Intent switchActivityIntent = new Intent(this, mdp_oublie.class);
+        Intent switchActivityIntent = new Intent(this, D_MdpOublie.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }

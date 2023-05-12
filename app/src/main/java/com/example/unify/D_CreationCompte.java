@@ -19,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class D_creation_compte extends AppCompatActivity {
+public class D_CreationCompte extends AppCompatActivity {
 
     Button buttonValider;
     Button buttonAnnuler;
@@ -27,7 +27,7 @@ public class D_creation_compte extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.creation_compte);
+        setContentView(R.layout.d_creation_compte);
 
         buttonValider = findViewById(R.id.valid);
 
@@ -61,7 +61,7 @@ public class D_creation_compte extends AppCompatActivity {
                 String mail = mail2.getText().toString().trim();
                 String mdp = mdp2.getText().toString().trim();
                 String conf_mdp = confirm_mdp2.getText().toString().trim();
-                buttonValider.setEnabled(!nom.isEmpty() && !prenom.isEmpty() && !id.isEmpty() && !mail.isEmpty() && !mdp.isEmpty() && !conf_mdp.isEmpty());
+                buttonValider.setEnabled(!nom.isEmpty() && !prenom.isEmpty() && !id.isEmpty() && !mail.isEmpty() && !mdp.isEmpty() && !conf_mdp.isEmpty() && mdp.equals(conf_mdp));
             }
 
             @Override
@@ -117,7 +117,7 @@ public class D_creation_compte extends AppCompatActivity {
                             }
                         });
 
-                Intent switchActivityIntent = new Intent(D_creation_compte.this, B_PageConnexion.class);
+                Intent switchActivityIntent = new Intent(D_CreationCompte.this, B_PageConnexion.class);
                 startActivity(switchActivityIntent);
                 overridePendingTransition(0, 0);
             }

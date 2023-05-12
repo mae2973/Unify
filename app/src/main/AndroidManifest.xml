@@ -15,10 +15,10 @@
             android:label="@string/title_activity_connexion_spotify_opt_withconstraints"
             android:theme="@style/Theme.Unify.NoActionBar" />
         <activity
-            android:name=".mdp_oublie"
+            android:name=".D_MdpOublie"
             android:exported="true" />
         <activity
-            android:name=".D_mail_envoye"
+            android:name=".D_MailEnvoye"
             android:exported="true" />
         <activity
             android:name=".C_Participants_TODO"
@@ -27,13 +27,13 @@
             android:name=".MenuSuggestionsPart"
             android:exported="true" />
         <activity
-            android:name=".D_creation_compte"
+            android:name=".D_CreationCompte"
             android:exported="true" />
         <activity
             android:name=".modif_compte"
             android:exported="true" />
         <activity
-            android:name=".overlay_changer_mdp"
+            android:name=".D_ChangerMdp"
             android:exported="true" />
         <activity
             android:name=".overlay_settings_guest"

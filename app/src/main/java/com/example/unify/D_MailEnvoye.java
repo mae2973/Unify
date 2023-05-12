@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class D_mail_envoye extends AppCompatActivity {
+public class D_MailEnvoye extends AppCompatActivity {
 
     Button buttonValider;
 
@@ -28,7 +28,7 @@ public class D_mail_envoye extends AppCompatActivity {
 
     private void setButtonValider() {
         // TODO avant le changement de fenetre, vérifier que le numéro rentrer par le mec est celui recu par mail
-        Intent switchActivityIntent = new Intent(this, overlay_changer_mdp.class);
+        Intent switchActivityIntent = new Intent(this, D_ChangerMdp.class);
         // destination à modif une fois qu'on aura les bons trucs avec les fragments
         startActivity(switchActivityIntent);
         this.finish();
