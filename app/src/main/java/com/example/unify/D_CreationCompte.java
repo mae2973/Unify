@@ -71,9 +71,7 @@ public class D_CreationCompte extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FirebaseFirestore db = FirebaseFirestore.getInstance();
-                String documentName = "user5";
-                // Accédez à la collection et créez le document avec le nom choisi
-                DocumentReference documentRef = db.collection("user").document(documentName);
+                //String documentName = "user5";
 
                 EditText nom = findViewById(R.id.nom_user);
                 String nom_text = nom.getText().toString();
@@ -92,6 +90,9 @@ public class D_CreationCompte extends AppCompatActivity {
 
                // EditText conf_mdp = findViewById(R.id.confirm_mdp_user);
                 //String conf_mdp_text = mdp.getText().toString();
+                // Accédez à la collection et créez le document avec le nom choisi
+                String documentName = id_text;
+                DocumentReference documentRef = db.collection("user").document(documentName);
 
                 // Créez les données à ajouter au document
                 Map<String, Object> data = new HashMap<>();
