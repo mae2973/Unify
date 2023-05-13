@@ -28,7 +28,7 @@
 
 
             <Button
-                android:id="@+id/Mon_compte"
+                android:id="@+id/mon_compte"
                 android:layout_width="wrap_content"
                 android:layout_height="43dp"
                 android:layout_marginLeft="235dp"
