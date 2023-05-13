@@ -4,21 +4,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.google.firebase.firestore.WriteBatch;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class B_PageConnexion extends AppCompatActivity {
     Button buttonCompte;
@@ -80,14 +81,15 @@ public class B_PageConnexion extends AppCompatActivity {
                 EditText mdp_saisi = findViewById(R.id.mdp_saisi_user);
                 String mdp_text = mdp_saisi.getText().toString();
 
+
                 // Vérifier si le mot de passe correspond à l'identifiant
                 if (verifierMotDePasse(id_text, mdp_text)) {
                     // Mot de passe correct, autoriser le passage à la page suivante
-                    Intent intent = new Intent(B_PageConnexion.this, B_ChoixTypeSalon.class);
-                    startActivity(intent);
+                    //Intent intent = new Intent(B_PageConnexion.this, B_ChoixTypeSalon.class);
+                    //startActivity(intent);
                 } else {
                     // Mot de passe incorrect, afficher un message d'erreur
-                    Toast.makeText(B_PageConnexion.this, "Identifiant ou mot de passe incorrect", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(B_PageConnexion.this, "Identifiant ou mot de passe incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -108,42 +110,69 @@ public class B_PageConnexion extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
-    private boolean verifierMotDePasse(String identifiant, String motDePasse) {
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private boolean verifierMotDePasse(String identifiant, String password) {
 
+        AtomicBoolean value = new AtomicBoolean(false);
         // Effectuer la requête pour obtenir le document correspondant à l'identifiant
+
         db.collection("user")
                 .whereEqualTo("identifiant", identifiant)
                 .get()
-                .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
-                        QuerySnapshot querySnapshot = task.getResult();
-                        if (querySnapshot != null && !querySnapshot.isEmpty()) {
-                            // Le document utilisateur correspondant à l'identifiant existe
-                            DocumentSnapshot documentSnapshot = querySnapshot.getDocuments().get(0);
-                            String motDePasseStocke = documentSnapshot.getString("motDePasse");
-
-                            if (motDePasseStocke != null && motDePasseStocke.equals(motDePasse)) {
-                                // Mot de passe correct
-                                // Autoriser le passage à la page suivante ici
-                                // ...
-                            } else {
-                                // Mot de passe incorrect
-                                // Afficher un message d'erreur ici
-                                // ...
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            QuerySnapshot result = task.getResult();
+                            Log.d("Firebase", "Number of documents: " + result.size());
+                            for (QueryDocumentSnapshot document : result) {
+                                String storedPassword = document.getString("mdp");
+                                if (password.equals(storedPassword)) {
+                                    // Password is correct
+                                    // Log in the user or do something else
+                                    //Toast.makeText(B_PageConnexion.this, "Correct",
+                                    //        Toast.LENGTH_SHORT).show();
+                                    Log.d("Firebase", "Connexion established");
+                                    Intent intent = new Intent(B_PageConnexion.this, B_ChoixTypeSalon.class);
+                                    startActivity(intent);
+                                } else {
+                                    // Password is incorrect
+                                    Toast.makeText(B_PageConnexion.this, "Incorrect password.",
+                                            Toast.LENGTH_SHORT).show();
+                                    Log.d("Firebase", "Incorrect password.");
+                                }
                             }
+
+                            // Toast.makeText(B_PageConnexion.this, "Debug",
+                            //        Toast.LENGTH_SHORT).show();
                         } else {
-                            // Aucun document utilisateur trouvé avec l'identifiant donné
-                            // Afficher un message d'erreur ici
-                            // ...
+                            // Log the error
+                            // Log.d(TAG, "Error getting documents: ", task.getException());
+                            Toast.makeText(B_PageConnexion.this, "Error getting documents: ",
+                                    Toast.LENGTH_SHORT).show();
                         }
-                    } else {
-                        // Une erreur s'est produite lors de la récupération du document utilisateur
-                        // Afficher un message d'erreur ici
-                        // ...
                     }
                 });
+        /*FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        return false; // Retourner une valeur par défaut
-}
+        db.collection("user")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Log.d(TAG, document.getId() + " => " + document.getData());
+                            }
+                        } else {
+                            Log.w(TAG, "Error getting documents.", task.getException());
+                        }
+                    }
+                });*/
+
+
+
+
+
+        return value.get(); // Retourner une valeur par défaut
+    }
 }
