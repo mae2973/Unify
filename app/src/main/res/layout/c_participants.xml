@@ -57,18 +57,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="40dp"
+        android:id="@+id/versMusique"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:padding="50dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="43dp"
         android:contentDescription="Quitter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/fleche_droit" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/parametrePart"
         android:contentDescription="Paramètres"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -79,7 +80,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/plus"
         android:contentDescription="Plus d'actions"
         android:layout_width="103dp"
         android:layout_height="83dp"

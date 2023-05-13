@@ -14,7 +14,7 @@ public class GridAdaptater extends BaseAdapter {
 
     private Context context;
     private ArrayList<GridItem> participant;
-    private LayoutInflater inflater ;
+    private LayoutInflater inflater;
 
     public GridAdaptater(Context context, ArrayList<GridItem> participant, LayoutInflater inflater) {
         this.context = context;
@@ -45,7 +45,21 @@ public class GridAdaptater extends BaseAdapter {
         ImageView im = view.findViewById(R.id.grid_image);
         TextView p = view.findViewById(R.id.item_firstname);
         TextView n = view.findViewById(R.id.item_lastname);
+        TextView i = view.findViewById(R.id.initiale);
 
+        GridItem item = getItem(position);
+
+        im.setImageResource(item.getIcone());
+        p.setText(item.getUser().getFirstName());
+        n.setText(item.getUser().getLastName());
+        i.setText(item.getUser().getFirstLetter());
+
+        return view;
+    }
+}
+
+
+        /*
         // Récupération de l'objet GridItem correspondant à cette position
         GridItem item = getItem(position);
 
