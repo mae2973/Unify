@@ -26,6 +26,8 @@ public class B_PageConnexion extends AppCompatActivity {
     Button buttonMdp;
     FirebaseFirestore db;
 
+    private String identifiant;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,23 +78,15 @@ public class B_PageConnexion extends AppCompatActivity {
             @Override
             public void onClick(View v3) {
                 EditText id_saisi = findViewById(R.id.identifiant_connexion);
-                String id_text = id_saisi.getText().toString();
+                identifiant = id_saisi.getText().toString(); // Assigner l'identifiant à la variable membre
 
                 EditText mdp_saisi = findViewById(R.id.mdp_saisi_user);
                 String mdp_text = mdp_saisi.getText().toString();
 
-
-                // Vérifier si le mot de passe correspond à l'identifiant
-                if (verifierMotDePasse(id_text, mdp_text)) {
-                    // Mot de passe correct, autoriser le passage à la page suivante
-                    //Intent intent = new Intent(B_PageConnexion.this, B_ChoixTypeSalon.class);
-                    //startActivity(intent);
-                } else {
-                    // Mot de passe incorrect, afficher un message d'erreur
-                    //Toast.makeText(B_PageConnexion.this, "Identifiant ou mot de passe incorrect", Toast.LENGTH_SHORT).show();
-                }
+                verifierMotDePasse(identifiant,mdp_text);
             }
         });
+
 
         idt.addTextChangedListener(formulaireValidationWatcher);
         mdp.addTextChangedListener(formulaireValidationWatcher);
@@ -133,6 +127,7 @@ public class B_PageConnexion extends AppCompatActivity {
                                     //        Toast.LENGTH_SHORT).show();
                                     Log.d("Firebase", "Connexion established");
                                     Intent intent = new Intent(B_PageConnexion.this, B_ChoixTypeSalon.class);
+                                    intent.putExtra("identifiant", identifiant); // Passer l'identifiant à la page suivante
                                     startActivity(intent);
                                 } else {
                                     // Password is incorrect
@@ -152,22 +147,6 @@ public class B_PageConnexion extends AppCompatActivity {
                         }
                     }
                 });
-        /*FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-        db.collection("user")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                Log.d(TAG, document.getId() + " => " + document.getData());
-                            }
-                        } else {
-                            Log.w(TAG, "Error getting documents.", task.getException());
-                        }
-                    }
-                });*/
 
 
 

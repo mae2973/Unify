@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,22 +16,6 @@ public class overlay_param_accueil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.param_accueil);
-
-        // Dans la méthode onCreate() ou onResume() de votre activité overlay_param_accueil
-        Intent intent = getIntent();
-
-// Vérifiez si l'intention contient l'extra avec la clé spécifiée
-        if (intent.hasExtra("INTENT_EXTRA")) {
-            // Récupérez l'Intent supplémentaire en tant qu'extra
-            Intent autreIntent = intent.getParcelableExtra("INTENT_EXTRA");
-
-            // Vérifiez si l'Intent supplémentaire contient l'extra avec la clé spécifiée
-            if (autreIntent.hasExtra("IDENTIFIANT_EXTRA")) {
-                // Récupérez l'identifiant de l'Intent supplémentaire
-                String identifiant = autreIntent.getStringExtra("IDENTIFIANT_EXTRA");
-
-            }
-        }
 
         buttonDeco = findViewById(R.id.deco);
         buttonDeco.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +32,6 @@ public class overlay_param_accueil extends AppCompatActivity {
                 setButtonCompte();
             }
         });
-
     }
 
     private void setButtonDeco() {
@@ -72,5 +54,4 @@ public class overlay_param_accueil extends AppCompatActivity {
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
-
 }
