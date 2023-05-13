@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="P1"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="30dp"
             tools:layout_editor_absoluteX="20dp"
             tools:layout_editor_absoluteY="16dp" />
@@ -38,12 +38,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/initiale"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="0dp"
             android:layout_marginTop="50dp"
             android:layout_weight="1"
             android:text="Prenom1"
-            android:textColor="@color/black"
-            android:textSize="9sp" />
+            android:textColor="@color/white"
+            android:textSize="10sp" />
 
         <TextView
             android:id="@+id/item_lastname"
@@ -51,11 +51,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Nom1"
-            android:textSize="9sp"
+            android:textSize="10sp"
             android:layout_below="@+id/initiale"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="45dp"
-            android:textColor="@color/black"/>
+            android:layout_marginLeft="42dp"
+            android:textColor="@color/white"/>
 
     </RelativeLayout>
 

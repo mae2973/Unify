@@ -1,9 +1,12 @@
 package com.example.unify;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.ListAdapter;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +15,8 @@ import java.util.ArrayList;
 
 
 public class Participants extends AppCompatActivity {
+
+    ImageButton flechedroite;
 
     private ArrayList<GridItem> liste_participants = new ArrayList<>();
     private LayoutInflater inflater ;
@@ -22,18 +27,50 @@ public class Participants extends AppCompatActivity {
         setContentView(R.layout.c_participants);
         // setContentView(binding.getRoot());
 
+        flechedroite = findViewById(R.id.versMusique);
+
+        flechedroite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setFlechedroite();
+            }
+        });
+
         inflater = getLayoutInflater();
 
         ajouterParticipant("Lucrece","Fodouop",R.drawable.icone) ;
-        ajouterParticipant("Lu","Fo",R.drawable.icone) ;
+        ajouterParticipant("Luqahd","Foaqkj",R.drawable.icone) ;
+        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("Luqahd","Foaqkj",R.drawable.icone) ;
+        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("zqsf,nahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("zqsf,nnzahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("zqkefnjkzahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
+
+
+
 
         GridView grid = findViewById(R.id.gridView) ;
         grid.setAdapter(new GridAdaptater(this,liste_participants,inflater));
 
     }
 
-    private void ajouterParticipant(String nom, String prenom, int drawableId) {
-        GridItem g = new GridItem(nom, prenom, drawableId);
+
+    private void setFlechedroite() {
+        Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
+    }
+
+
+    private void ajouterParticipant(String prenom, String nom, int drawableId) {
+        User user = new User(prenom, nom);
+        GridItem g = new GridItem(user, drawableId);
         liste_participants.add(g);
 
     }
