@@ -57,6 +57,10 @@
             android:name=".overlay_settings_host"
             android:exported="true" />
         <activity
+            android:name=".overlay_param_accueil"
+            android:exported="true" />
+
+        <activity
             android:name=".B_PageConnexion"
             android:exported="true" />
         <activity

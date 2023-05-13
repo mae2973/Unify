@@ -32,8 +32,7 @@ public class mon_compte extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-       // String identifiant = intent.getStringExtra("IDENTIFIANT_EXTRA");
-        String identifiant="klaiman";
+       String identifiant = intent.getStringExtra("IDENTIFIANT_EXTRA");
 
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
