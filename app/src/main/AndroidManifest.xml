@@ -10,30 +10,15 @@
         android:theme="@style/Theme.Unify"
         tools:targetApi="31">
         <activity
-            android:name=".overlay_modif_compte2"
-            android:exported="true"
-            android:label="@string/title_activity_overlay_modif_compte2"
-            android:theme="@style/Theme.Unify.NoActionBar" />
-        <activity
-            android:name=".overlay_mdp_oublie2"
-            android:exported="true"
-            android:label="@string/title_activity_overlay_mdp_oublie2"
-            android:theme="@style/Theme.Unify.NoActionBar" />
-        <activity
-            android:name=".overlay_mail_envoye2"
-            android:exported="true"
-            android:label="@string/title_activity_overlay_mail_envoye2"
-            android:theme="@style/Theme.Unify.NoActionBar" />
-        <activity
             android:name=".B_ConnexionSpotifyCrea"
             android:exported="true"
             android:label="@string/title_activity_connexion_spotify_opt_withconstraints"
             android:theme="@style/Theme.Unify.NoActionBar" />
         <activity
-            android:name=".mdp_oublie"
+            android:name=".D_MdpOublie"
             android:exported="true" />
         <activity
-            android:name=".mail_envoye"
+            android:name=".D_MailEnvoye"
             android:exported="true" />
         <activity
             android:name=".C_Participants_TODO"
@@ -42,13 +27,13 @@
             android:name=".MenuSuggestionsPart"
             android:exported="true" />
         <activity
-            android:name=".creation_compte"
+            android:name=".D_CreationCompte"
             android:exported="true" />
         <activity
             android:name=".modif_compte"
             android:exported="true" />
         <activity
-            android:name=".overlay_changer_mdp"
+            android:name=".D_ChangerMdp"
             android:exported="true" />
         <activity
             android:name=".overlay_settings_guest"

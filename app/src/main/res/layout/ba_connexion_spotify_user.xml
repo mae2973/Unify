@@ -122,13 +122,30 @@
         android:layout_height="39dp"
         android:layout_marginStart="261dp"
         android:layout_marginBottom="195dp"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/bouton_annuler"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Passer"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <!--<EditText
+        android:id="@+id/boutton_passer_spotify_opt"
+        android:layout_width="70dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="261dp"
+        android:layout_marginBottom="195dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="none"
+        android:enabled="false"
+        android:text="Passer"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="497dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>-->
 
     <ImageView
         android:id="@+id/imageView22"
