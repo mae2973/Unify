@@ -10,8 +10,8 @@ import com.spotify.sdk.android.auth.AuthorizationRequest;
 import com.spotify.sdk.android.auth.AuthorizationResponse;
 
 public class AuthenticationActivity extends AppCompatActivity {
-    private static final String CLIENT_ID = "your_client_id";
-    private static final String REDIRECT_URI = "your_redirect_uri";
+    private static final String CLIENT_ID = "9ef8387d89894e118397248505847c47";
+    private static final String REDIRECT_URI = "unify://callback";
     private static final int REQUEST_CODE = 1337;
 
     @Override
