@@ -2,46 +2,42 @@ package com.example.unify;
 
 import android.os.Bundle;
 
-import android.widget.AdapterView.OnItemClickListener;
+import android.view.LayoutInflater;
 import android.widget.GridView;
-import com.example.unify.GridItem;
-import com.example.unify.GridAdapter;
+import android.widget.ListAdapter;
+
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.unify.databinding.ActivityParticipantsBinding;
+import com.example.unify.databinding.CParticipantsBinding;
 import java.util.ArrayList;
 
 
 public class Participants extends AppCompatActivity {
 
-    ActivityParticipantsBinding binding;
-    GridView grille ;
-    ArrayList<GridItem> liste_participants;
-
-
-
+    private ArrayList<GridItem> liste_participants = new ArrayList<>();
+    private LayoutInflater inflater ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // binding = ActivityParticipantsBinding.inflate(getLayoutInflater());
-        setContentView(R.layout.activity_participants);
-       // setContentView(binding.getRoot());
+        // binding = ActivityParticipantsBinding.inflate(getLayoutInflater());
+        setContentView(R.layout.c_participants);
+        // setContentView(binding.getRoot());
 
-        grille = findViewById(R.id.gridView);
-        liste_participants = new ArrayList<>();
+        inflater = getLayoutInflater();
 
-        GridItem nouvelItem = new GridItem("P", "Prénom", "Nom");
-        ajouter_element_grille(nouvelItem);
+        ajouterParticipant("Lucrece","Fodouop",R.drawable.icone) ;
+        ajouterParticipant("Lu","Fo",R.drawable.icone) ;
+
+        GridView grid = findViewById(R.id.gridView) ;
+        grid.setAdapter(new GridAdaptater(this,liste_participants,inflater));
+
     }
 
+    private void ajouterParticipant(String nom, String prenom, int drawableId) {
+        GridItem g = new GridItem(nom, prenom, drawableId);
+        liste_participants.add(g);
 
-
-    public void ajouter_element_grille (GridItem item)  {
-        this.liste_participants.add(item) ;
-        GridAdapter adapter = new GridAdapter(this,0,liste_participants) ;
-        grille.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
     }
-
+}
 
 
 
@@ -87,7 +83,6 @@ public class Participants extends AppCompatActivity {
 
 
 
-    }
 
 
 

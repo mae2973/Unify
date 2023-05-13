@@ -13,40 +13,17 @@
         android:layout_height="wrap_content" >
 
 
-        <TextView
-            android:id="@+id/item_firstname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Prénom1"
-            android:textColor="@color/black"
-            android:textSize="9sp"
-            android:layout_below="@+id/initiales"
-            android:layout_marginTop="20dp"
-
-            />
-
-        <TextView
-            android:id="@+id/item_lastname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Nom1"
-            android:textSize="9sp"
-            android:layout_below="@+id/initiales"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="40dp"
-            android:textColor="@color/black"/>
 
         <ImageView
             android:id="@+id/grid_image"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/fond" />
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/icone" />
 
         <TextView
-            android:id="@+id/initiales"
+            android:id="@+id/initiale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -55,6 +32,30 @@
             android:textSize="30dp"
             tools:layout_editor_absoluteX="20dp"
             tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/item_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/initiale"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:text="Prenom1"
+            android:textColor="@color/black"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/item_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nom1"
+            android:textSize="9sp"
+            android:layout_below="@+id/initiale"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="45dp"
+            android:textColor="@color/black"/>
 
     </RelativeLayout>
 

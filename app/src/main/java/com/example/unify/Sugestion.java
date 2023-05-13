@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 // Adaptation pour la classe MenuSuggestionPart
-public class Sugestion extends RecyclerView.Adapter<MyViewHolder> {
+ /*public class Sugestion extends RecyclerView.Adapter<MyViewHolder> {
 
     Context context ;
 
