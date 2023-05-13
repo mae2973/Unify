@@ -59,8 +59,20 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
 
     private void setButtonParametre() {
         Intent switchActivityIntent = new Intent(this, overlay_param_accueil.class);
+
+        // Créez un nouvel Intent à ajouter en tant qu'extra
+        Intent autreIntent = new Intent(this, overlay_param_accueil.class);
+
+        // Supposons que vous avez un identifiant à transmettre
+        String identifiant = "klaiman";
+        autreIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
+        // Ajoutez l'Intent supplémentaire en tant qu'extra à l'Intent principal
+        switchActivityIntent.putExtra("INTENT_EXTRA", autreIntent);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
+
 
 }
