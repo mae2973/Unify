@@ -30,6 +30,7 @@
             android:text="P1"
             android:textColor="@color/white"
             android:textSize="30dp"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="20dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -43,7 +44,7 @@
             android:layout_weight="1"
             android:text="Prenom1"
             android:textColor="@color/white"
-            android:textSize="10sp" />
+            android:textSize="11sp" />
 
         <TextView
             android:id="@+id/item_lastname"
@@ -51,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Nom1"
-            android:textSize="10sp"
+            android:textSize="11sp"
             android:layout_below="@+id/initiale"
             android:layout_marginTop="50dp"
             android:layout_marginLeft="42dp"

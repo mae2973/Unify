@@ -39,7 +39,7 @@
         android:layout_marginTop="84dp"
         android:text="Participants"
         android:textColor="@color/white"
-        android:textSize="40dp"
+        android:textSize="37dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,10 +58,10 @@
 
     <ImageButton
         android:id="@+id/versMusique"
-        android:layout_width="35dp"
-        android:layout_height="40dp"
-        android:padding="50dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="25dp"
+        android:layout_height="38dp"
+        android:padding="40dp"
+        android:layout_marginTop="89dp"
         android:layout_marginEnd="43dp"
         android:contentDescription="Quitter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,7 @@
         android:background="@drawable/fleche_droit" />
 
     <ImageButton
-        android:id="@+id/parametrePart"
+        android:id="@+id/parametrehost1"
         android:contentDescription="Paramètres"
         android:layout_width="50dp"
         android:layout_height="50dp"

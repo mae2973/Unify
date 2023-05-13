@@ -17,6 +17,7 @@ import java.util.ArrayList;
 public class Participants extends AppCompatActivity {
 
     ImageButton flechedroite;
+    ImageButton parametreh1 ;
 
     private ArrayList<GridItem> liste_participants = new ArrayList<>();
     private LayoutInflater inflater ;
@@ -27,7 +28,12 @@ public class Participants extends AppCompatActivity {
         setContentView(R.layout.c_participants);
         // setContentView(binding.getRoot());
 
+
+
+
+        // Boutons
         flechedroite = findViewById(R.id.versMusique);
+        parametreh1 = findViewById(R.id.parametrehost1) ;
 
         flechedroite.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +42,16 @@ public class Participants extends AppCompatActivity {
             }
         });
 
+        parametreh1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setParametreH1();
+            }
+        });
+
+
+
+        // Grid View
         inflater = getLayoutInflater();
 
         ajouterParticipant("Lucrece","Fodouop",R.drawable.icone) ;
@@ -61,13 +77,23 @@ public class Participants extends AppCompatActivity {
     }
 
 
+    // Boutons
     private void setFlechedroite() {
         Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
 
+    private void setParametreH1() {
+        Intent switchActivityIntent = new Intent(this, overlay_settings_host.class);
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
+    }
 
+
+
+
+    // Grid View
     private void ajouterParticipant(String prenom, String nom, int drawableId) {
         User user = new User(prenom, nom);
         GridItem g = new GridItem(user, drawableId);

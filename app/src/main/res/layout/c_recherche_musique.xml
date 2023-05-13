@@ -40,7 +40,8 @@
                 android:text="Rechercher une musique..."
                 android:textSize="17dp"
                 android:textStyle="bold"
-                android:textColor="#B6B6B6"/>
+                android:textColor="#B3B3B3"
+                android:textColorHint="@color/white"/>
 
 
             <ImageView
