@@ -1,6 +1,7 @@
 package com.example.unify;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         // setSupportActionBar(binding.toolbar);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        //NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        //appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+        //NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         //// fab = floating_action_button #AndroidStudioIntelo
         //binding.fab.setOnClickListener(new View.OnClickListener() {
         //    @Override
@@ -53,12 +54,16 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
+
     }
 
 
 
     private void switchActivities() {
-        Intent switchActivityIntent = new Intent(this, B_ChoixTypeSalon.class);
-        startActivity(switchActivityIntent);
+        //Intent switchActivityIntent = new Intent(this, B_ChoixTypeSalon.class);
+        //startActivity(switchActivityIntent);
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("my-app://callback"));
+        startActivity(intent);
+
     }
 }
