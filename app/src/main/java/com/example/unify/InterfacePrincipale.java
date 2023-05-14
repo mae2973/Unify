@@ -82,7 +82,6 @@ ImageButton fleched;
 
     }
 
-
     // Boutons
 
     private void setParametreH2() {
@@ -103,7 +102,6 @@ ImageButton fleched;
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
-
 
 
     // Recyler view
