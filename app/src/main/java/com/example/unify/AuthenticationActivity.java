@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.spotify.android.appremote.api.ConnectionParams;
+import com.spotify.android.appremote.api.Connector;
 import com.spotify.android.appremote.api.SpotifyAppRemote;
 import com.spotify.sdk.android.auth.AuthorizationClient;
 import com.spotify.sdk.android.auth.AuthorizationRequest;
@@ -26,49 +28,39 @@ public class AuthenticationActivity extends AppCompatActivity {
                 AuthorizationResponse.Type.TOKEN,
                 REDIRECT_URI);
 
-        builder.setScopes(new String[]{"streaming"});
+        builder.setScopes(new String[]{"user-read-playback-state", "user-modify-playback-state"});
         AuthorizationRequest request = builder.build();
-        //Log.e("SpotifyAuth", "Auth");
+
         AuthorizationClient.openLoginActivity(this, REQUEST_CODE, request);
-        //Log.e("SpotifyAuth", "Auth");
-        //onStart();
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        //Log.e("SpotifyAuth", "Auth");
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == REQUEST_CODE) {
             AuthorizationResponse response = AuthorizationClient.getResponse(resultCode, data);
 
             switch (response.getType()) {
-                // La réponse a été transformée en token
                 case TOKEN:
-                    // Utilisez le token d'accès pour accéder à l'API Spotify
                     String accessToken = response.getAccessToken();
-
-                    // Vous pouvez maintenant lancer votre activité principale et utiliser le token d'accès
                     Intent intent = new Intent(this, MainActivity.class);
-                    Log.e("SpotifyAuth", "Auth accessToken: " + accessToken);
                     intent.putExtra("accessToken", accessToken);
                     startActivity(intent);
                     finish();
                     break;
 
-                // Auth flow returned an error
                 case ERROR:
                     Log.e("SpotifyAuth", "Auth error: " + response.getError());
                     break;
 
-                // Most likely auth flow was cancelled
                 default:
                     Log.e("SpotifyAuth", "Auth result: " + response.getType());
             }
         }
     }
 
-    /*@Override
+    @Override
     protected void onStart() {
         super.onStart();
         ConnectionParams connectionParams =
@@ -84,14 +76,12 @@ public class AuthenticationActivity extends AppCompatActivity {
                         mSpotifyAppRemote = spotifyAppRemote;
                         Log.d("MainActivity", "Connected! Yay!");
 
-                        // Now you can start interacting with App Remote
                         mSpotifyAppRemote.getPlayerApi().play("spotify:playlist:37i9dQZF1DWZeAduKwuwrr");
                     }
 
                     public void onFailure(Throwable throwable) {
                         Log.e("MainActivity", throwable.getMessage(), throwable);
 
-                        // Something went wrong when attempting to connect! Handle errors here
                     }
                 });
     }
@@ -100,6 +90,6 @@ public class AuthenticationActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         SpotifyAppRemote.disconnect(mSpotifyAppRemote);
-    }*/
+    }
 
 }
