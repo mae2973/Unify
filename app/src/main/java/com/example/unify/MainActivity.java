@@ -1,5 +1,6 @@
 package com.example.unify;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -71,8 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void switchActivities()  {
-        //Intent switchActivityIntent = new Intent(this, B_ChoixTypeSalon.class);
-        //startActivity(switchActivityIntent);
+        Intent switchActivityIntent = new Intent(this, SpotifyPlayer.class);
+        String accessToken = getIntent().getStringExtra("accessToken");
+        switchActivityIntent.putExtra("accessToken", accessToken);
+        startActivity(switchActivityIntent);
         /*Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
         emailIntent.setData(Uri.parse("mailto:")); // Seuls les clients de messagerie devraient traiter ceci
         emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"chneater.synesh@gmail.com"});
@@ -96,11 +99,11 @@ public class MainActivity extends AppCompatActivity {
         /*Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("my-app://callback"));
         startActivity(intent);*/
 
-        try {
+        /*try {
             MimeMessage email = createEmail("chneater.synesh@gmail.com", "unifydevs@gmail.com", "Subject", "Body text");
         } catch (MessagingException e) {
             e.printStackTrace();
-        }
+        }*/
         //sendMessage(service, "me", email);
         /*MailService mailer = new MailService("from@mydomain.example","to@domain.example","Subject","TextBody", "<b>HtmlBody</b>", (Attachment) null);
         try {

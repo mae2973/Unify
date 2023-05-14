@@ -34,6 +34,9 @@
             android:name=".ParticipantGuest"
             android:exported="true" />
         <activity
+            android:name=".SpotifyPlayer"
+            android:exported="true" />
+        <activity
             android:name=".modif_compte"
             android:exported="true"
             android:label="@string/title_activity_overlay_modif_compte2"
