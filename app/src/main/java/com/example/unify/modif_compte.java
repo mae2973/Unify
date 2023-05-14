@@ -10,5 +10,7 @@ public class modif_compte extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.d_modif_compte);
+
+        // TODO : faire cette page
     }
 }

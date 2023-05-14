@@ -44,11 +44,11 @@ public class overlay_param_accueil extends AppCompatActivity {
     private void setButtonCompte() {
         Intent switchActivityIntent = new Intent(this, mon_compte.class);
 
-        // Récupérez l'identifiant depuis l'intent actuel
+        // on récupère l'id depuis l'intent actuel
         Intent intent = getIntent();
         String identifiant = intent.getStringExtra("IDENTIFIANT_EXTRA");
 
-        // Ajoutez l'identifiant en tant qu'extra à l'intention de l'activité de destination
+        // on l'ajoute en tant qu'extra à l'intent de l'activité de destination
         switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
 
         startActivity(switchActivityIntent);
