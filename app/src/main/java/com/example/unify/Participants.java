@@ -56,17 +56,17 @@ public class Participants extends AppCompatActivity {
 
         ajouterParticipant("Lucrece","Fodouop",R.drawable.icone) ;
         ajouterParticipant("Luqahd","Foaqkj",R.drawable.icone) ;
-        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("Zqahd","Foeeqkj",R.drawable.icone) ;
         ajouterParticipant("Luqahd","Foaqkj",R.drawable.icone) ;
-        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
-        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
-        ajouterParticipant("zqsf,nahd","Foeeegzeqkj",R.drawable.icone) ;
-        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
-        ajouterParticipant("zqsf,nnzahd","Foeeegzeqkj",R.drawable.icone) ;
-        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
-        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
-        ajouterParticipant("zqkefnjkzahd","Foeeegzeqkj",R.drawable.icone) ;
-        ajouterParticipant("zqahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("Zqahd","Foeeeqkj",R.drawable.icone) ;
+        ajouterParticipant("Zqahd","Foeeegzkj",R.drawable.icone) ;
+        ajouterParticipant("Zqsf,nahd","Foeqkj",R.drawable.icone) ;
+        ajouterParticipant("Zqahd","Foeeekj",R.drawable.icone) ;
+        ajouterParticipant("Zqsf,nnzahd","Foeeegqkj",R.drawable.icone) ;
+        ajouterParticipant("Hqahd","Foeeeqkj",R.drawable.icone) ;
+        ajouterParticipant("Eqahd","Foeeegzeqkj",R.drawable.icone) ;
+        ajouterParticipant("Rqkefnjkzahd","Foeeegj",R.drawable.icone) ;
+        ajouterParticipant("Iqahd","Foeeegzekj",R.drawable.icone) ;
 
 
 

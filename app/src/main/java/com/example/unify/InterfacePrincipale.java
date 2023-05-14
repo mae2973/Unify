@@ -2,6 +2,7 @@ package com.example.unify;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Adapter;
@@ -38,17 +39,10 @@ ImageButton fleched;
       initRecyclerview();
 
         ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"lcjck","lqZJH") ;
-        ajouterMusique("ehmhucrece","Fodouop",R.drawable.icone,"qgeg","lqZJH") ;
-        ajouterMusique("dghcce","Fodouop",R.drawable.icone,"geqsh","lqZJH") ;
+        ajouterMusique("Ehmhucrece","Fodouop",R.drawable.icone,"qgeg","lqZJH") ;
+        ajouterMusique("Dghcce","Fodouop",R.drawable.icone,"geqsh","lqZJH") ;
         ajouterMusique("Lue","Fodouop",R.drawable.icone,"Hkjhd","lqZJH") ;
         ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"hrjh","lqZJH") ;
-        ajouterMusique("Lucrecdg,l,gle","Fodouop",R.drawable.icone,"lcjck","lqZJH") ;
-        ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"AJkk","lqZJH") ;
-        ajouterMusique("dgeshce","Fodouop",R.drawable.icone,"lcjck","lqZJH") ;
-        ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"lcjck","lqZJH") ;
-        ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"lcjck","lqZJH") ;
-
-
 
 
 
@@ -129,6 +123,7 @@ ImageButton fleched;
         Song song = new Song(a, t);
         RvMusiqueItem m = new RvMusiqueItem(user, image, song);
         songs.add(m);
+        adapter.notifyDataSetChanged();
     }
 
     }
