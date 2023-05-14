@@ -38,8 +38,10 @@ public class InterfacePrincipaleGuest extends AppCompatActivity {
 
                 Intent currentIntent = getIntent();
                 String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+                String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
 
                 intent.putExtra("CODE_SALON", codeSalon);
+                intent.putExtra("IDENTIFIANT_EXTRA", identifiant);
 
                 startActivity(intent);
             }
