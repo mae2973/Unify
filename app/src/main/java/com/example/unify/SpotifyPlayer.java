@@ -1,10 +1,8 @@
 package com.example.unify;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.spotify.android.appremote.api.ConnectionParams;
@@ -15,18 +13,19 @@ import com.spotify.android.appremote.api.error.SpotifyRemoteServiceException;
 import com.spotify.protocol.client.Subscription;
 import com.spotify.protocol.types.PlayerState;
 import com.spotify.protocol.types.Track;
+
 public class SpotifyPlayer extends AppCompatActivity {
 
     private static final String CLIENT_ID = "9ef8387d89894e118397248505847c47";
     private static final String REDIRECT_URI = "my-app://callback";
-    private String accessToken;
     private SpotifyAppRemote mSpotifyAppRemote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        accessToken = getIntent().getStringExtra("access_token");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        String accessToken = getIntent().getStringExtra("access_token");
 
         SpotifyAppRemote.disconnect(mSpotifyAppRemote);
         ConnectionParams connectionParams =
