@@ -20,6 +20,19 @@ import okhttp3.Response;
 
 public class SpotifyPlayer extends AppCompatActivity {
 
+    private static final String AUTHORIZE = "https://accounts.spotify.com/authorize";
+    private static final String TOKEN = "https://accounts.spotify.com/api/token";
+    private static final String PLAYLISTS = "https://api.spotify.com/v1/me/playlists";
+    private static final String DEVICES = "https://api.spotify.com/v1/me/player/devices";
+    private static final String PLAY = "https://api.spotify.com/v1/me/player/play";
+    private static final String PAUSE = "https://api.spotify.com/v1/me/player/pause";
+    private static final String NEXT = "https://api.spotify.com/v1/me/player/next";
+    private static final String PREVIOUS = "https://api.spotify.com/v1/me/player/previous";
+    private static final String PLAYER = "https://api.spotify.com/v1/me/player";
+    private static final String TRACKS = "https://api.spotify.com/v1/playlists/{{PlaylistId}}/tracks";
+    private static final String CURRENTLYPLAYING = "https://api.spotify.com/v1/me/player/currently-playing";
+    private static final String SHUFFLE = "https://api.spotify.com/v1/me/player/shuffle";
+
     private static final String CLIENT_ID = "9ef8387d89894e118397248505847c47";
     private static final String REDIRECT_URI = "my-app://callback";
     private static final String API_BASE_URL = "https://api.spotify.com/v1/";
@@ -27,6 +40,9 @@ public class SpotifyPlayer extends AppCompatActivity {
 
     private OkHttpClient mOkHttpClient;
     private String mAccessToken;
+
+    private String okaze = null;
+    private String deviceId = "ef83a9c20792c8d97a210b9f7e7b8f349acd9d2e";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +53,14 @@ public class SpotifyPlayer extends AppCompatActivity {
         Log.e("lol", mAccessToken);
         mOkHttpClient = new OkHttpClient();
 
-        //searchTrack("CARNIVORE");
+        searchTrack("CARNIVORE");
+        while(okaze == null) {};
+
         //playTrack("6MtW3gaINk8l0AKTVTR0Rg?si=c9ee6b1112be4034");
         //getAvailableDevices();
         //playTrackOnDevice("6MtW3gaINk8l0AKTVTR0Rg?si=c9ee6b1112be4034","ef83a9c20792c8d97a210b9f7e7b8f349acd9d2e");
         addToQueue("6MtW3gaINk8l0AKTVTR0Rg?si=c9ee6b1112be4034");
+        pause();
     }
 
     private void fetchPlaylist(String playlistId) {
@@ -209,6 +228,31 @@ public class SpotifyPlayer extends AppCompatActivity {
             @Override
             public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
                 Log.d("SpotifyPlayer", "Track added to queue: " + trackId);
+            }
+        });
+    }
+
+    private void callApi(String method, String url, String body, Callback callback) {
+        Request request = new Request.Builder()
+                .url(url)
+                .addHeader("Content-Type", "application/json")
+                .addHeader("Authorization", "Bearer " + mAccessToken)
+                .method(method, body != null ? RequestBody.create(body, MediaType.get("application/json")) : null)
+                .build();
+
+        mOkHttpClient.newCall(request).enqueue(callback);
+    }
+
+    private void pause() {
+        callApi("PUT", PAUSE + "?device_id=" + deviceId, null, new Callback() {
+            @Override
+            public void onFailure(@NotNull Call call, @NotNull IOException e) {
+                Log.e("SpotifyPlayer", "Failed to pause: " + e.getMessage());
+            }
+
+            @Override
+            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+                Log.d("SpotifyPlayer", "Paused playback");
             }
         });
     }

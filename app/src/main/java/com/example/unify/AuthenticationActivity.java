@@ -28,7 +28,7 @@ public class AuthenticationActivity extends AppCompatActivity {
                 AuthorizationResponse.Type.TOKEN,
                 REDIRECT_URI);
 
-        builder.setScopes(new String[]{"user-read-playback-state", "user-modify-playback-state", "streaming"});
+        builder.setScopes(new String[]{"user-read-private","user-read-email","user-modify-playback-state","user-read-playback-position","user-library-read","streaming","user-read-playback-state","user-read-recently-played","playlist-read-private"});
         AuthorizationRequest request = builder.build();
 
         AuthorizationClient.openLoginActivity(this, REQUEST_CODE, request);
