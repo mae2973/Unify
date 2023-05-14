@@ -1,61 +1,99 @@
 package com.example.unify;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.spotify.android.appremote.api.ConnectionParams;
-import com.spotify.android.appremote.api.Connector;
-import com.spotify.android.appremote.api.SpotifyAppRemote;
-import com.spotify.android.appremote.api.error.SpotifyConnectionTerminatedException;
-import com.spotify.android.appremote.api.error.SpotifyRemoteServiceException;
-import com.spotify.protocol.client.Subscription;
-import com.spotify.protocol.types.PlayerState;
-import com.spotify.protocol.types.Track;
+import org.jetbrains.annotations.NotNull;
+
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.HttpUrl;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
 public class SpotifyPlayer extends AppCompatActivity {
 
     private static final String CLIENT_ID = "9ef8387d89894e118397248505847c47";
     private static final String REDIRECT_URI = "my-app://callback";
-    private static final String ACCESS_TOKEN = "your_access_token_here";
+    private static final String API_BASE_URL = "https://api.spotify.com/v1/";
+    private static final String PLAYLIST_ID = "37i9dQZF1DWZeAduKwuwrr";
 
-    private SpotifyAppRemote mSpotifyAppRemote;
+    private OkHttpClient mOkHttpClient;
+    private String mAccessToken;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SpotifyAppRemote.disconnect(mSpotifyAppRemote);
-        ConnectionParams connectionParams =
-                new ConnectionParams.Builder(CLIENT_ID)
-                        .setRedirectUri(REDIRECT_URI)
-                        .build();
+        mAccessToken = getIntent().getStringExtra("access_token");
 
-        SpotifyAppRemote.connect(this, connectionParams,
-                new Connector.ConnectionListener() {
+        mOkHttpClient = new OkHttpClient();
 
-                    public void onConnected(SpotifyAppRemote spotifyAppRemote) {
-                        mSpotifyAppRemote = spotifyAppRemote;
-                        Log.d("MainActivity", "Connected! Yay!");
-
-                        // Play a playlist
-                        mSpotifyAppRemote.getPlayerApi().play("spotify:playlist:37i9dQZF1DWZeAduKwuwrr");
-                    }
-
-                    public void onFailure(Throwable throwable) {
-                        Log.e("MainActivity", throwable.getMessage(), throwable);
-
-                        // Something went wrong when attempting to connect! Handle errors here
-                    }
-                });
+        fetchPlaylist(PLAYLIST_ID);
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        SpotifyAppRemote.disconnect(mSpotifyAppRemote);
+    private void fetchPlaylist(String playlistId) {
+        HttpUrl url = HttpUrl.parse(API_BASE_URL + "playlists/" + playlistId + "/tracks")
+                .newBuilder()
+                .build();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .addHeader("Authorization", "Bearer " + mAccessToken)
+                .build();
+
+        mOkHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(@NotNull Call call, @NotNull IOException e) {
+                Log.e("SpotifyPlayer", "Failed to fetch playlist: " + e.getMessage());
+            }
+
+            @Override
+            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+                String responseBody = response.body().string();
+                Log.d("SpotifyPlayer", "Playlist fetched: " + responseBody);
+
+                // Parse response and extract first track ID
+                String trackId = ""; // Replace with actual track ID
+
+                playTrack(trackId);
+            }
+        });
+    }
+
+    private void playTrack(String trackId) {
+        HttpUrl url = HttpUrl.parse(API_BASE_URL + "me/player/play")
+                .newBuilder()
+                .build();
+
+        String requestBodyJson = "{"
+                + "\"uris\": [\"spotify:track:" + trackId + "\"]"
+                + "}";
+
+        Request request = new Request.Builder()
+                .url(url)
+                .addHeader("Authorization", "Bearer " + mAccessToken)
+                .post(RequestBody.create(requestBodyJson, MediaType.get("application/json")))
+                .build();
+
+        mOkHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(@NotNull Call call, @NotNull IOException e) {
+                Log.e("SpotifyPlayer", "Failed to play track: " + e.getMessage());
+            }
+
+            @Override
+            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+                Log.d("SpotifyPlayer", "Track played: " + trackId);
+            }
+        });
     }
 }

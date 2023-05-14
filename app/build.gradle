@@ -43,6 +43,10 @@ android {
         viewBinding true
         dataBinding true
     }
+
+    packagingOptions {
+        pickFirst 'META-INF/DEPENDENCIES'
+    }
 }
 
 dependencies {
@@ -53,6 +57,12 @@ dependencies {
     implementation 'com.spotify.android:auth:2.0.2' // Vérifiez la dernière version sur le site de Spotify
     //implementation 'com.spotify.android:app-remote:0.7.0'
     //implementation 'com.spotify.android:app-remote-sdk:0.7.0'
+
+    implementation 'com.google.api-client:google-api-client:2.0.0'
+    implementation 'com.google.oauth-client:google-oauth-client-jetty:1.34.1'
+    implementation 'com.google.apis:google-api-services-gmail:v1-rev110-1.25.0'
+    implementation 'com.sun.mail:javax.mail:1.6.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
 
 
     //noinspection GradleCompatible
@@ -72,6 +82,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.5.3'
     implementation 'androidx.navigation:navigation-ui:2.5.3'
     implementation files('spotify-app-remote-release-0.7.2.aar')
+    implementation 'androidx.compose.ui:ui-graphics:1.1.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
