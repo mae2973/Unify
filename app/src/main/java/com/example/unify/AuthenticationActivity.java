@@ -42,7 +42,7 @@ public class AuthenticationActivity extends AppCompatActivity {
                 String accessToken = response.getAccessToken();
 
                 // Vous pouvez maintenant lancer votre activité principale et utiliser le token d'accès
-                Intent intent = new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, B_PageConnexion.class);
                 intent.putExtra("accessToken", accessToken);
                 startActivity(intent);
                 finish();
