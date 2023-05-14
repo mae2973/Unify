@@ -6,6 +6,11 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import java.util.Random;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 public class B_ConnexionSpotifyCrea extends AppCompatActivity {
     Button buttonValider;
@@ -45,11 +50,41 @@ public class B_ConnexionSpotifyCrea extends AppCompatActivity {
     }
 
     private void setButtonValider() {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        CollectionReference roomsRef = db.collection("rooms");
+
+        Random random = new Random();
+        int initialCodeSalon;
+
+        do {
+            initialCodeSalon = random.nextInt(9000) + 1000;
+        } while (initialCodeSalonExists(initialCodeSalon, roomsRef));
+
+        final int codeSalon = initialCodeSalon;
+
         Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
-        // destination à modif une fois qu'on aura les bons trucs avec les fragments
+        switchActivityIntent.putExtra("CODE_SALON", String.valueOf(codeSalon));
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
+
+    private boolean initialCodeSalonExists(int codeSalon, CollectionReference roomsRef) {
+        final boolean[] exists = {false};
+
+        roomsRef.whereEqualTo("codeSalon", String.valueOf(codeSalon))
+                .get()
+                .addOnSuccessListener(queryDocumentSnapshots -> {
+                    if (!queryDocumentSnapshots.isEmpty()) {
+                        exists[0] = true;
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    // Gestion des erreurs lors de la requête
+                });
+
+        return exists[0];
+    }
+
 
     private void setButtonAnnuler() {
         this.finish();

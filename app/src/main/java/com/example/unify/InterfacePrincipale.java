@@ -45,14 +45,18 @@ ImageButton fleched;
         ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"hrjh","lqZJH") ;
 
 
-
-
         // Boutons
         parametreh2 = findViewById(R.id.parametrehost2) ;
         parametreh2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(InterfacePrincipale.this, overlay_settings_host.class);
+
+                Intent currentIntent = getIntent();
+                String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+
+                intent.putExtra("CODE_SALON", codeSalon);
+
                 startActivity(intent);
             }
         });
@@ -77,9 +81,6 @@ ImageButton fleched;
 
 
     }
-
-
-
 
 
     // Boutons
