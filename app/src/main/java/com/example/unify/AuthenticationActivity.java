@@ -3,7 +3,6 @@ package com.example.unify;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.spotify.android.appremote.api.ConnectionParams;
@@ -87,6 +86,7 @@ public class AuthenticationActivity extends AppCompatActivity {
                         Log.d("MainActivity", "Connected! Yay!");
 
                         // Now you can start interacting with App Remote
+                        mSpotifyAppRemote.getPlayerApi().play("spotify:playlist:37i9dQZF1DWZeAduKwuwrr");
                     }
 
                     public void onFailure(Throwable throwable) {
