@@ -29,8 +29,8 @@
         android:id="@+id/imageView5"
         android:layout_width="300dp"
         android:layout_height="540dp"
+        android:layout_marginTop="80dp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         app:srcCompat="@drawable/gradient2" />
 
     <Button
