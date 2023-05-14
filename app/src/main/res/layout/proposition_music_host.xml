@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     xmlns:aandroid="http://schemas.android.com/tools">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="65dp">
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
 
 
         <ImageView
@@ -17,7 +17,7 @@
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
-            app:srcCompat="@drawable/icone" />
+            app:srcCompat="@drawable/icone"  android:layout_width="49dp"/>
 
         <TextView
             android:id="@+id/ini_s_h"
@@ -55,23 +55,23 @@
 
         <ImageButton
             android:id="@+id/validerSuggestion"
-            android:layout_width="60dp"
+            android:layout_width="70dp"
             android:layout_height="65dp"
-            app:srcCompat="@drawable/validSugg"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="115dp"
             android:layout_marginTop="0dp"
             android:layout_toRightOf="@+id/titre_s_h"
-            android:background="null"/>
+            android:contentDescription="Accepter"
+            android:background="@drawable/valid_sugg"/>
 
         <ImageButton
             android:id="@+id/refuserSuggestion"
-            android:layout_width="60dp"
+            android:layout_width="70dp"
             android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/validerSuggestion"
             android:layout_weight="1"
-            app:srcCompat="@drawable/refusSugg"
-            android:background="null"
-        android:layout_toRightOf="@+id/validerSuggestion"
-            android:layout_marginLeft="15dp"/>
+            android:background="@drawable/refus_sugg"
+            android:contentDescription="Refuser" />
 
     </RelativeLayout>
 

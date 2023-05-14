@@ -1,17 +1,29 @@
 package com.example.unify;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+
 public class SuggestionHost extends AppCompatActivity {
 
 // Boutons
     ImageButton flecheg3 ;
     ImageButton par2 ;
+
+
+
+// Recycler view
+    ArrayList<SuggestionItemHost> suggestions_host;
+    LinearLayoutManager layoutManager3;
+    AdapterS_Host adapter3;
+    RecyclerView recyclerview;
 
 
 
@@ -23,7 +35,7 @@ public class SuggestionHost extends AppCompatActivity {
 
 
         // BOUTONS
-        flecheg3 = findViewById(R.id.versMusique2) ;
+        flecheg3 = findViewById(R.id.versMusique3) ;
         flecheg3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,13 +43,29 @@ public class SuggestionHost extends AppCompatActivity {
             }
         });
 
-        par2 = findViewById(R.id.parametreguest3) ;
+        par2 = findViewById(R.id.parametrehost3) ;
         par2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setPar2();
             }
         });
+
+
+
+
+
+
+
+        // Recycler view
+        suggestions_host= new ArrayList<>();
+        initRecyclerview4();
+
+        ajouterSuggestion("Lucrece","Fodouop",R.drawable.icone,"lcjck","lqZJH"); ;
+        ajouterSuggestion("Ehmhucrece","Fodouop",R.drawable.icone,"qghsbjc","lqZJH"); ;
+        ajouterSuggestion("Lue","Fodouop",R.drawable.icone,"Hkjhd","lqZJH"); ;
+        ajouterSuggestion("BuMLLMe","Fodouop",R.drawable.icone,"dbk,,nekbh","lqZJH"); ;
+
 
     }
 
@@ -53,5 +81,28 @@ public class SuggestionHost extends AppCompatActivity {
         Intent switchActivityIntent = new Intent(this, overlay_settings_host.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
+    }
+
+
+
+
+
+    // Recyler view
+    private void initRecyclerview4() {
+        recyclerview = findViewById(R.id.rvSH);
+        layoutManager3 = new LinearLayoutManager(this);
+        layoutManager3.setOrientation(RecyclerView.VERTICAL);
+        recyclerview.setLayoutManager(layoutManager3);
+        adapter3 = new AdapterS_Host(suggestions_host);
+        recyclerview.setAdapter(adapter3);
+        adapter3.notifyDataSetChanged();
+    }
+
+    private void ajouterSuggestion(String p1, String n1, int image2, String a1, String t1) {
+        User u = new User(p1, n1);
+        Song s = new Song(a1, t1);
+        SuggestionItemHost ss = new SuggestionItemHost (image2,u, s);
+        suggestions_host.add(ss);
+        adapter3.notifyDataSetChanged();
     }
     }
