@@ -103,7 +103,7 @@ public class B_ConnexionSpotifyCrea extends AppCompatActivity {
 
         roomDocRef.set(roomData)
                 .addOnSuccessListener(aVoid -> {
-                    // Le code de salon a été stocké avec succès
+                    // code stocké ok
                 })
                 .addOnFailureListener(e -> {
                     // Gestion des erreurs lors de la création du salon

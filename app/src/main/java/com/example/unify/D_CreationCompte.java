@@ -91,12 +91,12 @@ public class D_CreationCompte extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     QuerySnapshot querySnapshot = task.getResult();
                                     if (querySnapshot != null && !querySnapshot.isEmpty()) {
-                                        // L'identifiant existe déjà, afficher un message d'erreur ou prendre une action appropriée
+                                        // L'identifiant existe déjà, message d'erreur
                                         Toast.makeText(D_CreationCompte.this, "Cet identifiant existe déjà.", Toast.LENGTH_SHORT).show();
                                     } else {
-                                        // L'identifiant n'existe pas, ajouter le document à la base de données
+                                        // L'identifiant n'existe pas, ajouter le doc à la bdd
 
-                                        // Génération du nom du document
+                                        // génération du nom du doc en fonction du nombre d'utilisateurs
                                         db.collection("user")
                                                 .get()
                                                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -106,7 +106,6 @@ public class D_CreationCompte extends AppCompatActivity {
                                                             int count = task.getResult().size();
                                                             String documentName = "user" + (count + 1);
 
-                                                            // Accédez à la collection et créez le document avec le nom choisi
                                                             DocumentReference documentRef = db.collection("user").document(documentName);
 
                                                             EditText nom = findViewById(R.id.nom_user);
@@ -121,27 +120,25 @@ public class D_CreationCompte extends AppCompatActivity {
                                                             EditText mdp = findViewById(R.id.mdp_user);
                                                             String mdp_text = mdp.getText().toString();
 
-                                                            // Créez les données à ajouter au document
                                                             Map<String, Object> data = new HashMap<>();
                                                             data.put("nom", nom_text);
                                                             data.put("prenom", prenom_text);
                                                             data.put("mail", mail_text);
-                                                            // TODO: Vérifier que mdp = confirm mdp
                                                             data.put("identifiant", id_text);
                                                             data.put("mdp", mdp_text);
 
-                                                            // Ajoutez le document à la base de données
+                                                            // ajout du doc à la bdd
                                                             documentRef.set(data)
                                                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                         @Override
                                                                         public void onSuccess(Void aVoid) {
-                                                                            // Document créé avec succès
+                                                                            // doc créé
                                                                         }
                                                                     })
                                                                     .addOnFailureListener(new OnFailureListener() {
                                                                         @Override
                                                                         public void onFailure(@NonNull Exception e) {
-                                                                            // Erreur lors de la création du document
+                                                                            // erreur de la créa du document
                                                                         }
                                                                     });
 
@@ -149,14 +146,14 @@ public class D_CreationCompte extends AppCompatActivity {
                                                             startActivity(switchActivityIntent);
                                                             overridePendingTransition(0, 0);
                                                         } else {
-                                                            // Une erreur s'est produite lors de la récupération du nombre de documents
+                                                            // erreur lors de la récup du nombre de doc
                                                             Toast.makeText(D_CreationCompte.this, "Erreur lors de la génération du nom du document.", Toast.LENGTH_SHORT).show();
                                                         }
                                                     }
                                                 });
                                     }
                                 } else {
-                                    // Une erreur s'est produite lors de la vérification
+                                    // erreur lors de la vérif
                                     Toast.makeText(D_CreationCompte.this, "Erreur lors de la vérification de l'identifiant.", Toast.LENGTH_SHORT).show();
                                 }
                             }
