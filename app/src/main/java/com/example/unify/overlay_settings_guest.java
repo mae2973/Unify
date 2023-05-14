@@ -52,6 +52,7 @@ public class overlay_settings_guest extends AppCompatActivity {
                     // Gérer les erreurs lors de la suppression de l'identifiant
                 });
         Intent switchActivityIntent = new Intent(this, B_ChoixTypeSalon.class);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
         startActivity(switchActivityIntent);
         //TODO: la je change d'activité mais je ne kill pas celles d'avant, voir si on peut le faire
         overridePendingTransition(0, 0);

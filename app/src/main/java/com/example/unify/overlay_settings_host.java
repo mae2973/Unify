@@ -63,6 +63,7 @@ public class overlay_settings_host extends AppCompatActivity {
                 });
 
         Intent switchActivityIntent = new Intent(this, B_ChoixTypeSalon.class);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
         startActivity(switchActivityIntent);
         //TODO: la je change d'activité mais je ne kill pas celles d'avant, voir si on peut le faire
         overridePendingTransition(0, 0);
