@@ -66,9 +66,10 @@ public class B_RejoindreSalon extends AppCompatActivity {
                         roomsRef.document(codeSalon)
                                 .update("participants", FieldValue.arrayUnion(identifiant))
                                 .addOnSuccessListener(aVoid -> {
-                                    // id ajouté, on transmet le code du salon à l'act suivante
+                                    // id ajouté, on transmet le code du salon et l'identifiant à l'act suivante
                                     Intent switchActivityIntent = new Intent(B_RejoindreSalon.this, InterfacePrincipaleGuest.class);
                                     switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+                                    switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
                                     startActivity(switchActivityIntent);
                                     overridePendingTransition(0, 0);
                                 })
@@ -84,6 +85,8 @@ public class B_RejoindreSalon extends AppCompatActivity {
                     // Gérer les erreurs lors de la requête
                 });
     }
+
+
 
     private void setButtonAnnuler() {
         this.finish();

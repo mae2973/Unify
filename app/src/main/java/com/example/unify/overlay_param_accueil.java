@@ -37,7 +37,6 @@ public class overlay_param_accueil extends AppCompatActivity {
     private void setButtonDeco() {
         Intent switchActivityIntent = new Intent(this, B_PageConnexion.class);
         startActivity(switchActivityIntent);
-        // TODO : gérer la déconnexion
         overridePendingTransition(0, 0);
     }
 

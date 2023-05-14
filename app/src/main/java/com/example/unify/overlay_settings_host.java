@@ -15,7 +15,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class overlay_settings_host extends AppCompatActivity {
 
     Button buttonQuitterSalon;
-
     Button buttonCompte;
 
     @Override
@@ -61,6 +60,12 @@ public class overlay_settings_host extends AppCompatActivity {
                 .addOnFailureListener(e -> {
                     // Gérer les erreurs lors de la suppression de la room
                 });
+
+        Intent switchActivityIntent = new Intent(this, B_ChoixTypeSalon.class);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+        startActivity(switchActivityIntent);
+        //TODO: la je change d'activité mais je ne kill pas celles d'avant, voir si on peut le faire
+        overridePendingTransition(0, 0);
     }
 
     private void setButtonCompte(){
