@@ -47,7 +47,6 @@ public class overlay_settings_guest extends AppCompatActivity {
                 .update("participants", FieldValue.arrayRemove(identifiant))
                 .addOnSuccessListener(aVoid -> {
                     // Identifiant supprimé
-                    // Effectuer les actions supplémentaires si nécessaire
                 })
                 .addOnFailureListener(e -> {
                     // Gérer les erreurs lors de la suppression de l'identifiant

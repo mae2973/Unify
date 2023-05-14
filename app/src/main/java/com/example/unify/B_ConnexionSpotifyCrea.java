@@ -73,6 +73,7 @@ public class B_ConnexionSpotifyCrea extends AppCompatActivity {
 
         Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
         switchActivityIntent.putExtra("CODE_SALON", String.valueOf(codeSalon));
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
