@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
     tools:context=".InterfacePrincipale">
 
@@ -22,198 +22,77 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
         android:text="Suggestions"
         android:textColor="@color/white"
-        android:textSize="40dp"
+        android:textSize="37dp"
         android:textStyle="bold"
-        android:layout_marginLeft="97dp"
-        android:layout_marginTop="87dp"
-        />
+        app:layout_constraintEnd_toStartOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/include"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="37dp"
-        android:layout_height="41dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="95dp"
-        android:rotation="180"
-        android:rotationX="0"
-        app:srcCompat="@drawable/fleche_droit" />
+
+
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="77dp"
         android:layout_height="74dp"
-        android:layout_marginLeft="205dp"
-        android:layout_marginTop="641dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/include"
+        app:layout_constraintStart_toEndOf="@+id/include"
         app:srcCompat="@drawable/logo_1" />
 
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/icone_participant"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="170dp"/>
-
-    <ImageView
-        app:srcCompat="@drawable/icone_participant"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="235dp"/>
-
-    <ImageView
-        app:srcCompat="@drawable/icone_participant"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="302dp"/>
-
-    <ImageView
-        app:srcCompat="@drawable/icone_participant"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="370dp"/>
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pa1"
-        android:textColor="@color/white"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="179dp"
-        />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pa2"
-        android:textColor="@color/white"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="244dp" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pa3"
-        android:textColor="@color/white"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="310dp"/>
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pa4"
-        android:textColor="@color/white"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="379dp" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Titre1\nAC/DC"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="175dp"/>
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Titre2\nAC/DC"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="238dp"/>
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Titre3\nAC/DC"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="303dp" />
-
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="376dp"
-        android:text="Titre4\nAC/DC"
-        android:textColor="@color/white"
-        android:textSize="18dp" />
-
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="610dp"
-        app:srcCompat="@drawable/bouton_ajout" />
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginTop="435dp"
-            app:srcCompat="@drawable/icone_participant" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="435dp"
-            android:text="Titre5\nAC/DC"
-            android:textColor="@color/white"
-            android:textSize="18dp" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="444dp"
-            android:text="Pa5"
-            android:textColor="@color/white"
-            android:textSize="23dp"
-            android:textStyle="bold" />
-
-    </FrameLayout>
-
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:itemCount="6"
-        tools:listitem="@layout/proposition_music">
+        android:id="@+id/rvS"
+        android:layout_width="379dp"
+        android:layout_height="432dp"
+        android:layout_marginBottom="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/include">
 
     </androidx.recyclerview.widget.RecyclerView>
 
+    <ImageButton
+        android:id="@+id/plus3"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bouton_ajoutp"
+        android:contentDescription="Plus d'actions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!--Pa1 pour participant 1 , etc.. -->
+    <ImageButton
+        android:id="@+id/versMusique2"
+        android:layout_width="25dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="93dp"
+        android:background="@drawable/fleche_droit"
+        android:contentDescription="voir Musiques"
+        android:padding="40dp"
+        android:rotationY="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+    <ImageButton
+        android:id="@+id/parametrehost3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/parametres"
+        android:contentDescription="Paramètres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

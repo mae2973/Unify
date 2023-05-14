@@ -1,25 +1,26 @@
 package com.example.unify;
 
 public class CA_Sugestion_TODO {
-    private final String icon;
-    private final String titre;
-    private final String auteur;
+    private final int icon;
+    private User user ;
+    private Song song ;
 
-    public CA_Sugestion_TODO(String icon, String titre, String auteur) {
+    public CA_Sugestion_TODO(User user, int icon, Song song) {
+        this.user = user;
         this.icon = icon;
-        this.titre = titre;
-        this.auteur = auteur;
+        this.song = song;
     }
 
-    public String getIcon() {
+    public User getUser() {
+        return user;
+    }
+
+    public int getIcon() {
         return icon;
     }
 
-    public String getTitre() {
-        return titre;
-    }
-
-    public String getAuteur() {
-        return auteur;
+    public Song getSong() {
+        return song;
     }
 }
+

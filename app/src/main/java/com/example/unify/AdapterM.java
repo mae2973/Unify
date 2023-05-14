@@ -12,14 +12,11 @@ import java.util.ArrayList;
 
 public class AdapterM extends RecyclerView.Adapter<ViewHolderM> {
 
-   // private Context context ;
     private ArrayList<RvMusiqueItem> songs ;
-  //  private LayoutInflater inflater;
 
     public AdapterM(ArrayList<RvMusiqueItem> songs) {
-      //  this.context = context;
         this.songs = songs;
-       // this.inflater = inflater;
+
     }
 
 
