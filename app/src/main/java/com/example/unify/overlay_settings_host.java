@@ -18,6 +18,8 @@ public class overlay_settings_host extends AppCompatActivity {
 
         TextView codeSalonTextView = findViewById(R.id.Code_Salon);
         codeSalonTextView.setText(codeSalon);
+
+        //TODO : gérer la récup de l'id quand on vient de la page connexion spotify pour afficher le compte
     }
 
 }
