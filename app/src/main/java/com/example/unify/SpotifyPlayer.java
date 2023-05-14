@@ -19,12 +19,12 @@ public class SpotifyPlayer extends AppCompatActivity {
 
     private static final String CLIENT_ID = "9ef8387d89894e118397248505847c47";
     private static final String REDIRECT_URI = "my-app://callback";
-    private static final String ACCESS_TOKEN = "your_access_token_here";
-
+    private String accessToken;
     private SpotifyAppRemote mSpotifyAppRemote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        accessToken = getIntent().getStringExtra("access_token");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
