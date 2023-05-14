@@ -18,7 +18,7 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.b_choix_type_salon);
 
-        // Récupérer l'identifiant transmis depuis l'activité précédente
+        // récupération de l'id transmis depuis l'activité précédente
         String identifiant = getIntent().getStringExtra("identifiant");
 
 

@@ -20,8 +20,6 @@ public class B_RejoindreSalon extends AppCompatActivity {
 
     Button buttonParametre;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,7 +66,7 @@ public class B_RejoindreSalon extends AppCompatActivity {
                         roomsRef.document(codeSalon)
                                 .update("participants", FieldValue.arrayUnion(identifiant))
                                 .addOnSuccessListener(aVoid -> {
-                                    // Identifiant ajouté avec succès, passer à l'activité suivante en transmettant le code du salon
+                                    // id ajouté, on transmet le code du salon à l'act suivante
                                     Intent switchActivityIntent = new Intent(B_RejoindreSalon.this, InterfacePrincipaleGuest.class);
                                     switchActivityIntent.putExtra("CODE_SALON", codeSalon);
                                     startActivity(switchActivityIntent);
@@ -78,7 +76,7 @@ public class B_RejoindreSalon extends AppCompatActivity {
                                     // Gérer les erreurs lors de l'ajout de l'identifiant à la liste des participants
                                 });
                     } else {
-                        // Salon n'existe pas, afficher un message d'erreur
+                        // le salon n'existe pas => message d'erreur
                         Toast.makeText(B_RejoindreSalon.this, "Le salon n'existe pas", Toast.LENGTH_SHORT).show();
                     }
                 })
@@ -86,9 +84,6 @@ public class B_RejoindreSalon extends AppCompatActivity {
                     // Gérer les erreurs lors de la requête
                 });
     }
-
-
-
 
     private void setButtonAnnuler() {
         this.finish();

@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.spotify.android.appremote.api.ConnectionParams;
-import com.spotify.android.appremote.api.Connector;
 import com.spotify.android.appremote.api.SpotifyAppRemote;
 import com.spotify.sdk.android.auth.AuthorizationClient;
 import com.spotify.sdk.android.auth.AuthorizationRequest;
@@ -33,7 +31,7 @@ public class AuthenticationActivity extends AppCompatActivity {
         //Log.e("SpotifyAuth", "Auth");
         AuthorizationClient.openLoginActivity(this, REQUEST_CODE, request);
         //Log.e("SpotifyAuth", "Auth");
-        onStart();
+        //onStart();
     }
 
     @Override
@@ -52,6 +50,7 @@ public class AuthenticationActivity extends AppCompatActivity {
 
                     // Vous pouvez maintenant lancer votre activité principale et utiliser le token d'accès
                     Intent intent = new Intent(this, MainActivity.class);
+                    Log.e("SpotifyAuth", "Auth accessToken: " + accessToken);
                     intent.putExtra("accessToken", accessToken);
                     startActivity(intent);
                     finish();
@@ -69,7 +68,7 @@ public class AuthenticationActivity extends AppCompatActivity {
         }
     }
 
-    @Override
+    /*@Override
     protected void onStart() {
         super.onStart();
         ConnectionParams connectionParams =
@@ -101,6 +100,6 @@ public class AuthenticationActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         SpotifyAppRemote.disconnect(mSpotifyAppRemote);
-    }
+    }*/
 
 }

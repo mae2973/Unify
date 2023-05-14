@@ -78,7 +78,7 @@ public class B_PageConnexion extends AppCompatActivity {
             @Override
             public void onClick(View v3) {
                 EditText id_saisi = findViewById(R.id.identifiant_connexion);
-                identifiant = id_saisi.getText().toString(); // Assigner l'identifiant à la variable membre
+                identifiant = id_saisi.getText().toString(); // assigner l'id à la variable saisie
 
                 EditText mdp_saisi = findViewById(R.id.mdp_saisi_user);
                 String mdp_text = mdp_saisi.getText().toString();
@@ -121,37 +121,27 @@ public class B_PageConnexion extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : result) {
                                 String storedPassword = document.getString("mdp");
                                 if (password.equals(storedPassword)) {
-                                    // Password is correct
-                                    // Log in the user or do something else
-                                    //Toast.makeText(B_PageConnexion.this, "Correct",
-                                    //        Toast.LENGTH_SHORT).show();
+                                    // password correct
                                     Log.d("Firebase", "Connexion established");
                                     Intent intent = new Intent(B_PageConnexion.this, B_ChoixTypeSalon.class);
-                                    intent.putExtra("identifiant", identifiant); // Passer l'identifiant à la page suivante
+                                    intent.putExtra("identifiant", identifiant); // Passer l'id à la page suivante
                                     startActivity(intent);
                                 } else {
-                                    // Password is incorrect
+                                    // password incorrect
                                     Toast.makeText(B_PageConnexion.this, "Incorrect password.",
                                             Toast.LENGTH_SHORT).show();
                                     Log.d("Firebase", "Incorrect password.");
                                 }
                             }
 
-                            // Toast.makeText(B_PageConnexion.this, "Debug",
-                            //        Toast.LENGTH_SHORT).show();
                         } else {
                             // Log the error
-                            // Log.d(TAG, "Error getting documents: ", task.getException());
                             Toast.makeText(B_PageConnexion.this, "Error getting documents: ",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
 
-
-
-
-
-        return value.get(); // Retourner une valeur par défaut
+        return value.get(); // retourne une valeur par défaut
     }
 }
