@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".InterfacePrincipale">
+    tools:context=".SuggestionHost">
 
     <include
         android:id="@+id/include"
@@ -18,8 +18,21 @@
         tools:layout_editor_absoluteX="-53dp"
         tools:layout_editor_absoluteY="0dp" />
 
+    <ImageButton
+        android:id="@+id/plus5"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bouton_ajout"
+        android:contentDescription="Plus d'actions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
@@ -32,44 +45,8 @@
         app:layout_constraintStart_toEndOf="@+id/include"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="77dp"
-        android:layout_height="74dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/include"
-        app:layout_constraintStart_toEndOf="@+id/include"
-        app:srcCompat="@drawable/logo_1" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvS"
-        android:layout_width="379dp"
-        android:layout_height="432dp"
-        android:layout_marginBottom="115dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/include"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/include">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
     <ImageButton
-        android:id="@+id/plus3"
-        android:layout_width="110dp"
-        android:layout_height="80dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="18dp"
-        android:background="@drawable/bouton_ajout"
-        android:contentDescription="Plus d'actions"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageButton
-        android:id="@+id/versMusique2"
+        android:id="@+id/versMusique3"
         android:layout_width="25dp"
         android:layout_height="38dp"
         android:layout_marginStart="50dp"
@@ -81,8 +58,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/include"
+        app:layout_constraintStart_toEndOf="@+id/include"
+        app:srcCompat="@drawable/logo_1" />
+
     <ImageButton
-        android:id="@+id/parametreguest3"
+        android:id="@+id/parametrehost3"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
@@ -92,7 +79,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSH"
+        android:layout_width="379dp"
+        android:layout_height="432dp"
+        android:layout_marginBottom="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/include">
+
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-

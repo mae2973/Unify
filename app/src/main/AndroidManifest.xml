@@ -11,12 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Unify"
         tools:targetApi="31">
-
+        <activity
+            android:name=".SuggestionHost"
+            android:exported="false" />
         <activity
             android:name="com.spotify.sdk.android.auth.LoginActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar">
-        </activity>
-        <activity android:name=".AuthenticationActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name=".AuthenticationActivity"
             android:exported="true"
             android:launchMode="singleTask">
             <intent-filter android:autoVerify="true">
@@ -25,11 +27,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="my-app"
-                    android:host="callback" />
+                <data
+                    android:host="callback"
+                    android:scheme="my-app" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ParticipantGuest"
             android:exported="true" />
@@ -64,7 +66,6 @@
         <activity
             android:name=".mon_compte"
             android:exported="true" />
-
         <activity
             android:name=".Participants"
             android:exported="true" />

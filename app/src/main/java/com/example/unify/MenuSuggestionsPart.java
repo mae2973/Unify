@@ -16,6 +16,8 @@ public class MenuSuggestionsPart extends AppCompatActivity {
     // Suggestion GUEST !!!
 
     ImageButton flecheg2 ;
+    ImageButton par ;
+
 
     ArrayList<CA_Sugestion_TODO> suggestions;
     LinearLayoutManager layoutManager2;
@@ -50,7 +52,13 @@ public class MenuSuggestionsPart extends AppCompatActivity {
             }
         });
 
-
+        par = findViewById(R.id.parametreguest3) ;
+        par.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setPar();
+            }
+        });
     }
 
 
@@ -80,6 +88,11 @@ public class MenuSuggestionsPart extends AppCompatActivity {
     // BOUTONS
     private void setVersMusique2() {
         Intent switchActivityIntent = new Intent(this, InterfacePrincipaleGuest.class);
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
+    }
+    private void setPar() {
+        Intent switchActivityIntent = new Intent(this, overlay_settings_guest.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
