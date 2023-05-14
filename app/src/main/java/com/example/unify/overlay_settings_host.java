@@ -16,6 +16,8 @@ public class overlay_settings_host extends AppCompatActivity {
 
     Button buttonQuitterSalon;
 
+    Button buttonCompte;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,14 @@ public class overlay_settings_host extends AppCompatActivity {
                 setButtonQuitterSalon();
             }
         });
+
+        buttonCompte = findViewById(R.id.Mon_compte);
+        buttonCompte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonCompte();
+            }
+        });
     }
 
     private void setButtonQuitterSalon() {
@@ -44,13 +54,27 @@ public class overlay_settings_host extends AppCompatActivity {
         CollectionReference roomsRef = db.collection("rooms");
 
         roomsRef.document(codeSalon)
-                .update("participants", FieldValue.arrayRemove(identifiant))
+                .delete()
                 .addOnSuccessListener(aVoid -> {
-                    // Identifiant supprimé avec succès
-                    // Effectuer les actions supplémentaires si nécessaire
+                    // le créateur quitte la room => on la supprime entièrement de la bdd
                 })
                 .addOnFailureListener(e -> {
-                    // Gérer les erreurs lors de la suppression de l'identifiant
+                    // Gérer les erreurs lors de la suppression de la room
                 });
     }
+
+    private void setButtonCompte(){
+        Intent switchActivityIntent = new Intent(this, mon_compte.class);
+
+        // on récupère l'id depuis l'intent actuel
+        Intent intent = getIntent();
+        String identifiant = intent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        // on l'ajoute en tant qu'extra à l'intent de l'activité de destination
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
+    }
+
 }
