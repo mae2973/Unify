@@ -3,6 +3,8 @@ package com.example.unify;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +17,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 public class mon_compte extends AppCompatActivity {
 
+    Button buttonRetour;
     private TextView textViewIdentifiant;
     private TextView textViewNom;
     private TextView textViewPrenom;
@@ -63,5 +66,17 @@ public class mon_compte extends AppCompatActivity {
                     }
                 });
 
+        buttonRetour = findViewById(R.id.buttonRetour);
+        buttonRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonRetour();
+            }
+        });
+
+    }
+
+    private void setButtonRetour(){
+        this.finish();
     }
 }
