@@ -46,8 +46,7 @@ public class overlay_settings_host extends AppCompatActivity {
         roomsRef.document(codeSalon)
                 .update("participants", FieldValue.arrayRemove(identifiant))
                 .addOnSuccessListener(aVoid -> {
-                    // Identifiant supprimé avec succès
-                    // Effectuer les actions supplémentaires si nécessaire
+                    // id supprimé de la liste des participants
                 })
                 .addOnFailureListener(e -> {
                     // Gérer les erreurs lors de la suppression de l'identifiant
