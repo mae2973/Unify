@@ -73,7 +73,7 @@
             android:name=".InterfacePrincipale"
             android:exported="true" />
         <activity
-            android:name=".InterfacePrincipaleInvite"
+            android:name=".InterfacePrincipaleGuest"
             android:exported="true" />
         <activity
             android:name=".SalonSpotify"

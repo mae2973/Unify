@@ -1,5 +1,6 @@
 package com.example.unify;
 
+// Suggestion GUEST !!
 public class CA_Sugestion_TODO {
     private final int icon;
     private User user ;
