@@ -29,8 +29,6 @@
         android:id="@+id/imageView5"
         android:layout_width="300dp"
         android:layout_height="540dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="540dp"
         app:srcCompat="@drawable/gradient2"
         android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,12 +93,12 @@
         android:id="@+id/identifiant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="budapest_la_vie"
+        android:text="coucou"
         android:textSize="22dp"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_marginLeft="115dp"
+        android:layout_marginLeft="150dp"
         android:layout_marginTop="240dp"
         />
 

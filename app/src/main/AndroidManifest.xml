@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,6 +11,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Unify"
         tools:targetApi="31">
+
+        <activity
+            android:name="com.spotify.sdk.android.auth.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <activity android:name=".AuthenticationActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="my-app"
+                    android:host="callback" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ParticipantGuest"
+            android:exported="false" />
         <activity
             android:name=".modif_compte"
             android:exported="true"
@@ -59,7 +82,6 @@
         <activity
             android:name=".overlay_param_accueil"
             android:exported="true" />
-
         <activity
             android:name=".B_PageConnexion"
             android:exported="true" />
@@ -73,13 +95,10 @@
             android:name=".InterfacePrincipale"
             android:exported="true" />
         <activity
-            android:name=".InterfacePrincipaleInvite"
+            android:name=".InterfacePrincipaleGuest"
             android:exported="true" />
         <activity
             android:name=".SalonSpotify"
-            android:exported="true" />
-        <activity
-            android:name=".AuthenticationActivity"
             android:exported="true" />
         <activity
             android:name=".A_SplashScreen"

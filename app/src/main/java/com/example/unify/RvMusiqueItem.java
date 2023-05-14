@@ -1,14 +1,14 @@
 package com.example.unify;
 
-// Suggestion GUEST !!
-public class CA_Sugestion_TODO {
-    private final int icon;
+public class RvMusiqueItem {
+
     private User user ;
+    private int icone ;
     private Song song ;
 
-    public CA_Sugestion_TODO(User user, int icon, Song song) {
+    public RvMusiqueItem(User user, int icone, Song song) {
         this.user = user;
-        this.icon = icon;
+        this.icone = icone;
         this.song = song;
     }
 
@@ -16,12 +16,11 @@ public class CA_Sugestion_TODO {
         return user;
     }
 
-    public int getIcon() {
-        return icon;
+    public int getIcone() {
+        return icone;
     }
 
     public Song getSong() {
         return song;
     }
 }
-

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:ignore="Extra Text"
-    tools:context=".Participants">
+    tools:context=".ParticipantGuest">
 
     <include
         android:id="@+id/include"
@@ -15,21 +15,19 @@
         app:layout_anchorGravity="center"
         tools:ignore="NotSibling" />
 
-
-
-     <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <GridView
+        android:id="@+id/gridView_g"
+        android:layout_width="358dp"
+        android:layout_height="469dp"
+        android:layout_marginTop="157dp"
+        android:numColumns="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo_1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
@@ -41,19 +39,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <GridView
-        android:id="@+id/gridView"
-        android:layout_width="358dp"
-        android:layout_height="469dp"
-        android:layout_marginTop="157dp"
-        android:numColumns="3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
-        android:id="@+id/versMusique"
+        android:id="@+id/versMusique_Guest"
         android:layout_width="25dp"
         android:layout_height="38dp"
         android:padding="40dp"
@@ -65,7 +52,7 @@
         android:background="@drawable/fleche_droit" />
 
     <ImageButton
-        android:id="@+id/parametrehost1"
+        android:id="@+id/parametreguest2"
         android:contentDescription="Paramètres"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -75,8 +62,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_1" />
+
     <ImageButton
-        android:id="@+id/plus"
+        android:id="@+id/plus4"
         android:contentDescription="Plus d'actions"
         android:layout_width="103dp"
         android:layout_height="83dp"
@@ -85,11 +83,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/bouton_ajout" />
-
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -50,7 +50,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-firestore'
 
-    implementation 'com.spotify.android:auth:2.0.2' // Vérifiez la dernière version sur le site de Spotify
+    implementation 'com.spotify.android:auth:1.2.3' // Vérifiez la dernière version sur le site de Spotify
+    //implementation 'com.spotify.android:app-remote:0.7.0'
+    //implementation 'com.spotify.android:app-remote-sdk:0.7.0'
 
 
     //noinspection GradleCompatible
@@ -69,6 +71,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.navigation:navigation-fragment:2.5.3'
     implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation files('spotify-app-remote-release-0.7.2.aar')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

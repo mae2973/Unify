@@ -7,17 +7,31 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
 public class B_ConnexionSpotifyCrea extends AppCompatActivity {
     Button buttonValider;
     Button buttonAnnuler;
 
     Button buttonParametre;
 
+    private FirebaseFirestore db;
+    private CollectionReference roomsRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ba_connexion_spotify_crea);
+
+        db = FirebaseFirestore.getInstance();
+        roomsRef = db.collection("rooms");
 
         buttonValider = findViewById(R.id.bouton_valid_spotify_crea);
         buttonValider.setOnClickListener(new View.OnClickListener() {
@@ -45,10 +59,55 @@ public class B_ConnexionSpotifyCrea extends AppCompatActivity {
     }
 
     private void setButtonValider() {
+        Random random = new Random();
+        int initialCodeSalon;
+
+        do {
+            initialCodeSalon = random.nextInt(9000) + 1000;
+        } while (initialCodeSalonExists(initialCodeSalon));
+
+        final int codeSalon = initialCodeSalon;
+        String identifiant = getIntent().getStringExtra("IDENTIFIANT_EXTRA");
+
+        storeCodeSalon(codeSalon, identifiant);
+
         Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
-        // destination à modif une fois qu'on aura les bons trucs avec les fragments
+        switchActivityIntent.putExtra("CODE_SALON", String.valueOf(codeSalon));
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
+    }
+
+    private boolean initialCodeSalonExists(int codeSalon) {
+        final boolean[] exists = {false};
+
+        roomsRef.document(String.valueOf(codeSalon))
+                .get()
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
+                        exists[0] = true;
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    // Gestion des erreurs lors de la requête
+                });
+
+        return exists[0];
+    }
+
+    private void storeCodeSalon(int codeSalon, String identifiant) {
+        DocumentReference roomDocRef = roomsRef.document(String.valueOf(codeSalon));
+
+        Map<String, Object> roomData = new HashMap<>();
+        roomData.put("idCrea", identifiant);
+        roomData.put("participants", new ArrayList<String>());
+
+        roomDocRef.set(roomData)
+                .addOnSuccessListener(aVoid -> {
+                    // Le code de salon a été stocké avec succès
+                })
+                .addOnFailureListener(e -> {
+                    // Gestion des erreurs lors de la création du salon
+                });
     }
 
     private void setButtonAnnuler() {
@@ -57,8 +116,11 @@ public class B_ConnexionSpotifyCrea extends AppCompatActivity {
     }
 
     private void setButtonParametre() {
-        Intent switchActivityIntent = new Intent(this, B_RejoindreSalon.class);
-        // METTRE LA BONNE DESTINATION, ICI L'OVERLAY PARAMETRES QU'ON A PAS ENCORE FAIT
+        Intent switchActivityIntent = new Intent(this, overlay_param_accueil.class);
+
+        String identifiant = getIntent().getStringExtra("IDENTIFIANT_EXTRA");
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
