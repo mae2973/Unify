@@ -142,7 +142,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="270dp"
         android:layout_marginEnd="78dp"
-        android:background="@drawable/play"
+        android:background="@drawable/bouton_valider"
         android:contentDescription="Play"
         android:rotation="90"
         app:layout_constraintEnd_toEndOf="parent"

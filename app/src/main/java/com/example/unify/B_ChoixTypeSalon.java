@@ -62,6 +62,11 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
 
     private void setButtonRejoindre() {
         Intent switchActivityIntent = new Intent(this, B_RejoindreSalon.class);
+
+        String identifiant = getIntent().getStringExtra("identifiant");
+
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
