@@ -15,7 +15,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class overlay_settings_host extends AppCompatActivity {
 
     Button buttonQuitterSalon;
-
     Button buttonCompte;
 
     @Override

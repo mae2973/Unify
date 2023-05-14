@@ -16,6 +16,7 @@ public class overlay_settings_guest extends AppCompatActivity {
 
     Button buttonQuitterSalon;
 
+    Button buttonCompte;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,14 @@ public class overlay_settings_guest extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 setButtonQuitterSalon();
+            }
+        });
+
+        buttonCompte = findViewById(R.id.Mon_compte);
+        buttonCompte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonCompte();
             }
         });
     }
@@ -55,6 +64,20 @@ public class overlay_settings_guest extends AppCompatActivity {
         switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
         startActivity(switchActivityIntent);
         //TODO: la je change d'activité mais je ne kill pas celles d'avant, voir si on peut le faire
+        overridePendingTransition(0, 0);
+    }
+
+    private void setButtonCompte(){
+        Intent switchActivityIntent = new Intent(this, mon_compte.class);
+
+        // on récupère l'id depuis l'intent actuel
+        Intent intent = getIntent();
+        String identifiant = intent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        // on l'ajoute en tant qu'extra à l'intent de l'activité de destination
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
+        startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
 }
