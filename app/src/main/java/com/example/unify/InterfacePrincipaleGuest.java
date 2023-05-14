@@ -1,18 +1,28 @@
 package com.example.unify;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+
 public class InterfacePrincipaleGuest extends AppCompatActivity {
 
-    ImageButton parametreg1 ;
-    ImageButton flecheg_g ;
+    ImageButton parametreg1;
+    ImageButton flecheg_g;
 
     ImageButton fleched_g;
+
+
+    ArrayList<RvMusiqueItem> songs2;
+    LinearLayoutManager layoutManagerguest;
+    AdapterM adapterguest;
+    RecyclerView rvM2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +30,7 @@ public class InterfacePrincipaleGuest extends AppCompatActivity {
         setContentView(R.layout.activity_interface_principale_invite);
 
         // Boutons
-        parametreg1 = findViewById(R.id.parametreguest1) ;
+        parametreg1 = findViewById(R.id.parametreguest1);
         parametreg1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +46,7 @@ public class InterfacePrincipaleGuest extends AppCompatActivity {
         });
 
 
-        flecheg_g = findViewById(R.id.versParticipant_Guest) ;
+        flecheg_g = findViewById(R.id.versParticipant_Guest);
         flecheg_g.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +55,7 @@ public class InterfacePrincipaleGuest extends AppCompatActivity {
         });
 
 
-        fleched_g = findViewById(R.id.versSuggestion_Guest) ;
+        fleched_g = findViewById(R.id.versSuggestion_Guest);
         fleched_g.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,11 +64,23 @@ public class InterfacePrincipaleGuest extends AppCompatActivity {
         });
 
 
+        // Recycler view
+        songs2 = new ArrayList<>();
+        initRecyclerview2();
+
+        ajouterMusique("Lucrece", "Fodouop", R.drawable.icone, "lcjck", "lqZJH");
+        ajouterMusique("Ehmhucrece", "Fodouop", R.drawable.icone, "qgeg", "lqZJH");
+        ajouterMusique("Dghcce", "Fodouop", R.drawable.icone, "geqsh", "lqZJH");
+        ajouterMusique("Lue", "Fodouop", R.drawable.icone, "Hkjhd", "lqZJH");
+        ajouterMusique("Lucrece", "Fodouop", R.drawable.icone, "hrjh", "lqZJH");
+        ajouterMusique("BALAece", "Nkzhkz", R.drawable.icone, "hrjh", "lqZJH");
+        ajouterMusique("BALAece", "Nkzhkz", R.drawable.icone, "hrjh", "lqZJH");
+
+
     }
 
 
     // Boutons
-
 
 
     private void setVersParticipant_Guest() {
@@ -74,4 +96,26 @@ public class InterfacePrincipaleGuest extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
+
+    // Recyler view
+    private void initRecyclerview2() {
+        rvM2 = findViewById(R.id.rvMusiqueGuest);
+        layoutManagerguest = new LinearLayoutManager(this);
+        layoutManagerguest.setOrientation(RecyclerView.VERTICAL);
+        rvM2.setLayoutManager(layoutManagerguest);
+        adapterguest = new AdapterM(songs2);
+        rvM2.setAdapter(adapterguest);
+        adapterguest.notifyDataSetChanged();
+
     }
+
+
+    private void ajouterMusique(String p, String n, int image, String a, String t) {
+        User user = new User(p, n);
+        Song song = new Song(a, t);
+        RvMusiqueItem m3 = new RvMusiqueItem(user, image, song);
+        songs2.add(m3);
+        adapterguest.notifyDataSetChanged();
+
+    }
+}
