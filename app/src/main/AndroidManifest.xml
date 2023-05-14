@@ -13,7 +13,7 @@
         tools:targetApi="31">
         <activity
             android:name=".ParticipantGuest"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".modif_compte"
             android:exported="true"
@@ -42,6 +42,7 @@
         <activity
             android:name=".mon_compte"
             android:exported="true" />
+
         <activity
             android:name=".Participants"
             android:exported="true" />
