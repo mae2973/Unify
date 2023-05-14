@@ -1,10 +1,10 @@
 package com.example.unify;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.util.Log;
 
 import com.spotify.android.appremote.api.ConnectionParams;
+import com.spotify.android.appremote.api.Connector;
 import com.spotify.android.appremote.api.SpotifyAppRemote;
 import com.spotify.android.appremote.api.error.AuthenticationFailedException;
 import com.spotify.android.appremote.api.error.CouldNotFindSpotifyApp;
@@ -29,7 +29,7 @@ public class SpotifyPlayer {
                 .setAccessToken(accessToken)
                 .build();
 
-        SpotifyAppRemote.connect(context, connectionParams, new SpotifyAppRemote.Connector.ConnectionListener() {
+        SpotifyAppRemote.connect(context, connectionParams, new Connector.ConnectionListener() {
             @Override
             public void onConnected(SpotifyAppRemote spotifyAppRemote) {
                 mSpotifyAppRemote = spotifyAppRemote;
