@@ -16,6 +16,8 @@ public class overlay_settings_host extends AppCompatActivity {
 
     Button buttonQuitterSalon;
 
+    Button buttonCompte;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,14 @@ public class overlay_settings_host extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 setButtonQuitterSalon();
+            }
+        });
+
+        buttonCompte = findViewById(R.id.Mon_compte);
+        buttonCompte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonCompte();
             }
         });
     }
@@ -51,6 +61,20 @@ public class overlay_settings_host extends AppCompatActivity {
                 .addOnFailureListener(e -> {
                     // Gérer les erreurs lors de la suppression de la room
                 });
+    }
+
+    private void setButtonCompte(){
+        Intent switchActivityIntent = new Intent(this, mon_compte.class);
+
+        // on récupère l'id depuis l'intent actuel
+        Intent intent = getIntent();
+        String identifiant = intent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        // on l'ajoute en tant qu'extra à l'intent de l'activité de destination
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
+        startActivity(switchActivityIntent);
+        overridePendingTransition(0, 0);
     }
 
 }
