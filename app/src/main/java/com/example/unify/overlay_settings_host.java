@@ -44,12 +44,13 @@ public class overlay_settings_host extends AppCompatActivity {
         CollectionReference roomsRef = db.collection("rooms");
 
         roomsRef.document(codeSalon)
-                .update("participants", FieldValue.arrayRemove(identifiant))
+                .delete()
                 .addOnSuccessListener(aVoid -> {
-                    // id supprimé de la liste des participants
+                    // le créateur quitte la room => on la supprime entièrement de la bdd
                 })
                 .addOnFailureListener(e -> {
-                    // Gérer les erreurs lors de la suppression de l'identifiant
+                    // Gérer les erreurs lors de la suppression de la room
                 });
     }
+
 }
