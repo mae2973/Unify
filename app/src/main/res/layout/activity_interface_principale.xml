@@ -131,7 +131,7 @@
         android:layout_height="80dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="18dp"
-        android:background="@drawable/bouton_ajoutp"
+        android:background="@drawable/bouton_ajout"
         android:contentDescription="Plus d'actions"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -166,7 +166,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="270dp"
         android:layout_marginEnd="78dp"
-        android:background="@drawable/play"
+        android:background="@drawable/bouton_valid"
         android:contentDescription="Play"
         android:rotation="90"
         app:layout_constraintEnd_toEndOf="parent"

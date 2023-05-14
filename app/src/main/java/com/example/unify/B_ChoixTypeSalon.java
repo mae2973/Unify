@@ -50,9 +50,15 @@ public class B_ChoixTypeSalon extends AppCompatActivity {
 
     private void setButtonCreer() {
         Intent switchActivityIntent = new Intent(this, B_ConnexionSpotifyCrea.class);
+
+        String identifiant = getIntent().getStringExtra("identifiant");
+
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
+
 
     private void setButtonRejoindre() {
         Intent switchActivityIntent = new Intent(this, B_RejoindreSalon.class);
