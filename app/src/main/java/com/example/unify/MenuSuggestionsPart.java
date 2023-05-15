@@ -34,11 +34,10 @@ public class MenuSuggestionsPart extends AppCompatActivity {
         suggestions = new ArrayList<>();
         initRecyclerview2();
 
-        ajouterSuggestion("Lucrece","Fodouop",R.drawable.icone,"lcjck","lqZJH"); ;
-        ajouterSuggestion("Ehmhucrece","Fodouop",R.drawable.icone,"qghsbjc","lqZJH"); ;
-        ajouterSuggestion("Dghe","Fodp",R.drawable.icone,"KNVK","lqZ,vne"); ;
-        ajouterSuggestion("Lue","Fodouop",R.drawable.icone,"Hkjhd","lqZJH"); ;
-        ajouterSuggestion("BuMLLMe","Fodouop",R.drawable.icone,"dbk,,nekbh","lqZJH"); ;
+        ajouterSuggestion("Lucrece","Fodouop",R.drawable.icone,"Tino Rossi","Chanson aux nuages"); ;
+        ajouterSuggestion("Ehmhucrece","Fodouop",R.drawable.icone,"Nekfeu","Esquimaux"); ;
+        ajouterSuggestion("Lue","Fodouop",R.drawable.icone,"Mandragora","Sunshine 3000"); ;
+        ajouterSuggestion("BuMLLMe","Fodouop",R.drawable.icone,"dbk,,PLK","Demain");
 
 
 

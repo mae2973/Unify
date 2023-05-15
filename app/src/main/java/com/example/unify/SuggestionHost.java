@@ -61,10 +61,10 @@ public class SuggestionHost extends AppCompatActivity {
         suggestions_host= new ArrayList<>();
         initRecyclerview4();
 
-        ajouterSuggestion("Lucrece","Fodouop",R.drawable.icone,"lcjck","lqZJH"); ;
-        ajouterSuggestion("Ehmhucrece","Fodouop",R.drawable.icone,"qghsbjc","lqZJH"); ;
-        ajouterSuggestion("Lue","Fodouop",R.drawable.icone,"Hkjhd","lqZJH"); ;
-        ajouterSuggestion("BuMLLMe","Fodouop",R.drawable.icone,"dbk,,nekbh","lqZJH"); ;
+        ajouterSuggestion("Lucrece","Fodouop",R.drawable.icone,"Tino Rossi","Chanson aux nuages"); ;
+        ajouterSuggestion("Ehmhucrece","Fodouop",R.drawable.icone,"Nekfeu","Esquimaux"); ;
+        ajouterSuggestion("Lue","Fodouop",R.drawable.icone,"Mandragora","Sunshine 3000"); ;
+        ajouterSuggestion("BuMLLMe","Fodouop",R.drawable.icone,"dbk,,PLK","Demain"); ;
 
 
     }
