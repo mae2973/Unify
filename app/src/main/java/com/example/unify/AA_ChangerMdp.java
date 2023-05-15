@@ -6,7 +6,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class D_ChangerMdp extends AppCompatActivity {
+public class AA_ChangerMdp extends AppCompatActivity {
 
     Button buttonValider;
 

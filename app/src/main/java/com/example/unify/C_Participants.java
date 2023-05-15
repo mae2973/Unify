@@ -2,22 +2,31 @@ package com.example.unify;
 
 import android.content.Intent;
 import android.os.Bundle;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.ListAdapter;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.unify.databinding.CParticipantsBinding;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FieldPath;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
 import java.util.ArrayList;
+import java.util.List;
 
 
-public class Participants extends AppCompatActivity {
+public class C_Participants extends AppCompatActivity {
 
     ImageButton flechedroite;
     ImageButton parametreh1 ;
+    GridView grid;
 
     private ArrayList<GridItem> liste_participants = new ArrayList<>();
     private LayoutInflater inflater ;
@@ -29,6 +38,7 @@ public class Participants extends AppCompatActivity {
         // setContentView(binding.getRoot());
 
 
+         grid = findViewById(R.id.gridView) ;
 
 
         // Boutons
@@ -54,6 +64,7 @@ public class Participants extends AppCompatActivity {
         // Grid View
         inflater = getLayoutInflater();
 
+        /*
         ajouterParticipant("Lucrece","Fodouop",R.drawable.icone) ;
         ajouterParticipant("Luqahd","Foaqkj",R.drawable.icone) ;
         ajouterParticipant("Zqahd","Foeeqkj",R.drawable.icone) ;
@@ -67,25 +78,64 @@ public class Participants extends AppCompatActivity {
         ajouterParticipant("Eqahd","Foeeegzeqkj",R.drawable.icone) ;
         ajouterParticipant("Rqkefnjkzahd","Foeeegj",R.drawable.icone) ;
         ajouterParticipant("Iqahd","Foeeegzekj",R.drawable.icone) ;
+        */
+
+        Intent currentIntent = getIntent();
+        String code_room = currentIntent.getStringExtra("CODE_SALON");
+        //Log.d("ok", code_room);
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        db.collection("rooms")
+                .whereEqualTo(FieldPath.documentId(), code_room)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Log.d("room:", document.getId() + " => " + document.getData());
+                                List<String> list = (List<String>) document.get("participants");
+                                for (String participant : list) {
+                                    ajouterParticipant(participant, participant, R.drawable.icone) ;
+                                }
+                            }
+                        } else {
+                            Log.w("Erreur", "Error getting documents.", task.getException());
+                        }
+                    }
+                });
 
 
-
-
-        GridView grid = findViewById(R.id.gridView) ;
-        grid.setAdapter(new GridAdaptater(this,liste_participants,inflater));
 
     }
 
 
     // Boutons
     private void setFlechedroite() {
-        Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
+        Intent switchActivityIntent = new Intent(this, C_InterfacePrincipale.class);
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
+        finish();
     }
 
     private void setParametreH1() {
-        Intent switchActivityIntent = new Intent(this, overlay_settings_host.class);
+        Intent switchActivityIntent = new Intent(this, D_OverlaySettingsHost.class);
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
@@ -98,6 +148,7 @@ public class Participants extends AppCompatActivity {
         User user = new User(prenom, nom);
         GridItem g = new GridItem(user, drawableId);
         liste_participants.add(g);
+        grid.setAdapter(new GridAdaptater(this,liste_participants,inflater));
 
     }
 }

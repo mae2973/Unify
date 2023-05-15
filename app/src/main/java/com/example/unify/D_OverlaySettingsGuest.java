@@ -12,7 +12,7 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class overlay_settings_guest extends AppCompatActivity {
+public class D_OverlaySettingsGuest extends AppCompatActivity {
 
     Button buttonQuitterSalon;
 
@@ -20,7 +20,7 @@ public class overlay_settings_guest extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.overlay_settings_guest);
+        setContentView(R.layout.d_overlay_settings_guest);
 
         Intent currentIntent = getIntent();
         String codeSalon = currentIntent.getStringExtra("CODE_SALON");
@@ -68,7 +68,7 @@ public class overlay_settings_guest extends AppCompatActivity {
     }
 
     private void setButtonCompte(){
-        Intent switchActivityIntent = new Intent(this, mon_compte.class);
+        Intent switchActivityIntent = new Intent(this, AB_MonCompte.class);
 
         // on récupère l'id depuis l'intent actuel
         Intent intent = getIntent();

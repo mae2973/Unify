@@ -54,7 +54,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-firestore'
 
-    implementation 'com.spotify.android:auth:2.0.2' // Vérifiez la dernière version sur le site de Spotify
+    implementation 'com.spotify.android:auth:1.2.3' // Vérifiez la dernière version sur le site de Spotify
     //implementation 'com.spotify.android:app-remote:0.7.0'
     //implementation 'com.spotify.android:app-remote-sdk:0.7.0'
 
@@ -64,7 +64,9 @@ dependencies {
     implementation 'com.sun.mail:javax.mail:1.6.2'
     implementation 'com.squareup.okhttp3:okhttp:4.9.1'
 
-    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+
+    implementation 'org.mozilla:rhino:1.7.13'
 
     //noinspection GradleCompatible
     // implementation 'com.android.support:appcompat-v7:28.0.0'

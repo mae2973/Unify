@@ -21,7 +21,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class B_PageConnexion extends AppCompatActivity {
+public class A_PageConnexion extends AppCompatActivity {
     Button buttonCompte;
     Button buttonMdp;
     FirebaseFirestore db;
@@ -31,7 +31,7 @@ public class B_PageConnexion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d_page_connexion);
+        setContentView(R.layout.a_page_connexion);
 
         db = FirebaseFirestore.getInstance();
 
@@ -90,16 +90,33 @@ public class B_PageConnexion extends AppCompatActivity {
 
         idt.addTextChangedListener(formulaireValidationWatcher);
         mdp.addTextChangedListener(formulaireValidationWatcher);
+
+
+        db.collection("users")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Log.d("Info", document.getId() + " => " + document.getData());
+                            }
+                        } else {
+                            Log.w("Info", "Error getting documents.", task.getException());
+                        }
+                    }
+                });
+
     }
 
     private void setButtonCompte() {
-        Intent switchActivityIntent = new Intent(this, D_CreationCompte.class);
+        Intent switchActivityIntent = new Intent(this, B_CreationCompte.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
 
     private void setButtonMdp() {
-        Intent switchActivityIntent = new Intent(this, D_MdpOublie.class);
+        Intent switchActivityIntent = new Intent(this, AB_MdpOublie.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
@@ -123,12 +140,12 @@ public class B_PageConnexion extends AppCompatActivity {
                                 if (password.equals(storedPassword)) {
                                     // password correct
                                     Log.d("Firebase", "Connexion established");
-                                    Intent intent = new Intent(B_PageConnexion.this, B_ChoixTypeSalon.class);
+                                    Intent intent = new Intent(A_PageConnexion.this, B_ChoixTypeSalon.class);
                                     intent.putExtra("identifiant", identifiant); // Passer l'id à la page suivante
                                     startActivity(intent);
                                 } else {
                                     // password incorrect
-                                    Toast.makeText(B_PageConnexion.this, "Incorrect password.",
+                                    Toast.makeText(A_PageConnexion.this, "Incorrect password.",
                                             Toast.LENGTH_SHORT).show();
                                     Log.d("Firebase", "Incorrect password.");
                                 }
@@ -136,7 +153,7 @@ public class B_PageConnexion extends AppCompatActivity {
 
                         } else {
                             // Log the error
-                            Toast.makeText(B_PageConnexion.this, "Error getting documents: ",
+                            Toast.makeText(A_PageConnexion.this, "Error getting documents: ",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }

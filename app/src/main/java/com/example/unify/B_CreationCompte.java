@@ -23,7 +23,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.HashMap;
 import java.util.Map;
 
-public class D_CreationCompte extends AppCompatActivity {
+public class B_CreationCompte extends AppCompatActivity {
 
     Button buttonValider;
     Button buttonAnnuler;
@@ -92,7 +92,7 @@ public class D_CreationCompte extends AppCompatActivity {
                                     QuerySnapshot querySnapshot = task.getResult();
                                     if (querySnapshot != null && !querySnapshot.isEmpty()) {
                                         // L'identifiant existe déjà, message d'erreur
-                                        Toast.makeText(D_CreationCompte.this, "Cet identifiant existe déjà.", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(B_CreationCompte.this, "Cet identifiant existe déjà.", Toast.LENGTH_SHORT).show();
                                     } else {
                                         // L'identifiant n'existe pas, ajouter le doc à la bdd
 
@@ -142,19 +142,19 @@ public class D_CreationCompte extends AppCompatActivity {
                                                                         }
                                                                     });
 
-                                                            Intent switchActivityIntent = new Intent(D_CreationCompte.this, B_PageConnexion.class);
+                                                            Intent switchActivityIntent = new Intent(B_CreationCompte.this, A_PageConnexion.class);
                                                             startActivity(switchActivityIntent);
                                                             overridePendingTransition(0, 0);
                                                         } else {
                                                             // erreur lors de la récup du nombre de doc
-                                                            Toast.makeText(D_CreationCompte.this, "Erreur lors de la génération du nom du document.", Toast.LENGTH_SHORT).show();
+                                                            Toast.makeText(B_CreationCompte.this, "Erreur lors de la génération du nom du document.", Toast.LENGTH_SHORT).show();
                                                         }
                                                     }
                                                 });
                                     }
                                 } else {
                                     // erreur lors de la vérif
-                                    Toast.makeText(D_CreationCompte.this, "Erreur lors de la vérification de l'identifiant.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(B_CreationCompte.this, "Erreur lors de la vérification de l'identifiant.", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
@@ -170,7 +170,7 @@ public class D_CreationCompte extends AppCompatActivity {
     }
 
     private void setButtonAnnuler() {
-        Intent switchActivityIntent = new Intent(this, B_PageConnexion.class);
+        Intent switchActivityIntent = new Intent(this, A_PageConnexion.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }

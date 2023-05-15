@@ -21,7 +21,7 @@ public class AdapterM_Guest extends RecyclerView.Adapter<ViewHolderM_Guest> {
     @NonNull
     @Override
     public ViewHolderM_Guest onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.c_item_rv_musique,parent,false) ;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.z_item_rv_musique,parent,false) ;
         return new ViewHolderM_Guest(view) ;
     }
 

@@ -12,6 +12,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -28,7 +29,7 @@ public class B_ConnexionSpotifyCrea extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ba_connexion_spotify_crea);
+        setContentView(R.layout.b_connexion_spotify_crea);
 
         db = FirebaseFirestore.getInstance();
         roomsRef = db.collection("rooms");
@@ -71,7 +72,7 @@ public class B_ConnexionSpotifyCrea extends AppCompatActivity {
 
         storeCodeSalon(codeSalon, identifiant);
 
-        Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
+        Intent switchActivityIntent = new Intent(this, C_InterfacePrincipale.class);
         switchActivityIntent.putExtra("CODE_SALON", String.valueOf(codeSalon));
         switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
         startActivity(switchActivityIntent);
@@ -100,7 +101,7 @@ public class B_ConnexionSpotifyCrea extends AppCompatActivity {
 
         Map<String, Object> roomData = new HashMap<>();
         roomData.put("idCrea", identifiant);
-        roomData.put("participants", new ArrayList<String>());
+        roomData.put("participants", new ArrayList<String>(Collections.singleton(identifiant)));
 
         roomDocRef.set(roomData)
                 .addOnSuccessListener(aVoid -> {
@@ -117,7 +118,7 @@ public class B_ConnexionSpotifyCrea extends AppCompatActivity {
     }
 
     private void setButtonParametre() {
-        Intent switchActivityIntent = new Intent(this, overlay_param_accueil.class);
+        Intent switchActivityIntent = new Intent(this, D_OverlayParamAccueil.class);
 
         String identifiant = getIntent().getStringExtra("IDENTIFIANT_EXTRA");
         switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);

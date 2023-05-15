@@ -8,11 +8,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class overlay_settings_host extends AppCompatActivity {
+public class D_OverlaySettingsHost extends AppCompatActivity {
 
     Button buttonQuitterSalon;
     Button buttonCompte;
@@ -50,9 +48,8 @@ public class overlay_settings_host extends AppCompatActivity {
         String codeSalon = getIntent().getStringExtra("CODE_SALON");
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        CollectionReference roomsRef = db.collection("rooms");
 
-        roomsRef.document(codeSalon)
+        db.collection("rooms").document(codeSalon)
                 .delete()
                 .addOnSuccessListener(aVoid -> {
                     // le créateur quitte la room => on la supprime entièrement de la bdd
@@ -66,10 +63,11 @@ public class overlay_settings_host extends AppCompatActivity {
         startActivity(switchActivityIntent);
         //TODO: la je change d'activité mais je ne kill pas celles d'avant, voir si on peut le faire
         overridePendingTransition(0, 0);
+        finish();
     }
 
     private void setButtonCompte(){
-        Intent switchActivityIntent = new Intent(this, mon_compte.class);
+        Intent switchActivityIntent = new Intent(this, AB_MonCompte.class);
 
         // on récupère l'id depuis l'intent actuel
         Intent intent = getIntent();

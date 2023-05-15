@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MenuSuggestionsPart extends AppCompatActivity {
+public class C_MenuSuggestionsPart extends AppCompatActivity {
 
     // Suggestion GUEST !!!
 
@@ -27,7 +27,7 @@ public class MenuSuggestionsPart extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu_suggestions_part);
+        setContentView(R.layout.menu_suggestions_part_deprecated);
 
 
         // Recycler view
@@ -87,12 +87,29 @@ public class MenuSuggestionsPart extends AppCompatActivity {
 
     // BOUTONS
     private void setVersMusique2() {
-        Intent switchActivityIntent = new Intent(this, InterfacePrincipaleGuest.class);
+        Intent switchActivityIntent = new Intent(this, C_InterfacePrincipaleGuest.class);
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
+        finish();
     }
     private void setPar() {
-        Intent switchActivityIntent = new Intent(this, overlay_settings_guest.class);
+        Intent switchActivityIntent = new Intent(this, D_OverlaySettingsGuest.class);
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }

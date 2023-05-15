@@ -18,5 +18,6 @@
             android:layout_height="100dp"
             android:text="lol"
             android:id="@+id/my_button_test"/>
+
     </LinearLayout>
 </layout>

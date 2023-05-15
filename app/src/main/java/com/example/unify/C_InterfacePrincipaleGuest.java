@@ -1,17 +1,17 @@
 package com.example.unify;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
-public class InterfacePrincipaleGuest extends AppCompatActivity {
+public class C_InterfacePrincipaleGuest extends AppCompatActivity {
 
     ImageButton parametreg1;
     ImageButton flecheg_g;
@@ -27,14 +27,14 @@ public class InterfacePrincipaleGuest extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_interface_principale_invite);
+        setContentView(R.layout.c_interface_principale_invite);
 
         // Boutons
         parametreg1 = findViewById(R.id.parametreguest1);
         parametreg1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(InterfacePrincipaleGuest.this, overlay_settings_guest.class);
+                Intent intent = new Intent(C_InterfacePrincipaleGuest.this, D_OverlaySettingsGuest.class);
 
                 Intent currentIntent = getIntent();
                 String codeSalon = currentIntent.getStringExtra("CODE_SALON");
@@ -86,16 +86,34 @@ public class InterfacePrincipaleGuest extends AppCompatActivity {
 
 
     private void setVersParticipant_Guest() {
-        Intent switchActivityIntent = new Intent(this, ParticipantGuest.class);
+        Intent switchActivityIntent = new Intent(this, C_ParticipantGuest.class);
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
+        finish();
     }
 
 
     private void setVersSuggestion_Guest() {
-        Intent switchActivityIntent = new Intent(this, MenuSuggestionsPart.class);
+        Intent switchActivityIntent = new Intent(this, C_MenuSuggestionsPart.class);
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
+        finish();
     }
 
 
