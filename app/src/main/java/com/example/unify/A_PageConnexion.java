@@ -150,6 +150,12 @@ public class A_PageConnexion extends AppCompatActivity {
                                     Log.d("Firebase", "Incorrect password.");
                                 }
                             }
+                            if (result.size() == 0) {
+                                // on ne trouve pas d'identifiant similaire à celui indiqué
+                                Toast.makeText(A_PageConnexion.this, "Compte non trouvé.",
+                                        Toast.LENGTH_SHORT).show();
+
+                            }
 
                         } else {
                             // Log the error
