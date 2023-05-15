@@ -34,11 +34,13 @@ ImageButton fleched;
         songs = new ArrayList<>();
         initRecyclerview();
 
-        ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"lcjck","lqZJH") ;
-        ajouterMusique("Ehmhucrece","Fodouop",R.drawable.icone,"qgeg","lqZJH") ;
-        ajouterMusique("Dghcce","Fodouop",R.drawable.icone,"geqsh","lqZJH") ;
-        ajouterMusique("Lue","Fodouop",R.drawable.icone,"Hkjhd","lqZJH") ;
-        ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"hrjh","lqZJH") ;
+        ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"Starset","Carnivore") ;
+        ajouterMusique("Ehmhucrece","Fodouop",R.drawable.icone,"Imagine Dragons","Waves") ;
+        ajouterMusique("Dghcce","Fodouop",R.drawable.icone,"Jane","The fool") ;
+        ajouterMusique("Lue","Fodouop",R.drawable.icone,"Louane","Secret") ;
+        ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"Slimane","Chez toi") ;
+        ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"PLK","Demain") ;
+
 
 
         // Boutons
