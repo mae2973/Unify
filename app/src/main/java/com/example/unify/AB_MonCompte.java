@@ -15,9 +15,10 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
-public class mon_compte extends AppCompatActivity {
+public class AB_MonCompte extends AppCompatActivity {
 
     Button buttonRetour;
+    Button buttonModifier;
     private TextView textViewIdentifiant;
     private TextView textViewNom;
     private TextView textViewPrenom;
@@ -26,7 +27,7 @@ public class mon_compte extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.d_mon_compte__a_refaire);
+        setContentView(R.layout.ab_mon_compte);
 
         textViewIdentifiant = findViewById(R.id.identifiant);
         textViewNom = findViewById(R.id.nom);
@@ -35,7 +36,7 @@ public class mon_compte extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-       String identifiant = intent.getStringExtra("IDENTIFIANT_EXTRA");
+        String identifiant = intent.getStringExtra("IDENTIFIANT_EXTRA");
 
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -74,9 +75,22 @@ public class mon_compte extends AppCompatActivity {
             }
         });
 
+        buttonModifier = findViewById(R.id.modif_compte);
+        buttonModifier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setButtonModifier();
+            }
+        });
+
     }
 
     private void setButtonRetour(){
         this.finish();
+    }
+
+    private void setButtonModifier(){
+        Intent intent = new Intent(getApplicationContext(), D_OverlayModifierCompte.class) ;
+        startActivity(intent) ;
     }
 }

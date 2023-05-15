@@ -1,6 +1,5 @@
 package com.example.unify;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +22,7 @@ public class AdapterM extends RecyclerView.Adapter<ViewHolderM> {
     @NonNull
     @Override
     public ViewHolderM onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.c_item_rv_musique,parent,false) ;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.z_item_rv_musique,parent,false) ;
         return new ViewHolderM(view) ; }
        /* View view = inflater.inflate(R.layout.c_item_rv_musique, parent, false);
         ;*/

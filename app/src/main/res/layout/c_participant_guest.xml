@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:ignore="Extra Text"
-    tools:context=".ParticipantGuest">
+    tools:context=".C_ParticipantGuest">
 
     <include
         android:id="@+id/include"

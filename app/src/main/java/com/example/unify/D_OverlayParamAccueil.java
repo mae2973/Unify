@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class overlay_param_accueil extends AppCompatActivity {
+public class D_OverlayParamAccueil extends AppCompatActivity {
 
     Button buttonDeco;
     Button buttonCompte;
@@ -35,13 +35,13 @@ public class overlay_param_accueil extends AppCompatActivity {
     }
 
     private void setButtonDeco() {
-        Intent switchActivityIntent = new Intent(this, B_PageConnexion.class);
+        Intent switchActivityIntent = new Intent(this, A_PageConnexion.class);
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
 
     private void setButtonCompte() {
-        Intent switchActivityIntent = new Intent(this, mon_compte.class);
+        Intent switchActivityIntent = new Intent(this, AB_MonCompte.class);
 
         // on récupère l'id depuis l'intent actuel
         Intent intent = getIntent();

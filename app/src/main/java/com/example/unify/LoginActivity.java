@@ -6,14 +6,14 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
-    D_Session session;
+    Session session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authentication);
 
-        session = new D_Session(getApplicationContext());
+        session = new Session(getApplicationContext());
 
         if (session.isLoggedIn()) {
             // l'utilisateur est connecté, vous pouvez passer à la MainActivity

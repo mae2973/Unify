@@ -15,6 +15,9 @@ import com.example.unify.databinding.ActivityMainBinding;
 import com.google.api.services.gmail.Gmail;
 import com.google.api.services.gmail.model.Message;
 
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Base64;
@@ -59,6 +62,21 @@ public class MainActivity extends AppCompatActivity {
                 switchActivities();
             }
         });
+
+
+        Context rhino = Context.enter();
+
+        try {
+            Scriptable scope = rhino.initStandardObjects();
+
+            String jsCode = "var x = 7; var y = 8; x * y"; // votre code JavaScript ici
+            Object result = rhino.evaluateString(scope, jsCode, "JavaScript", 1, null);
+
+            System.out.println(Context.toNumber(result)); // affiche 56.0
+        } finally {
+            Context.exit();
+        }
+
     }
 
     @Override

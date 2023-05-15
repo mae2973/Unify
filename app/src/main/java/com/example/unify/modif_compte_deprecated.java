@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class modif_compte extends AppCompatActivity {
+public class modif_compte_deprecated extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

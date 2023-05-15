@@ -19,7 +19,7 @@ public class B_ConnexionSpotifyUser extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ba_connexion_spotify_user);
+        setContentView(R.layout.b_connexion_spotify_user);
 
         buttonValider = findViewById(R.id.boutton_valid_spotify_opt);
         buttonValider.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +55,7 @@ public class B_ConnexionSpotifyUser extends AppCompatActivity {
     }
 
     private void setButtonValider() {
-        Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
+        Intent switchActivityIntent = new Intent(this, C_InterfacePrincipale.class);
         // destination à modif une fois qu'on aura les bons trucs avec les fragments, ici interface principale pour invité
         startActivity(switchActivityIntent);
     }
@@ -65,14 +65,30 @@ public class B_ConnexionSpotifyUser extends AppCompatActivity {
     }
 
     private void setButtonPasser(){
-        Intent switchActivityIntent = new Intent(this, InterfacePrincipale.class);
+        Intent switchActivityIntent = new Intent(this, C_InterfacePrincipale.class);
         // destination à modif une fois qu'on aura les bons trucs avec les fragments, ici interface principale pour invité
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
     }
 
     private void setButtonParametre() {
-        Intent switchActivityIntent = new Intent(this, B_RejoindreSalon.class);
+        Intent switchActivityIntent = new Intent(this, D_OverlayParamAccueil.class);
         // METTRE LA BONNE DESTINATION, ICI L'OVERLAY PARAMETRES QU'ON A PAS ENCORE FAIT
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
 }

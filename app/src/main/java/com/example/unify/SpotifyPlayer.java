@@ -20,6 +20,8 @@ import okhttp3.Response;
 
 public class SpotifyPlayer extends AppCompatActivity {
 
+    //https://accounts.google.com/o/oauth2/v2/auth?response_type=code&access_type=offline&client_id=1046568431490-ij1gi5shcp2gtorls09frkc56d4mjbe2.apps.googleusercontent.com&state=AQBLzLVGLSjhnkWts6gFwtVoAemlboyUQdxL5cS%2F7tMFQ%2BgNlvPxLh4wqXF%2FDpxRk3RilwXmVk59fMjDvusrtq4uSmZ%2BRT8fHezYtFISrqxwvMorNoH6SUk5HEiEz4jRegXL%2BlTDssxYVfbeK%2FKzWql8ccr03TuS0QpifKY7L4FbPBa18jhjagAHQACwsRo5cBamBYwkKcGZq8NT0c1hh8O5%2BVvAE%2BaYTTxIWmNoT8pq%2BuHPLQ7OfKrwoJPiYp1j1euEIJHuW1RWWBN9NnKi4ATyprhawiMOOnw2HmFZtWLHEcvkLt04ozBQd%2Fhhmll7%2Fr8%2FeHYu3IMNtLns%2BAPaP8u9wambMFoKJKJjkHt3%2BoqxxtfWKR9r6YiC1%2FDaSnT9HAS2mJ1pOOqHlDK3a91iiALUcsmuwfpmZAJt5c7U36tcJ93AszEKr3CnRu3wzbkfs6hUtOu%2FBT3KCMKyHtVnaxH4eI9zYkg0uXxdGhHapPpkBmVoQtXMRUuAio%2F%2FBTTj1jnMN4vFVjPe6eJqBnTPd%2Bf01AS6ukt5RmQ8Gz8mo8SvwsACdPyFWtxbQpiuevPOgTiAqsSRo2rzNJbSG4JKi3vrV625yxhtJJMYJkrhU9Domy2%2BIScI81NjHWvBaPt5i5%2FbgxhFffiGwhwBoXDWLpwCm36Vc7eRiiQMsg27GY2%2BX1NYVj%2BQtLDQQJ95HHMyrew9m79shGuqY4gQyQQc%2BIPIxtGuZHIk0lTVPVcsFpS2GaZUMAVIlU2V%2B8DRnfEurtld%2Fil2WKniSZfgW9Rtzpxc7oMQ2NQslqzwpTXUqrcb4sMbeBfStTqLb%2FOWM1wYqM29O%2BL7YvMBkRocInpxJIBK5RDQBXyCAOboZywZ%2BBPH%2FPzPUTWZOev6XwskhYRa9eUP9YkVMJ2vvDD2BfWcamDiOziZa7I%2BKPI3UMfS5GDiSiJJmdbP%2BhrTVWI61PonD7KNeHVbXhVCVMa1G5eeUk7K%2B6U%2BbEEVc%2BIe6ccSUU2ftlm9SthDW5od5IrZml3e2lSBfb8rKlfha4qF5m1qJQ%3D%3D&scope=profile+email+openid&redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Fgoogle%2Fredirect
+
     private static final String AUTHORIZE = "https://accounts.spotify.com/authorize";
     private static final String TOKEN = "https://accounts.spotify.com/api/token";
     private static final String PLAYLISTS = "https://api.spotify.com/v1/me/playlists";
@@ -244,7 +246,7 @@ public class SpotifyPlayer extends AppCompatActivity {
     }
 
     private void pause() {
-        callApi("PUT", PAUSE + "?device_id=" + deviceId, null, new Callback() {
+        callApi("PUT", PLAY + "?device_id=" + deviceId, null, new Callback() {
             @Override
             public void onFailure(@NotNull Call call, @NotNull IOException e) {
                 Log.e("SpotifyPlayer", "Failed to pause: " + e.getMessage());

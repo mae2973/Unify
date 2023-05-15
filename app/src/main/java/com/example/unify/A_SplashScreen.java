@@ -20,7 +20,7 @@ public class A_SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 // Démarrer une page
-                Intent intent = new Intent(getApplicationContext(), B_PageConnexion.class) ;
+                Intent intent = new Intent(getApplicationContext(), A_PageConnexion.class) ;
                 startActivity(intent) ;
                 finish();
             }

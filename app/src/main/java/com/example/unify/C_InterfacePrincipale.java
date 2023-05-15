@@ -2,19 +2,15 @@ package com.example.unify;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class InterfacePrincipale extends AppCompatActivity {
+public class C_InterfacePrincipale extends AppCompatActivity {
 
 
 ImageButton parametreh2 ;
@@ -30,13 +26,13 @@ ImageButton fleched;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_interface_principale);
+        setContentView(R.layout.c_interface_principale);
 
 
 
-       // Recycler view
+        // Recycler view
         songs = new ArrayList<>();
-      initRecyclerview();
+        initRecyclerview();
 
         ajouterMusique("Lucrece","Fodouop",R.drawable.icone,"lcjck","lqZJH") ;
         ajouterMusique("Ehmhucrece","Fodouop",R.drawable.icone,"qgeg","lqZJH") ;
@@ -50,7 +46,7 @@ ImageButton fleched;
         parametreh2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(InterfacePrincipale.this, overlay_settings_host.class);
+                Intent intent = new Intent(C_InterfacePrincipale.this, D_OverlaySettingsHost.class);
 
                 Intent currentIntent = getIntent();
                 String codeSalon = currentIntent.getStringExtra("CODE_SALON");
@@ -88,22 +84,48 @@ ImageButton fleched;
     // Boutons
 
     private void setParametreH2() {
-        Intent switchActivityIntent = new Intent(this, overlay_settings_host.class);
+        Intent switchActivityIntent = new Intent(this, D_OverlaySettingsHost.class);
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
     }
 
     private void setVersParticipant() {
-        Intent switchActivityIntent = new Intent(this, Participants.class);
+        Intent switchActivityIntent = new Intent(this, C_Participants.class);
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
+        finish();
     }
 
 
     private void setVersSuggestion() {
-        Intent switchActivityIntent = new Intent(this, MenuSuggestionsPart.class);
+        Intent switchActivityIntent = new Intent(this, C_MenuSuggestionsPart.class);
+
+        Intent currentIntent = getIntent();
+        String codeSalon = currentIntent.getStringExtra("CODE_SALON");
+        String identifiant = currentIntent.getStringExtra("IDENTIFIANT_EXTRA");
+
+        switchActivityIntent.putExtra("CODE_SALON", codeSalon);
+        switchActivityIntent.putExtra("IDENTIFIANT_EXTRA", identifiant);
+
         startActivity(switchActivityIntent);
         overridePendingTransition(0, 0);
+        finish();
     }
 
 
